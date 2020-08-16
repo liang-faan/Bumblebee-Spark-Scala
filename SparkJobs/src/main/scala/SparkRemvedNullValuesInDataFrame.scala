@@ -13,7 +13,14 @@ object SparkRemvedNullValuesInDataFrame {
       .format("com.databricks.spark.csv")
       .csv(file);
     val nonNullDf = df.na.fill("");
-    nonNullDf.show(10)
+    nonNullDf.show(60)
+
+    // Convert DataFrame to Json Object
+
+    nonNullDf.write.csv("./Data/output.csv")
+
+
+
   }
 
 }
