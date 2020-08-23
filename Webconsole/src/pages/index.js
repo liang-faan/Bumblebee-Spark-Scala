@@ -6,12 +6,11 @@ import { getUser, isLoggedIn } from "../services/auth"
 
 export default () => (
   <Layout>
-    <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
+    <h1>Webconsole to manage Webflow jobs.</h1>
     <p>
-      What do I like to do? Lots of course but definitely enjoy building
-      websites.
+      Includes Submit, Schedule, Query, Stop, Cancel Spark jobs.
     </p>
-    <h1>Hello {isLoggedIn() ? getUser().name : "world"}!</h1>
+    <h1>Welcome {isLoggedIn() ? getUser().name : "Here"}!</h1>
         <p>
             {isLoggedIn() ? (
             <>
@@ -20,8 +19,7 @@ export default () => (
             </>
             ) : (
             <>
-                You should <Link to="/app/login">log in</Link> to see restricted
-                content
+                Please <Link to="/app/login">log in</Link>
             </>
             )}
         </p>
