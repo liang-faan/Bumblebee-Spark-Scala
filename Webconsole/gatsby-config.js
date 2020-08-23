@@ -29,24 +29,24 @@ module.exports = {
         hostname: "test-gatsby-website-bucket.s3-website-us-east-1.amazonaws.com",
       },
     },
-    {
-      resolve: 'gatsby-source-multi-api',
-      options: {
-        apis:[
-          {
-            prefix: 'account',
-            baseUrl: 'https://jsonplaceholder.typicode.com/',
-            endpoints: ["users"],
-            method: 'GET'
-          },
-          {
-            prefix: "SpaceX",
-            baseUrl: "https://api.spacex.land/rest/",
-            endpoints: ["rockets", "ships"],
-            method: "GET",
-          },
-        ],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-source-multi-api',
+    //   options: {
+    //     apis:[
+    //       {
+    //         prefix: 'account',
+    //         baseUrl: 'https://jsonplaceholder.typicode.com/',
+    //         endpoints: ["users"],
+    //         method: 'GET'
+    //       },
+    //       {
+    //         prefix: "SpaceX",
+    //         baseUrl: "https://api.spacex.land/rest/",
+    //         endpoints: ["rockets", "ships"],
+    //         method: "GET",
+    //       },
+    //     ],
+    //   },
+    // },
   ],
 };
