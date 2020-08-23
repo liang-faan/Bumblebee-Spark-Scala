@@ -1,0 +1,29 @@
+service: test-gatsby-website-bucket
+
+plugins:
+- serverless-s3-sync
+
+provider:
+  name: aws
+  region: ${file(./.cache/s3.config.json):region}
+
+custom:
+  frontendBucketName: ${file(./.cache/s3.config.json):bucketName}
+  s3Sync:
+  - bucketName: ${self:custom.frontendBucketName}
+    localDir: public
+    acl: public-read
+    defaultContentType: text/html
+    params: ${file(./.cache/s3.params.json)}
+
+resources:
+  Resources:
+    FrontendBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: ${self:custom.frontendBucketName}
+        AccessControl: PublicRead
+        WebsiteConfiguration:
+          IndexDocument: index.html
+          ErrorDocument: 404.html
+          RoutingRules: ${file(./.cache/s3.sls.routingRules.json)}
