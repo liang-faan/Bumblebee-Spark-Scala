@@ -4,6 +4,12 @@ import Layout from "../components/layout"
 import PrivateRoute from "../components/privateRoute"
 import Profile from "../components/profile"
 import Login from "../components/login"
+import Amplify, { API, graphqlOperation } from 'aws-amplify'
+
+import { withAuthenticator } from '@aws-amplify/ui-react'
+
+import awsExports from "../aws-exports";
+Amplify.configure(awsExports);
 
 const App = () => (
   <Layout>
@@ -14,4 +20,4 @@ const App = () => (
   </Layout>
 )
 
-export default App
+export default withAuthenticator(App)

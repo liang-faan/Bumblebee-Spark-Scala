@@ -1,16 +1,30 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
   Gatsby's Webconsole for Group#3 Webflow management
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Integrate AWS Amplify with Gatsby to support application authorization through AWS Cognito
+Setup:
+1. install Amplify cli
+```
+npm install -g gatsby-cli
+```
+2. Initial Amplify project
+```
+amplify init
+```
+3. Add Amplify Auth
+```
+amplify add auth
+```
+4. install amplify plugin
+```
+npm install aws-amplify @aws-amplify/ui-react
+```
+5. push project into amplify
+```
+amplify push
+```
 
 ## 🚀 Quick start
 
