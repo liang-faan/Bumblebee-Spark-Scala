@@ -31,3 +31,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 pR0zPB6msE
 curl --header "rest_api_plugin_http_token: pR0zPB6msE" http://localhost:8080/admin/rest_api/api?api=version
 ```
+
+```
+curl -XPOST http://localhost:8080/api/v1/security/login -H "Content-Type: application/json" -d '{"username":"lanphan", "password":"..", "refresh":true, "provider": "db"}' 
+```
+
+
+```
+
+curl -H 'Authorization:Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1OTk3OTY3NTQsIm5iZiI6MTU5OTc5Njc1NCwianRpIjoiZWY4ZDQ1MzAtNzAwOC00MzQxLWEwOTMtMGIxMmY5M2Q3NTg5IiwiZXhwIjoxNTk5Nzk3NjU0LCJpZGVudGl0eSI6MSwiZnJlc2giOnRydWUsInR5cGUiOiJhY2Nlc3MifQ.4B4te9jfZfkVLZUNYCZDytVxPdtZCUXM9EL102tSAnw' http://localhost:8080/admin/rest_api/api?api=version
+```
