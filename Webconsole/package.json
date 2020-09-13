@@ -1,26 +1,26 @@
 {
-  "name": "@coreui/coreui-free-react-admin-template",
-  "version": "3.1.0",
-  "description": "CoreUI React Open Source Bootstrap 4 Admin Template",
+  "name": "@liangfaan/coreui-free-react-admin-template",
+  "version": "0.0.1",
+  "description": "Airflow Webconsole Bootstrap 4 Admin Template",
   "author": {
-    "name": "CoreUI",
-    "url": "https://coreui.io",
-    "github": "https://github.com/coreui",
+    "name": "Liang Faan",
+    "url": "https://liangfaan.com",
+    "github": "https://github.com/liang-faan",
     "twitter": "https://twitter.com/core_ui"
   },
   "contributors": [
     {
-      "name": "CoreUI Team",
-      "url": "https://github.com/orgs/coreui/people"
+      "name": "Liang Faan",
+      "url": "https://github.com/liang-faan/Bumblebee-Spark-Scala"
     }
   ],
   "homepage": ".",
-  "copyright": "Copyright 2017-2020 creativeLabs Łukasz Holeczek",
-  "license": "MIT",
+  "copyright": "Copyright 2017-2020 Liang Faan",
+  "license": "LFA",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+    "url": "git@github.com:liang-faan/Bumblebee-Spark-Scala.git"
   },
   "dependencies": {
     "@coreui/chartjs": "^2.0.0",
@@ -41,7 +41,8 @@
     "react-dom": "^16.13.1",
     "react-redux": "7.2.1",
     "react-router-dom": "^5.2.0",
-    "redux": "4.0.5"
+    "redux": "4.0.5",
+    "typescript": "^4.0.2"
   },
   "devDependencies": {
     "auto-changelog": "2.2.0",
@@ -57,7 +58,7 @@
     "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit"
   },
   "bugs": {
-    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
+    "url": "https://github.com/liang-faan/Bumblebee-Spark-Scala/Webconsole"
   },
   "eslintConfig": {
     "extends": "react-app"

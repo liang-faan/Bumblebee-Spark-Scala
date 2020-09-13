@@ -23,9 +23,6 @@ const getBadge = status => {
 }
 const fields = ['name','registered', 'role', 'status']
 
-// const customPagenation =CPagination;
-// customPagenation.align="center"
-
 const Tables = () => {
   return (
     <>
