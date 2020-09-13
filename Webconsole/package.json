@@ -1,50 +1,83 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
-  "version": "0.1.0",
+  "name": "@coreui/coreui-free-react-admin-template",
+  "version": "3.1.0",
+  "description": "CoreUI React Open Source Bootstrap 4 Admin Template",
+  "author": {
+    "name": "CoreUI",
+    "url": "https://coreui.io",
+    "github": "https://github.com/coreui",
+    "twitter": "https://twitter.com/core_ui"
+  },
+  "contributors": [
+    {
+      "name": "CoreUI Team",
+      "url": "https://github.com/orgs/coreui/people"
+    }
+  ],
+  "homepage": ".",
+  "copyright": "Copyright 2017-2020 creativeLabs Łukasz Holeczek",
   "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby-plugin-s3 deploy",
-    "sls_deploy": "sls deploy"
-  },
-  "dependencies": {
-    "@aws-amplify/ui-react": "^0.2.15",
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "aws-amplify": "^3.0.24",
-    "bootstrap": "^4.5.2",
-    "gatsby": "^2.24.47",
-    "gatsby-plugin-s3": "^0.3.5",
-    "gatsby-plugin-typography": "^2.5.10",
-    "gatsby-source-multi-api": "^1.0.5",
-    "gatsby-transformer-remark": "^2.8.28",
-    "jquery": "^3.5.1",
-    "lodash": "^4.17.20",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.3.0",
-    "react-dom": "^16.13.1",
-    "react-typography": "^0.16.19",
-    "typography": "^0.16.19",
-    "typography-theme-fairy-gates": "^0.16.19"
-  },
-  "devDependencies": {
-    "prettier": "^1.19.1",
-    "serverless": "^1.79.0",
-    "serverless-s3-sync": "^1.14.4"
-  },
+  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "git@github.com:coreui/coreui-free-react-admin-template.git"
+  },
+  "dependencies": {
+    "@coreui/chartjs": "^2.0.0",
+    "@coreui/coreui": "^3.2.2",
+    "@coreui/icons": "2.0.0-beta.4",
+    "@coreui/icons-react": "^1.0.2",
+    "@coreui/react": "^3.2.3",
+    "@coreui/react-chartjs": "^1.0.1",
+    "@coreui/utils": "^1.3.1",
+    "classnames": "^2.2.6",
+    "core-js": "^3.6.5",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.3",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-app-polyfill": "^1.0.6",
+    "react-dom": "^16.13.1",
+    "react-redux": "7.2.1",
+    "react-router-dom": "^5.2.0",
+    "redux": "4.0.5"
+  },
+  "devDependencies": {
+    "auto-changelog": "2.2.0",
+    "react-scripts": "^3.4.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "test:cov": "npm test -- --coverage --watchAll=false",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject",
+    "changelog": "auto-changelog --starting-version 3.0.0 --commit-limit false --hide-credit"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/coreui/coreui-free-react-admin-template/issues"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 10",
+    "not op_mini all"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/*index.js",
+      "!src/serviceWorker.js",
+      "!src/polyfill.js"
+    ]
+  },
+  "engines": {
+    "node": ">=10",
+    "npm": ">=6"
   }
 }

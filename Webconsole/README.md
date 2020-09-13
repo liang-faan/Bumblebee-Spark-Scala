@@ -1,111 +1,174 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<h1 align="center">
-  Gatsby's Webconsole for Group#3 Webflow management
-</h1>
+[![@coreui coreui](https://img.shields.io/badge/@coreui%20-coreui-lightgrey.svg?style=flat-square)](https://github.com/coreui/coreui)
+[![npm package][npm-coreui-badge]][npm-coreui]
+[![NPM downloads][npm-coreui-download]][npm-coreui]  
+[![@coreui react](https://img.shields.io/badge/@coreui%20-react-lightgrey.svg?style=flat-square)](https://github.com/coreui/react)
+[![npm package][npm-coreui-react-badge]][npm-coreui-react]
+[![NPM downloads][npm-coreui-react-download]][npm-coreui-react]  
+[![npm next][npm-next]][npm]
 
-Integrate AWS Amplify with Gatsby to support application authorization through AWS Cognito
-Setup:
-1. install Amplify cli
+[npm-coreui]: https://www.npmjs.com/package/@coreui/coreui
+[npm-coreui-badge]: https://img.shields.io/npm/v/@coreui/coreui.png?style=flat-square
+[npm-coreui-download]: https://img.shields.io/npm/dm/@coreui/coreui.svg?style=flat-square
+[npm-coreui-react]: https://www.npmjs.com/package/@coreui/react
+[npm-coreui-react-badge]: https://img.shields.io/npm/v/@coreui/react.png?style=flat-square
+[npm-coreui-react-download]: https://img.shields.io/npm/dm/@coreui/react.svg?style=flat-square
+[npm-next]: https://img.shields.io/npm/v/@coreui/react/next.png?style=flat-square
+[npm]: https://www.npmjs.com/package/@coreui/react
+
+# CoreUI Free React Admin Template v3
+
+CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of redundant components, so the app is light enough to offer ultimate user experience. This means mobile devices also, where the navigation is just as easy and intuitive as on a desktop or laptop. The CoreUI Layout API lets you customize your project for almost any device – be it Mobile, Web or WebApp – CoreUI covers them all!
+
+## Table of Contents
+
+* [Versions](#versions)
+* [CoreUI Pro](#coreui-pro)
+* [Installation](#installation)
+* [Basic usage](#create-react-app)
+* [What's included](#whats-included)
+* [Documentation](#documentation)
+* [Versioning](#versioning)
+* [Creators](#creators)
+* [Community](#community)
+* [Copyright and License](#copyright-and-license)
+
+## Versions
+
+* [CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
+* [CoreUI Free Angular 9+ Admin Template](https://github.com/coreui/coreui-free-angular-admin-template)
+* [CoreUI Free React.js Admin Template](https://github.com/coreui/coreui-free-react-admin-template)
+* [CoreUI Free Vue.js Admin Template](https://github.com/coreui/coreui-free-vue-admin-template)
+* [CoreUI Free Laravel Admin Template](https://github.com/coreui/coreui-free-laravel-admin-template)
+* [CoreUI Free Vue.js + Laravel Admin Template](https://github.com/coreui/coreui-free-vue-laravel-admin-template)
+
+## CoreUI Pro
+
+**Only customers with [Enterpise Membership Plan](https://coreui.io/pro/#buy) have access to private github CoreUI Pro repository.**
+
+* 💪  [CoreUI Pro Bootstrap Admin Template](https://coreui.io/pro/)
+* 💪  [CoreUI Pro Angular 9+ Admin Template](https://coreui.io/pro/angular)
+* 💪  [CoreUI Pro React Admin Template](https://coreui.io/pro/react)
+* 💪  [CoreUI Pro Vue Admin Template](https://coreui.io/pro/vue)
+* 💪  [CoreUI Pro Laravel Admin Template](https://coreui.io/pro/laravel/)
+* 💪  [CoreUI Pro Vue.js + Laravel Admin Template](https://coreui.io/pro/vue-laravel/)
+
+## Installation
+
+### Clone repo
+
+``` bash
+# clone the repo
+$ git clone https://github.com/coreui/coreui-free-react-admin-template.git my-project
+
+# go into app's directory
+$ cd my-project
+
+# install app's dependencies
+$ npm install
 ```
-npm install -g gatsby-cli
-```
-2. Initial Amplify project
-```
-amplify init
-```
-3. Add Amplify Auth
-```
-amplify add auth
-```
-4. install amplify plugin
-```
-npm install aws-amplify @aws-amplify/ui-react
-```
-5. push project into amplify
-```
-amplify push
+
+### Copy and Paste
+
+Copy all your files to your project folder and then,
+
+``` bash
+# go into app's directory
+$ cd my-project
+
+# install app's dependencies
+$ npm install
 ```
 
-## 🚀 Quick start
+## Create React App
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
-1.  **Create a Gatsby site.**
+see also:
+[CRA docs](https://create-react-app.dev/docs/getting-started)
 
-    Use the Gatsby CLI to create a new site, specifying the hello-world starter.
+### Basic usage
 
-    ```shell
-    # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
-    ```
+``` bash
+# dev server with hot reload at http://localhost:3000
+$ npm start
+```
 
-1.  **Start developing.**
+Navigate to [http://localhost:3000](http://localhost:3000). The app will automatically reload if you change any of the source files.
 
-    Navigate into your new site’s directory and start it up.
+### Build
 
-    ```shell
-    cd my-hello-world-starter/
-    gatsby develop
-    ```
+Run `build` to build the project. The build artifacts will be stored in the `build/` directory.
 
-1.  **Open the source code and start editing!**
+```bash
+# build for production with minification
+$ npm run build
+```
 
-    Your site is now running at `http://localhost:8000`!
+## What's included
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+Within the download you'll find the following directories and files, logically grouping common assets and providing both compiled and minified variations. You'll see something like this:
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```
+CoreUI-React#v3.0.0
+├── public/          #static files
+│   └── index.html   #html template
+│
+├── src/             #project root
+│   ├── assets/      #assets - js icons object
+│   ├── containers/  #container source - template layout
+|   │   ├── _nav.js  #sidebar config
+|   │   └── ...      
+│   ├── scss/        #user scss/css source
+│   ├── views/       #views source
+│   ├── App.js
+│   ├── App.test.js
+│   ├── polyfill.js
+│   ├── index.js
+│   ├── routes.js    #routes config
+│   └── store.js     #template state example 
+│
+└── package.json
+```
 
-## 🧐 What's inside?
+## Documentation
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+The documentation for the CoreUI Admin Template is hosted at our website [CoreUI for React](https://coreui.io/react/)
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+### :film_strip: How to setup coreui react theme in laravel. Video tutorial available [here](https://youtu.be/HVVpbpNUJ8M)
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+## Versioning
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+For transparency into our release cycle and in striving to maintain backward compatibility, CoreUI Free Admin Template is maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+See [the Releases section of our project](https://github.com/coreui/coreui-free-react-admin-template/releases) for changelogs for each release version.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+## Creators
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+**Łukasz Holeczek**
+* <https://twitter.com/lukaszholeczek>
+* <https://github.com/mrholek>
+* <https://github.com/coreui>
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+**CoreUI team**
+* https://github.com/orgs/coreui/people
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+## Community
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+Get updates on CoreUI's development and chat with the project maintainers and community members.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+- Follow [@core_ui on Twitter](https://twitter.com/core_ui).
+- Read and subscribe to [CoreUI Blog](https://coreui.ui/blog/).
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+## Copyright and License
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+copyright 2020 creativeLabs Łukasz Holeczek.   
 
-## 🎓 Learning Gatsby
+ 
+Code released under [the MIT license](https://github.com/coreui/coreui-free-react-admin-template/blob/master/LICENSE).
+There is only one limitation you can't can’t re-distribute the CoreUI as stock. You can’t do this if you modify the CoreUI. In past we faced some problems with persons who tried to sell CoreUI based templates.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+## Support CoreUI Development
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+CoreUI is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without proper financial backing. You can support development by buying [CoreUI Pro Version](https://coreui.io/pro/).
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+We're also open to conversations regarding custom sponsorship / consulting arrangements. Get in touch on [Twitter](https://twitter.com/lukaszholeczek).
