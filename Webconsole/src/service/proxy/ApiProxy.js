@@ -1,27 +1,46 @@
-const axios = require('axios');
-import { map } from 'core-js/fn/array';
-import config, { headers } from '../../config';
+import axios from 'axios'
+import config from '../../config';
 
-function constructUrl(relativeUrl){
-    reutrn (config.https ? 'https://' : 'http://').concat(config.hostname, ":", config.port, relativeUrl);
+export function constructUrl(relativeUrl){
+    return (config.https ? 'https://' : 'http://').concat(config.hostname, ":", config.port, relativeUrl);
 }
 
-function constructHeaders(){
+export function constructHeaders(){
     // var headers = 
 }
 
-function getConfig(relativeUrl) {
+export function getConfig(relativeUrl, headerPara) {
     return {
         method: 'get',
         url: constructUrl(relativeUrl),
-        headers: constructHeaders()
+        headers: headerPara
     }
 }
 
-function postConfig (relativeUrl) {
+export function postConfig (relativeUrl, headerPara) {
     return {
         method: 'post',
         url: constructUrl(relativeUrl),
-        headers: constructHeaders()
+        headers: headerPara
     }
+}
+
+export function requestWithConfig(url, para, headerPara){
+    const apiConfig = {
+        method: 'get',
+        url: this.constructUrl(url),
+        headers: headerPara
+    }
+    let res = axios.request(apiConfig);
+    return res;
+}
+
+export function postRequest(url, body, headerPara){
+    return axios.post(constructUrl(url), body, {method: 'POST',headers: headerPara})
+    .then(function(respone){
+        console.log(respone.data);
+        return respone.data;
+    })
+    ;
+    // return res;
 }

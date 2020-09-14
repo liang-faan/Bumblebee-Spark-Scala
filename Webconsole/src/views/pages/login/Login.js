@@ -30,8 +30,18 @@ const Login = () => {
 
     evt.preventDefault();
     console.log("userName" + username);
-    if (username) {
-      handleLogin(username, password);
+    if (username && password) {
+      Promise.all([handleLogin(username, password)]).then(
+        resp => {
+          console.log(resp)
+          if(resp.access_token){
+            refreshPage();
+          }
+        }
+      ).catch(err => {
+        console.log(err)
+      });
+      
     }
 
 
@@ -71,7 +81,7 @@ const Login = () => {
                     </CInputGroup>
                     <CRow>
                       <CCol xs="6">
-                        <CButton color="primary" className="px-4" type="Submit" onClick={refreshPage}>Login</CButton>
+                        <CButton color="primary" className="px-4" type="Submit">Login</CButton>
                       </CCol>
                       <CCol xs="6" className="text-right">
                         <CButton color="link" className="px-0">Forgot password?</CButton>
