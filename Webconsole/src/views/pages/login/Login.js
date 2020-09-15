@@ -31,7 +31,7 @@ const Login = () => {
     evt.preventDefault();
     console.log("userName" + username);
     if (username && password) {
-      Promise.all([handleLogin(username, password)]).then(
+      Promise.resolve(handleLogin(username, password)).then(
         resp => {
           console.log(resp)
           if(resp.access_token){
