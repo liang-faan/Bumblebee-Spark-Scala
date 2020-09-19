@@ -26,7 +26,22 @@ curl -X GET "http://localhost:5000/api/v1/users/sadfasdf" -H  "accept: applicati
 
 ### Updated oas3-tools version by local model
 - latest version in NPM is 7 mths ago (@18Sep2020) which outdated by swagger-ui
-- updated swagger-ui to latest version 3.34.0 into oas3-tools
+- updated swagger-ui to latest version 3.34.0 into oas3-tools; local build oas3-tools
+```
+#1 clone latest oas3-tools
+git clone https://github.com/bug-hunters/oas3-tools.git
+#2 update swagger
+git clone https://github.com/swagger-api/swagger-ui.git
+#3 update oas3-tools swagger-ui package
+#3.1 cd swagger-ui && cp -rf dist ../oas3-tools/src/middleware/
+#3.2 delete swagger-ui folder under oas3-tools/src/middleware/
+#3.3 change dist to swagger-ui
+```
+- involve local build packages: update package.json as below: 
+```
+"oas3-tools": "file:oas3-tools-2.1.3.tgz",
+```
+
 - change swagger ui default URL by updating swagger-ui/index.html
 - local build oas3-tools support security configuration
 ```
