@@ -1,5 +1,7 @@
 'use strict';
 
+var database = require('../db/Database')
+var query = require('../Query');
 
 /**
  * User Register
@@ -21,6 +23,16 @@ exports.createUser = function(body) {
  * returns User
  **/
 exports.getUser = function(userName) {
+
+  var connection = database.getDatabaseConnection();
+  connection.get(query.retrieve_all_users, (err, row) => {
+    if (err) {
+      console.error(err.message);
+    }
+    console.log(row.id + "\t" + row.first_name);
+    console.log(JSON.stringify(row));
+  })
+
   return new Promise(function(resolve, reject) {
     var examples = {};
     examples['application/json'] = {

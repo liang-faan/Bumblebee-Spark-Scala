@@ -3,7 +3,6 @@ const express_openapi_validator_1 = require("express-openapi-validator");
 const tokenService = require("./TokenService")
 // const swagger_router_1 = require("SwaggerRouter");
 const swagger_parameters_1 = require("oas3-tools/dist/middleware/swagger.parameters");
-
 var swagger_router_1 = require('oas3-tools/dist/middleware/swagger.router');
 /**
  * User Authentication

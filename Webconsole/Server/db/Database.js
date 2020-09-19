@@ -3,7 +3,7 @@ const config = require('../Config');
 var path = require('path');
 // const query = require('../Query');
 
-let db = new sqlite3.Database(config.db.path,sqlite3.OPEN_READWRITE, (err) => {
+let db = new sqlite3.Database(resolveHome(config.db.path),sqlite3.OPEN_READWRITE, (err) => {
     if (err) {
         console.error(err.message);
     }
@@ -11,7 +11,12 @@ let db = new sqlite3.Database(config.db.path,sqlite3.OPEN_READWRITE, (err) => {
 });
 
 
-
+function resolveHome(filepath) {
+    if (filepath[0] === '~') {
+        return path.join(process.env.HOME, filepath.slice(1));
+    }
+    return filepath;
+}
 
 exports.getDatabaseConnection = function () {
     return db;

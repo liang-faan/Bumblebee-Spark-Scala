@@ -9,7 +9,7 @@ const dev = {
    host: 'localhost',
    port: 27017,
    name: 'db',
-   path: '/Users/lanphan/airflow/airflow.db'
+   path: '~/airflow/airflow.db'
  }
 };
 

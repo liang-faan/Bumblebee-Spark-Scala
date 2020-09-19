@@ -1,13 +1,13 @@
 var apiOptions = {
     hostname: "localhost",
-    port: 8080,
+    port: 5000,
     https: false,
     key: "",
     headers: {
         "Authorization":"{0}",
         "User-Agent":"{0}"
     },
-    loginUrl: "/api/v1/security/login"
+    loginUrl: "/api/v1/login"
 };
 
 module.exports = apiOptions;

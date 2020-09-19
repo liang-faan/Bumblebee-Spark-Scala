@@ -17,3 +17,93 @@ open http://localhost:8080/docs
 ```
 
 This project leverages the mega-awesome [swagger-tools](https://github.com/apigee-127/swagger-tools) middleware which does most all the work.
+
+
+### Test API
+```
+curl -X GET "http://localhost:5000/api/v1/users/sadfasdf" -H  "accept: application/json" -H  "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyLCJpc3MiOiJJU0EgQXV0aCJ9.uC_oQOEP0Cxs8ZA6NwK8TK3BvJWFv33dQg-t4imYJd8"
+```
+
+### Updated oas3-tools version by local model
+- latest version in NPM is 7 mths ago (@18Sep2020) which outdated by swagger-ui
+- updated swagger-ui to latest version 3.34.0 into oas3-tools
+- change swagger ui default URL by updating swagger-ui/index.html
+- local build oas3-tools support security configuration
+```
+<!-- <script>
+    window.onload = function() {
+      // Begin Swagger UI call region
+      const ui = SwaggerUIBundle({
+        url: "https://petstore.swagger.io/v2/swagger.json",
+        dom_id: '#swagger-ui',
+        deepLinking: true,
+        presets: [
+          SwaggerUIBundle.presets.apis,
+          SwaggerUIStandalonePreset
+        ],
+        plugins: [
+          SwaggerUIBundle.plugins.DownloadUrl
+        ],
+        layout: "StandaloneLayout"
+      })
+      // End Swagger UI call region
+
+      window.ui = ui
+    }
+  </script> -->
+  <script>
+    window.onload = function() {
+      function initSwaggerUi (url) {
+        window.ui = SwaggerUIBundle({
+          url: url,
+          dom_id: '#swagger-ui',
+          deepLinking: true,
+          presets: [
+            SwaggerUIBundle.presets.apis,
+            SwaggerUIStandalonePreset
+          ],
+          plugins: [
+            SwaggerUIBundle.plugins.DownloadUrl
+          ],
+          layout: "StandaloneLayout",
+          validatorUrl: null
+        });
+      }
+      var xhr = new XMLHttpRequest();
+      xhr.open('HEAD', document.location.href);
+      xhr.onreadystatechange = function () {
+        var url = '/api-docs';
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          url = xhr.getResponseHeader('Swagger-API-Docs-URL');
+        } else {
+          console.log('Unable to get the Swagger UI URL from the server (%s): %s', xhr.status, xhr.responseText);
+        }
+        initSwaggerUi(url);
+      };
+      xhr.send(null);
+    }
+  </script>
+```
+
+### Express Server register in swagger configuration
+```
+var options = {
+    routing: {
+        controllers: path.join(__dirname, './controllers')
+    },
+    openApiValidator: {
+        validateSecurity: {
+            handlers: {
+              bearerAuth: tokenService.TokenVerify
+            }
+          }
+    },
+    swaggerUI:{
+        apiDocsPath: "/docs/openapi.json"
+        
+    }
+
+};
+
+var expressAppConfig = oas3Tools.expressAppConfig(path.join(__dirname, 'api/openapi.yaml'), options);
+```
