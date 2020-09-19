@@ -1,0 +1,203 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Airflow Admin Console
+  license:
+    name: "Group#3 - Capstone Project"
+servers:
+  - url: http://localhost:8080/api/v1
+    description: "development url"
+  - url: https://liangfaan.com/api/v1
+    description: "production url"
+paths:
+  /login:
+    post: 
+      summary: User Authentication
+      operationId: userLogin
+      tags: 
+        - Authentication
+      requestBody:
+        description: Input user authentication
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Login"
+      responses:
+        '200':
+          description: Success login
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserAccess"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /users:
+    get:
+      summary: List all pets
+      operationId: listUsers
+      security: 
+        - bearerAuth: []
+      tags:
+        - User
+      # parameters:
+      #   - name: userName
+      #     in: query
+      #     description: Retrieve user information based on user name
+      #     required: false
+      #     schema:
+      #       type: string
+      responses:
+        '200':
+          description: A paged array of users
+          # headers:
+          #   x-next:
+          #     description: A link to the next page of responses
+          #     schema:
+          #       type: string
+          content:
+            application/json:    
+              schema:
+                $ref: "#/components/schemas/Users"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    post:
+      summary: User Register
+      operationId: createUser
+      security: 
+        - bearerAuth: []
+      tags:
+        - User
+      requestBody:
+        description: Input user information
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /users/{userName}:
+    get:
+      summary: "Retrieve user by name"
+      operationId: getUser
+      security: 
+        - bearerAuth: []
+      tags:
+          - "User"
+      parameters: 
+        - name: userName
+          in: path
+          description: "Retrieve user informaton based on user name"
+          required: true
+          schema: 
+            type: string
+      responses:
+        '200':
+          description: A paged array of users
+          # headers:
+          #   x-next:
+          #     description: A link to the next page of responses
+          #     schema:
+          #       type: string
+          content:
+            application/json:    
+              schema:
+                $ref: "#/components/schemas/User"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  securitySchemes:
+    bearerAuth:            # arbitrary name for the security scheme
+      type: http
+      scheme: bearer
+      bearerFormat: JWT    # optional, arbitrary value for documentation purposes
+  schemas:
+    User:
+      type: object
+      required: 
+        - firstName
+        - lastName
+        - userName
+        - active
+        - email
+        - password
+      properties:
+        id: 
+          type: integer
+          format: int64
+        firstName:
+          type: string
+        lastName: 
+          type: string
+        password: 
+          type: string
+        active:
+          type: integer
+          enum: [1, 0]
+        loginCount:
+          type: integer
+        failLoginCount:
+          type: integer
+        createdOn: 
+          type: string
+          format: date-time
+        createdBy:
+          $ref:  "#/components/schemas/User"
+        changedBy:
+          $ref:  "#/components/schemas/User"
+    Users: 
+      type: array
+      items:
+        $ref: "#/components/schemas/User"
+    Login:
+      type: object
+      properties:
+        userName:
+          type: string
+        password:
+          type: string
+        refresh:
+          type: boolean
+        provider:
+          type: string
+    UserAccess:
+      type: object
+      properties:
+        accesssToken:
+          type: string
+        refreshToken:
+          type: string
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid

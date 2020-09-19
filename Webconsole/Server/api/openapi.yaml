@@ -1,0 +1,208 @@
+openapi: 3.0.0
+info:
+  title: Airflow Admin Console
+  license:
+    name: Group#3 - Capstone Project
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/api/v1
+  description: development url
+- url: https://liangfaan.com/api/v1
+  description: production url
+paths:
+  /login:
+    post:
+      tags:
+      - Authentication
+      summary: User Authentication
+      operationId: userLogin
+      requestBody:
+        description: Input user authentication
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Login'
+        required: true
+      responses:
+        "200":
+          description: Success login
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserAccess'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      x-swagger-router-controller: Authentication
+  /users:
+    get:
+      tags:
+      - User
+      summary: List all pets
+      operationId: listUsers
+      responses:
+        "200":
+          description: A paged array of users
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Users'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: User
+    post:
+      tags:
+      - User
+      summary: User Register
+      operationId: createUser
+      requestBody:
+        description: Input user information
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        "201":
+          description: Null response
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: User
+  /users/{userName}:
+    get:
+      tags:
+      - User
+      summary: Retrieve user by name
+      operationId: getUser
+      parameters:
+      - name: userName
+        in: path
+        description: Retrieve user informaton based on user name
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: A paged array of users
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: User
+components:
+  schemas:
+    User:
+      required:
+      - active
+      - email
+      - firstName
+      - lastName
+      - password
+      - userName
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        firstName:
+          type: string
+        lastName:
+          type: string
+        password:
+          type: string
+        active:
+          type: integer
+          enum:
+          - 1
+          - 0
+        loginCount:
+          type: integer
+        failLoginCount:
+          type: integer
+        createdOn:
+          type: string
+          format: date-time
+        createdBy:
+          $ref: '#/components/schemas/User'
+        changedBy:
+          $ref: '#/components/schemas/User'
+      example:
+        firstName: firstName
+        lastName: lastName
+        password: password
+        failLoginCount: 5
+        createdBy: null
+        changedBy: null
+        active: 6
+        id: 0
+        createdOn: 2000-01-23T04:56:07.000+00:00
+        loginCount: 1
+    Users:
+      type: array
+      items:
+        $ref: '#/components/schemas/User'
+    Login:
+      type: object
+      properties:
+        userName:
+          type: string
+        password:
+          type: string
+        refresh:
+          type: boolean
+        provider:
+          type: string
+    UserAccess:
+      type: object
+      properties:
+        accesssToken:
+          type: string
+        refreshToken:
+          type: string
+      example:
+        accesssToken: accesssToken
+        refreshToken: refreshToken
+    Error:
+      required:
+      - code
+      - message
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+  responses:
+    UnauthorizedError:
+      description: Access token is missing or invalid
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
