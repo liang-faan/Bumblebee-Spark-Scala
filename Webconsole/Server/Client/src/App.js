@@ -64,4 +64,4 @@ class App extends Component {
   }
 }
 
-export default proxy(App);
+export default App;

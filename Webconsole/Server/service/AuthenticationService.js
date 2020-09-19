@@ -26,27 +26,27 @@ exports.userLogin = function (body) {
   });
 }
 
-exports.addValidator=function(expressAppConfig) {
-  new express_openapi_validator_1.OpenApiValidator({
-      apiSpec: expressAppConfig.definitionPath,
-      validateSecurity: {
-        handlers: {
-          bearerAuth: tokenService.TokenVerify
-        }
-      }
-  })
-      .install(expressAppConfig.app)
-      .then(() => {
-          expressAppConfig.app.use(new swagger_parameters_1.SwaggerParameters().checkParameters());
-          expressAppConfig.app.use(new swagger_router_1.SwaggerRouter().initialize(expressAppConfig.routingOptions));
-          expressAppConfig.app.use((err, req, res, next) => {
-          // format errors
-          res.status(err.status || 500).json({
-              message: err.message,
-              errors: err.errors,
-          });
-      });
-  });
-}
+// exports.addValidator=function(expressAppConfig) {
+//   new express_openapi_validator_1.OpenApiValidator({
+//       apiSpec: expressAppConfig.definitionPath,
+//       validateSecurity: {
+//         handlers: {
+//           bearerAuth: tokenService.TokenVerify
+//         }
+//       }
+//   })
+//       .install(expressAppConfig.app)
+//       .then(() => {
+//           expressAppConfig.app.use(new swagger_parameters_1.SwaggerParameters().checkParameters());
+//           expressAppConfig.app.use(new swagger_router_1.SwaggerRouter().initialize(expressAppConfig.routingOptions));
+//           expressAppConfig.app.use((err, req, res, next) => {
+//           // format errors
+//           res.status(err.status || 500).json({
+//               message: err.message,
+//               errors: err.errors,
+//           });
+//       });
+//   });
+// }
 
 
