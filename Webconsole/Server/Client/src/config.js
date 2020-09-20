@@ -7,7 +7,8 @@ var apiOptions = {
         "Authorization":"{0}",
         "User-Agent":"{0}"
     },
-    loginUrl: "/api/v1/login"
+    loginUrl: "/api/v1/login",
+    apiUrl: "/api/vi"
 };
 
 module.exports = apiOptions;

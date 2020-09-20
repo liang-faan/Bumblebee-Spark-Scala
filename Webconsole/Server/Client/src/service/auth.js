@@ -1,35 +1,41 @@
 import config from '../config'
 import jwt from "jsonwebtoken"
-import {postRequest} from "./proxy/ApiProxy"
+import { postRequest } from "./proxy/ApiProxy"
 
 const isBrowser = () => typeof window !== "undefined"
 
 const getAuthentication = () => isBrowser() && window.localStorage.getItem("access_token")
-    ? jwt.decode(window.localStorage.getItem("access_token"))
-    : null
+  ? jwt.decode(window.localStorage.getItem("access_token"))
+  : null
 
 
 export function handleLogin(username, password) {
 
-  if(username && password){
+  if (username && password) {
     var authUrl = config.loginUrl
-    
-    var body = {"userName":username, "password":password, "refresh":true, "provider": "db"};
+
+    var body = { "userName": username, "password": password, "refresh": true, "provider": "db" };
 
     var headers = {
       'Content-Type': 'application/json'
     }
 
-    return postRequest(authUrl, body, headers).then(data => {
-      console.log(data);
-      window.localStorage.setItem("access_token",data.access_token)
-      window.localStorage.setItem("refresh_token",data.refresh_token)
-      return data;
-    }).catch(err => {
-      return err
+    return new Promise(function (resolve, reject) {
+      postRequest(authUrl, body, headers).then(data => {
+        if (data) {
+          console.log(data);
+
+          window.localStorage.setItem("access_token", data.access_token)
+          window.localStorage.setItem("refresh_token", data.refresh_token)
+
+          resolve(data);
+        }
+      }).catch(err => {
+        reject(err)
+      })
     });
   }
-  
+
 }
 
 export const isLogin = () => {

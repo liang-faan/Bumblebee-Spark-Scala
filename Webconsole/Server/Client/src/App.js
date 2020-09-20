@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Redirect, HashRouter, Route, Switch } from 'react-router-dom';
 import './scss/style.scss';
 import {isLogin} from './service/auth'
-import {proxy} from './setupProxy'
+// import {proxy} from './setupProxy'
 
 const loading = (
   <div className="pt-3 text-center">

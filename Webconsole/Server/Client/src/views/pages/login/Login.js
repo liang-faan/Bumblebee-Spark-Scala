@@ -13,35 +13,48 @@ import {
   CInputGroup,
   CInputGroupPrepend,
   CInputGroupText,
-  CRow
+  CModal,
+  CRow,
+  CModalHeader,
+  CModalBody, CModalFooter
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 
-function refreshPage(){
+function refreshPage() {
   window.location.replace("/")
-  window.location.reload(); 
+  window.location.reload();
 }
+
+
+
+
 
 const Login = () => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
+  const [modal, setModal] = useState(false);
+
+  const toggle = () => {
+    setModal(!modal);
+  }
 
   const handleSubmit = (evt) => {
 
     evt.preventDefault();
     console.log("userName" + username);
     if (username && password) {
-      Promise.resolve(handleLogin(username, password)).then(
+      handleLogin(username, password).then(
         resp => {
           console.log(resp)
-          if(resp.access_token){
+          if (resp.access_token) {
             refreshPage();
           }
         }
       ).catch(err => {
-        console.log(err)
+        console.log(err);
+        toggle();
       });
-      
+
     }
 
 
@@ -59,6 +72,15 @@ const Login = () => {
             <CCardGroup>
               <CCard className="p-4">
                 <CCardBody>
+                  <CModal show={modal} onClose={toggle}>
+                    <CModalHeader closeButton color="warning">Unauthorized Access (401)</CModalHeader>
+                    <CModalBody>
+                      Invalid Username or Password.
+                    </CModalBody>
+                    <CModalFooter>
+                      <CButton color="secondary" onClick={toggle}>OK</CButton>
+                    </CModalFooter>
+                  </CModal>
                   <CForm onSubmit={handleSubmit}>
                     <h1>Login</h1>
                     <p className="text-muted">Sign In to your account</p>
@@ -69,7 +91,6 @@ const Login = () => {
                         </CInputGroupText>
                       </CInputGroupPrepend>
                       <CInput type="text" placeholder="Username" autoComplete="username" onChange={e => setUsername(e.target.value)} required />
-
                     </CInputGroup>
                     <CInputGroup className="mb-4">
                       <CInputGroupPrepend>

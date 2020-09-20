@@ -9,6 +9,6 @@ module.exports.userLogin = function userLogin (req, res, next, body) {
       utils.writeJson(res, response);
     })
     .catch(function (response) {
-      utils.writeJson(res, response);
+      utils.writeJson(res, response, 401);
     });
 };

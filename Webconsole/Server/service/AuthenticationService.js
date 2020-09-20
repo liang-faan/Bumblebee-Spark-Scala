@@ -42,6 +42,7 @@ exports.userLogin = function (body) {
         // utils.writeJson(res, response);
       })
       .catch(function (response) {
+        
         reject(response);
         //user not  found
         // utils.writeJson(res, response,404);

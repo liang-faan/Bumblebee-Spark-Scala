@@ -1,4 +1,5 @@
 import axios from 'axios'
+// import { reject, resolve } from 'core-js/fn/promise';
 import config from '../../config';
 
 export function constructUrl(relativeUrl){
@@ -36,11 +37,14 @@ export function requestWithConfig(url, para, headerPara){
 }
 
 export function postRequest(url, body, headerPara){
-    return axios.post(constructUrl(url), body, {method: 'POST',headers: headerPara})
+    return new Promise(function (resolve, reject) {axios.post(constructUrl(url), body, {method: 'POST',headers: headerPara})
     .then(function(respone){
+        console.log(respone);
         console.log(respone.data);
-        return respone.data;
-    })
-    ;
+        resolve(respone.data)
+    }).catch(function(err){
+        console.log(err);
+        reject(err);
+    })});
     // return res;
 }
