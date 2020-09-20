@@ -8,7 +8,8 @@ var apiOptions = {
         "User-Agent":"{0}"
     },
     loginUrl: "/api/v1/login",
-    apiUrl: "/api/vi"
+    apiUrl: "/api/v1",
+    userUrl: '/api/v1/users'
 };
 
 module.exports = apiOptions;

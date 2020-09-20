@@ -122,3 +122,20 @@ var options = {
 
 var expressAppConfig = oas3Tools.expressAppConfig(path.join(__dirname, 'api/openapi.yaml'), options);
 ```
+
+### Data return from Promise and render in React
+```
+#store the data via react State
+
+  const [usersDD, userData] = useState([]);
+  const [firstLoad, setFirstLoad] = useState(true);
+
+  if (firstLoad) {
+    retrieveUsers().then(function (res, err) {
+      const usersDD = res;
+      userData(usersDD);
+    });
+    setFirstLoad(false);
+  }
+
+```

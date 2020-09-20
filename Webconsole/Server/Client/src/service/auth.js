@@ -28,7 +28,20 @@ export function handleLogin(username, password) {
           window.localStorage.setItem("access_token", data.access_token)
           window.localStorage.setItem("refresh_token", data.refresh_token)
 
+          // getRequest(config.userUrl,null, constructAuthenticationHeaders()).then(
+          //   function(err, res){
+          //     if(err){
+          //       console.log(err);
+          //     }
+          //     console.log(res);
+          //   }
+          // ).catch(function(err){
+          //   console.log(err);
+          // })
+          // ;
+
           resolve(data);
+          
         }
       }).catch(err => {
         reject(err)
@@ -56,4 +69,8 @@ export const isLogin = () => {
     }
   }
   return false;
+}
+
+export const getAccessToken = () => {
+  return window.localStorage.getItem("access_token");
 }
