@@ -11,7 +11,7 @@ exports.TokenVerify = function (req, scopes, schema) {
 
     if (token && bearerRegex.test(token)) {
         var newToken = token.replace(bearerRegex, '');
-        return jwt.verify(newToken, config.jwtSecretKey, config.jwtIssuer, (error, decoded) => {
+        return jwt.verify(newToken, config.jwtSecretKey, config.jwtIssuer.issuer, (error, decoded) => {
                 if (error === null && decoded) {
                     return true;
                 }
@@ -74,7 +74,7 @@ exports.TokenSignature = function(user, expDate){
         first_name: user.first_name,
         last_name: user.last_name,
         email: user.email,
-        issue: config.jwtIssuer.issuer,
+        issuer: config.jwtIssuer.issuer,
         exp: expDate,
         iat: Math.floor(Date.now() / 1000)
 
