@@ -2,31 +2,35 @@
 const env = process.env.NODE_ENV; // 'dev' or 'test'
 
 const dev = {
- app: {
-   port: 5000
- },
- db: {
-   host: 'localhost',
-   port: 27017,
-   name: 'db',
-   path: '~/airflow/airflow.db'
- }
+  app: {
+    port: 5000
+  },
+  db: {
+    host: 'localhost',
+    port: 27017,
+    name: 'db',
+    path: '~/airflow/airflow.db'
+  },
+  jwtSecretKey: "0QyYwXN2NXpd47gq/IaaEYphBdJ98+J0DdUsX7q+zCkI",
+  jwtIssuer: { issuer: "liang.faan@gmail.com" }
 };
 
 const test = {
- app: {
-   port: 5000
- },
- db: {
-   host: 'localhost',
-   port: 27017,
-   name: 'test'
- }
+  app: {
+    port: 5000
+  },
+  db: {
+    host: 'localhost',
+    port: 27017,
+    name: 'test'
+  },
+  jwtSecretKey: "0QyYwXN2NXpd47gq/IaaEYphBdJ98+J0DdUsX7q+zCkI",
+  jwtIssuer: { issuer: "liang.faan@gmail.com" }
 };
 
 const Config = {
- dev,
- test
+  dev,
+  test
 };
 
 module.exports = Config.dev;

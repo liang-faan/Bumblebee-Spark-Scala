@@ -14,7 +14,7 @@ export function handleLogin(username, password) {
   if(username && password){
     var authUrl = config.loginUrl
     
-    var body = {"username":username, "password":password, "refresh":true, "provider": "db"};
+    var body = {"userName":username, "password":password, "refresh":true, "provider": "db"};
 
     var headers = {
       'Content-Type': 'application/json'
@@ -23,6 +23,7 @@ export function handleLogin(username, password) {
     return postRequest(authUrl, body, headers).then(data => {
       console.log(data);
       window.localStorage.setItem("access_token",data.access_token)
+      window.localStorage.setItem("refresh_token",data.refresh_token)
       return data;
     }).catch(err => {
       return err

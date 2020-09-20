@@ -19,7 +19,7 @@ module.exports.getUser = function getUser(req, res, next, userName) {
       utils.writeJson(res, response);
     })
     .catch(function (response) {
-      utils.writeJson(res, response);
+      utils.writeJson(res, response,404);
     });
 };
 
