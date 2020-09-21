@@ -70,9 +70,9 @@ exports.verifyPassword = function (password, combined, callback) {
 
 exports.TokenSignature = function(user, expDate){
     var payload = {
-        userName: user.username,
-        first_name: user.first_name,
-        last_name: user.last_name,
+        userName: user.userName,
+        firstName: user.firstName,
+        lastName: user.lastName,
         email: user.email,
         issuer: config.jwtIssuer.issuer,
         exp: expDate,

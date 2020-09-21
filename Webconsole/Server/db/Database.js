@@ -6,8 +6,10 @@ var path = require('path');
 let db = new sqlite3.Database(resolveHome(config.db.path),sqlite3.OPEN_READWRITE, (err) => {
     if (err) {
         console.error(err.message);
+    }else{
+        console.log('Connected to the airflow database.');
     }
-    console.log('Connected to the chinook database.');
+    
 });
 
 

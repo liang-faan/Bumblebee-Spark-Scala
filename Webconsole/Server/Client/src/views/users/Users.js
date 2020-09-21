@@ -50,7 +50,7 @@ const Users = () => {
 
   return (
     <CRow>
-      <CCol xl={6}>
+      <CCol>
         <CCard>
           <CCardHeader>
             Users
@@ -60,8 +60,8 @@ const Users = () => {
             <CDataTable
               items={usersDD}
               fields={[
-                { key: 'username', _classes: 'font-weight-bold' },
-                'email', 'first_name', 'last_name', 'active'
+                { key: 'userName', _classes: 'font-weight-bold' },
+                'email', 'firstName', 'lastName', 'active'
               ]}
               hover
               striped
@@ -82,6 +82,7 @@ const Users = () => {
             />
             <CPagination
               activePage={page}
+              hidden = {usersDD.length <=5}
               onActivePageChange={pageChange}
               pages={5}
               doubleArrows={false}

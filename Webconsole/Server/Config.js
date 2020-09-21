@@ -9,7 +9,7 @@ const dev = {
     host: 'localhost',
     port: 27017,
     name: 'db',
-    path: '~/airflow/airflow.db'
+    path: './db/airflow.db'
   },
   jwtSecretKey: "0QyYwXN2NXpd47gq/IaaEYphBdJ98+J0DdUsX7q+zCkI",
   jwtIssuer: { issuer: "liang.faan@gmail.com" }
