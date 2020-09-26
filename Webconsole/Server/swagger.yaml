@@ -218,27 +218,7 @@ paths:
               application/json:
                 schema:
                   $ref: "#/components/schemas/Error"
-  /jobs:
-    get:
-      summary: retrieve dags schedule from airflow
-      operationId: getJobs
-      tags: 
-        - Job
-      responses:
-        '200':
-          description: Success retrieve all jobs
-          content:
-            application/json:    
-              schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Job'
-        default:
-            description: unexpected error
-            content:
-              application/json:
-                schema:
-                  $ref: "#/components/schemas/Error"
+        
 components:
   securitySchemes:
     bearerAuth:            # arbitrary name for the security scheme
