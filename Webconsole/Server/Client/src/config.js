@@ -9,7 +9,8 @@ var apiOptions = {
     },
     loginUrl: "/api/v1/login",
     apiUrl: "/api/v1",
-    userUrl: '/api/v1/users'
+    userUrl: '/api/v1/users',
+    dagsUrl: '/api/v1/dags'
 };
 
 module.exports = apiOptions;

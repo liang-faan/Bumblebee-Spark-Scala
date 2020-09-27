@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
   CBadge,
   CCard,
@@ -10,203 +10,101 @@ import {
 } from '@coreui/react'
 // import { DocsLink } from 'src/reusable'
 
-import usersData from '../users/UsersData'
+import { retrieveDags } from '../../service/DagService'
 
 const getBadge = status => {
   switch (status) {
     case 'Active': return 'success'
+    case 1: return 'success'
+    case 0: return 'secondary'
     case 'Inactive': return 'secondary'
     case 'Pending': return 'warning'
     case 'Banned': return 'danger'
     default: return 'primary'
   }
 }
-const fields = ['name','registered', 'role', 'status']
+
+const formatDate = strDate => {
+
+  if(strDate === null){
+    return ""
+  }
+
+  const date = new Date(strDate);
+  return Intl.DateTimeFormat('en-US',{
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit',
+    hour: 'numeric', minute: 'numeric', second: 'numeric' }).format(date);
+}
+
+const fields = ['dagId', 'isPaused', 'isSubDag', 'isActive', 'lastSchedulerRun', 'lastExpired',  'owners', 'description', 'rootDagId']
 
 const Tables = () => {
+  const [dagsData, updateDag] = useState([]);
+  const [firstLoad, setFirstLoad] = useState(true);
+
+  if (firstLoad) {
+    retrieveDags().then(function (res, err) {
+      const usersDD = res;
+      updateDag(usersDD);
+    });
+    setFirstLoad(false);
+  }
   return (
     <>
-      {/* <CRow>
-        <CCol xs="12" lg="6">
-          <CCard>
-            <CCardHeader>
-              Simple Table
-              <DocsLink name="CModal"/>
-            </CCardHeader>
-            <CCardBody>
-            <CDataTable
-              items={usersData}
-              fields={fields}
-              itemsPerPage={5}
-              pagination
-              scopedSlots = {{
-                'status':
-                  (item)=>(
-                    <td>
-                      <CBadge color={getBadge(item.status)}>
-                        {item.status}
-                      </CBadge>
-                    </td>
-                  )
-
-              }}
-            />
-            </CCardBody>
-          </CCard>
-        </CCol>
-
-        <CCol xs="12" lg="6">
-          <CCard>
-            <CCardHeader>
-              Striped Table
-            </CCardHeader>
-            <CCardBody>
-            <CDataTable
-              items={usersData}
-              fields={fields}
-              striped
-              itemsPerPage={5}
-              pagination
-              scopedSlots = {{
-                'status':
-                  (item)=>(
-                    <td>
-                      <CBadge color={getBadge(item.status)}>
-                        {item.status}
-                      </CBadge>
-                    </td>
-                  )
-
-              }}
-            />
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow> */}
-
-      {/* <CRow>
-
-        <CCol xs="12" lg="6">
-          <CCard>
-            <CCardHeader>
-              Condensed Table
-            </CCardHeader>
-            <CCardBody>
-            <CDataTable
-              items={usersData}
-              fields={fields}
-              size="sm"
-              itemsPerPage={5}
-              pagination
-              scopedSlots = {{
-                'status':
-                  (item)=>(
-                    <td>
-                      <CBadge color={getBadge(item.status)}>
-                        {item.status}
-                      </CBadge>
-                    </td>
-                  )
-
-              }}
-            />
-            </CCardBody>
-          </CCard>
-        </CCol>
-
-        <CCol xs="12" lg="6">
-          <CCard>
-            <CCardHeader>
-              Bordered Table
-            </CCardHeader>
-            <CCardBody>
-            <CDataTable
-              items={usersData}
-              fields={fields}
-              bordered
-              itemsPerPage={5}
-              pagination
-              scopedSlots = {{
-                'status':
-                  (item)=>(
-                    <td>
-                      <CBadge color={getBadge(item.status)}>
-                        {item.status}
-                      </CBadge>
-                    </td>
-                  )
-
-              }}
-            />
-            </CCardBody>
-          </CCard>
-        </CCol>
-
-      </CRow> */}
-
       <CRow>
         <CCol>
           <CCard>
             <CCardHeader>
-              Combined All Table
+              Airflow DAG List
             </CCardHeader>
             <CCardBody>
-            <CDataTable
-              items={usersData}
-              fields={fields}
-              hover
-              striped
-              bordered
-              size="sm"
-              itemsPerPage={15}
-              pagination={{'align':'end', 'size':'lg'}}
-              scopedSlots = {{
-                'status':
-                  (item)=>(
-                    <td>
-                      <CBadge color={getBadge(item.status)}>
-                        {item.status}
-                      </CBadge>
-                    </td>
-                  )
-              }}
-            />
+              <CDataTable
+                items={dagsData}
+                fields={fields}
+                hover
+                striped
+                bordered
+                size="sm"
+                itemsPerPage={15}
+                pagination={{ 'align': 'end', 'size': 'lg' }}
+                scopedSlots={{
+                  'isActive':
+                    (item) => (
+                      <td>
+                        <CBadge color={getBadge(item.isActive)}>
+                          {item.isActive}
+                        </CBadge>
+                      </td>
+                    ),
+                    'lastSchedulerRun':(item) => (
+                      <td>
+                        {formatDate(item.lastSchedulerRun)}
+                      </td>
+                    ),
+                    'lastExpired':(item) => (
+                      <td>
+                        {formatDate(item.lastExpired)}
+                      </td>
+                    ),
+                    'description': (item) => (
+                      <td>
+                        {item.description ===null ? "" : item.description }
+                      </td>
+                    ),
+                    'rootDagId': (item) => (
+                      <td>
+                        {item.rootDagId ===null ? "" : item.rootDagId }
+                      </td>
+                    ),
+
+                }}
+              />
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
-        {/* <CRow>
-        <CCol>
-          <CCard>
-            <CCardHeader>
-              Combined All dark Table
-            </CCardHeader>
-            <CCardBody>
-            <CDataTable
-              items={usersData}
-              fields={fields}
-              dark
-              hover
-              striped
-              bordered
-              size="sm"
-              itemsPerPage={10}
-              pagination
-              scopedSlots = {{
-                'status':
-                  (item)=>(
-                    <td>
-                      <CBadge color={getBadge(item.status)}>
-                        {item.status}
-                      </CBadge>
-                    </td>
-                  )
-              }}
-            />
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow> */}
     </>
   )
 }

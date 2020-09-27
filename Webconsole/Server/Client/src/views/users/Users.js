@@ -11,7 +11,7 @@ import {
   CPagination
 } from '@coreui/react'
 
-import { retrieveUsers } from './UsersData'
+import { retrieveUsers } from '../../service/UserService'
 
 const getBadge = status => {
   switch (status) {
