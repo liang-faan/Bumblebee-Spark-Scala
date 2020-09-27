@@ -46,6 +46,130 @@ exports.getUser = function (userName) {
   });
 }
 
+/**
+ * Retrieve user roles by userName
+ *
+ * userName String 
+ * returns List
+ **/
+exports.getUserRoles = function(userName) {
+  return new Promise(function(resolve, reject) {
+    var examples = {};
+    examples['application/json'] = [ {
+  "mappingId" : 5,
+  "roles" : [ {
+    "permissions" : [ {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    }, {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    } ],
+    "name" : "name",
+    "id" : 7
+  }, {
+    "permissions" : [ {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    }, {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    } ],
+    "name" : "name",
+    "id" : 7
+  } ],
+  "userName" : "userName",
+  "userId" : 2
+}, {
+  "mappingId" : 5,
+  "roles" : [ {
+    "permissions" : [ {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    }, {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    } ],
+    "name" : "name",
+    "id" : 7
+  }, {
+    "permissions" : [ {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    }, {
+      "name" : "name",
+      "id" : 9,
+      "views" : [ {
+        "viewName" : "viewName",
+        "id" : 3
+      }, {
+        "viewName" : "viewName",
+        "id" : 3
+      } ]
+    } ],
+    "name" : "name",
+    "id" : 7
+  } ],
+  "userName" : "userName",
+  "userId" : 2
+} ];
+    if (Object.keys(examples).length > 0) {
+      resolve(examples[Object.keys(examples)[0]]);
+    } else {
+      resolve();
+    }
+  });
+}
+
 
 /**
  * List all pets

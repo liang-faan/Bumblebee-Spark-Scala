@@ -41,7 +41,7 @@ paths:
     get:
       tags:
       - User
-      summary: List all pets
+      summary: List all users
       operationId: listUsers
       responses:
         "200":
@@ -49,7 +49,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Users'
+                type: array
+                items:
+                  $ref: '#/components/schemas/User'
+                x-content-type: application/json
         default:
           description: unexpected error
           content:
@@ -114,6 +117,139 @@ paths:
       security:
       - bearerAuth: []
       x-swagger-router-controller: User
+  /users/roles/{userName}:
+    get:
+      tags:
+      - User
+      summary: Retrieve user roles by userName
+      operationId: getUserRoles
+      parameters:
+      - name: userName
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Array of user roles
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/UserRole'
+                x-content-type: application/json
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: User
+  /dags:
+    get:
+      tags:
+      - Dag
+      summary: Retrieve airflow DAGs
+      operationId: getDags
+      responses:
+        "200":
+          description: Success retrieve all DAG
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Dag'
+                x-content-type: application/json
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: Dag
+  /tasks:
+    get:
+      tags:
+      - Task
+      summary: retrieve dags schedule from airflow
+      operationId: getTasks
+      responses:
+        "200":
+          description: Success retrieve all tasks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TaskInstance'
+                x-content-type: application/json
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: Task
+  /tasks/schedule:
+    get:
+      tags:
+      - Task
+      summary: retrieve dags schedule from airflow
+      operationId: getTaskSchedule
+      responses:
+        "200":
+          description: Success retrieve all tasks
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TaskSchedule'
+                x-content-type: application/json
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: Task
+  /jobs:
+    get:
+      tags:
+      - Job
+      summary: retrieve dags schedule from airflow
+      operationId: getJobs
+      responses:
+        "200":
+          description: Success retrieve all jobs
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Job'
+                x-content-type: application/json
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+      security:
+      - bearerAuth: []
+      x-swagger-router-controller: Job
 components:
   schemas:
     User:
@@ -151,9 +287,90 @@ components:
           $ref: '#/components/schemas/User'
         changedBy:
           $ref: '#/components/schemas/User'
+        userRoles:
+          type: array
+          items:
+            $ref: '#/components/schemas/UserRole'
       example:
         firstName: firstName
         lastName: lastName
+        userRoles:
+        - mappingId: 5
+          roles:
+          - permissions:
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            name: name
+            id: 7
+          - permissions:
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            name: name
+            id: 7
+          userName: userName
+          userId: 2
+        - mappingId: 5
+          roles:
+          - permissions:
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            name: name
+            id: 7
+          - permissions:
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            - name: name
+              id: 9
+              views:
+              - viewName: viewName
+                id: 3
+              - viewName: viewName
+                id: 3
+            name: name
+            id: 7
+          userName: userName
+          userId: 2
         password: password
         failLoginCount: 5
         createdBy: null
@@ -162,10 +379,6 @@ components:
         id: 0
         createdOn: 2000-01-23T04:56:07.000+00:00
         loginCount: 1
-    Users:
-      type: array
-      items:
-        $ref: '#/components/schemas/User'
     Login:
       type: object
       properties:
@@ -187,6 +400,116 @@ components:
       example:
         accesssToken: accesssToken
         refreshToken: refreshToken
+    UserRole:
+      type: object
+      properties:
+        mappingId:
+          type: integer
+        userId:
+          type: integer
+        userName:
+          type: string
+        roles:
+          type: array
+          items:
+            $ref: '#/components/schemas/Role'
+      example:
+        mappingId: 5
+        roles:
+        - permissions:
+          - name: name
+            id: 9
+            views:
+            - viewName: viewName
+              id: 3
+            - viewName: viewName
+              id: 3
+          - name: name
+            id: 9
+            views:
+            - viewName: viewName
+              id: 3
+            - viewName: viewName
+              id: 3
+          name: name
+          id: 7
+        - permissions:
+          - name: name
+            id: 9
+            views:
+            - viewName: viewName
+              id: 3
+            - viewName: viewName
+              id: 3
+          - name: name
+            id: 9
+            views:
+            - viewName: viewName
+              id: 3
+            - viewName: viewName
+              id: 3
+          name: name
+          id: 7
+        userName: userName
+        userId: 2
+    Role:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        permissions:
+          type: array
+          items:
+            $ref: '#/components/schemas/Permission'
+      example:
+        permissions:
+        - name: name
+          id: 9
+          views:
+          - viewName: viewName
+            id: 3
+          - viewName: viewName
+            id: 3
+        - name: name
+          id: 9
+          views:
+          - viewName: viewName
+            id: 3
+          - viewName: viewName
+            id: 3
+        name: name
+        id: 7
+    Permission:
+      type: object
+      properties:
+        name:
+          type: string
+        id:
+          type: integer
+        views:
+          type: array
+          items:
+            $ref: '#/components/schemas/View'
+      example:
+        name: name
+        id: 9
+        views:
+        - viewName: viewName
+          id: 3
+        - viewName: viewName
+          id: 3
+    View:
+      type: object
+      properties:
+        id:
+          type: integer
+        viewName:
+          type: string
+      example:
+        viewName: viewName
+        id: 3
     Error:
       required:
       - code
@@ -198,6 +521,231 @@ components:
           format: int32
         message:
           type: string
+    Dag:
+      type: object
+      properties:
+        dagId:
+          type: string
+        isPaused:
+          type: boolean
+        isSubDag:
+          type: boolean
+        isActive:
+          type: boolean
+        lastSchedulerRun:
+          type: string
+          format: datetime
+        lastPick:
+          type: string
+          format: datetime
+        lastExpired:
+          type: string
+          format: datetime
+        schedulerLock:
+          type: boolean
+        pickleId:
+          type: integer
+        flieLoc:
+          type: string
+        owners:
+          type: string
+        description:
+          type: string
+        defaultView:
+          type: string
+        scheduleInterval:
+          type: string
+        rootDagId:
+          type: string
+      example:
+        isPaused: true
+        flieLoc: flieLoc
+        description: description
+        owners: owners
+        dagId: dagId
+        lastExpired: lastExpired
+        isActive: true
+        lastSchedulerRun: lastSchedulerRun
+        pickleId: 0
+        rootDagId: rootDagId
+        scheduleInterval: scheduleInterval
+        defaultView: defaultView
+        lastPick: lastPick
+        isSubDag: true
+        schedulerLock: true
+    DagCode:
+      type: object
+      properties:
+        fileLocHash:
+          type: string
+          description: Hashed file location
+        fileLoc:
+          type: string
+          description: file location
+        sourceCode:
+          type: string
+          description: source code
+        lastUpdated:
+          type: string
+          format: datetime
+    DagTag:
+      type: object
+      properties:
+        name:
+          type: string
+          description: tag name
+        dagId:
+          type: string
+          description: dag id
+    DagPickle:
+      type: object
+      properties:
+        id:
+          type: integer
+        picked:
+          type: string
+        createDateTime:
+          type: string
+          format: datetime
+        pickleHash:
+          type: number
+    Job:
+      type: object
+      properties:
+        id:
+          type: integer
+        dag_id:
+          type: string
+        state:
+          type: string
+        jobType:
+          type: string
+        startDate:
+          type: string
+          format: datetime
+        endDate:
+          type: string
+          format: datetime
+        lastHeartBeat:
+          type: string
+          format: datetime
+        executorClass:
+          type: string
+        hostname:
+          type: string
+        unixName:
+          type: string
+      example:
+        lastHeartBeat: lastHeartBeat
+        unixName: unixName
+        hostname: hostname
+        executorClass: executorClass
+        endDate: endDate
+        id: 0
+        dag_id: dag_id
+        state: state
+        jobType: jobType
+        startDate: startDate
+    TaskInstance:
+      type: object
+      properties:
+        taskId:
+          type: string
+        dagId:
+          type: string
+        executeDate:
+          type: string
+          format: datetime
+        startDate:
+          type: string
+          format: datetime
+        endDate:
+          type: string
+          format: datetime
+        duration:
+          type: number
+        state:
+          type: string
+        tryNumber:
+          type: integer
+        hostname:
+          type: string
+        unixName:
+          type: string
+        jobId:
+          type: integer
+        queue:
+          type: string
+        priorityWeight:
+          type: integer
+        operator:
+          type: string
+        queuedDateTime:
+          type: string
+          format: datetime
+        pid:
+          type: integer
+        maxTries:
+          type: integer
+        executorConfig:
+          type: string
+        poolSlots:
+          type: integer
+      example:
+        queuedDateTime: queuedDateTime
+        priorityWeight: 5
+        maxTries: 2
+        endDate: endDate
+        executorConfig: executorConfig
+        pid: 5
+        dagId: dagId
+        operator: operator
+        poolSlots: 7
+        duration: 0.80082819046101150206595775671303272247314453125
+        unixName: unixName
+        jobId: 1
+        hostname: hostname
+        executeDate: executeDate
+        state: state
+        tryNumber: 6
+        taskId: taskId
+        startDate: startDate
+        queue: queue
+    TaskSchedule:
+      type: object
+      properties:
+        id:
+          type: integer
+        taskId:
+          type: string
+        dagId:
+          type: string
+        executionDate:
+          type: string
+          format: datetime
+        tryNumber:
+          type: integer
+        startDate:
+          type: string
+          format: datetime
+        endDate:
+          type: string
+          format: datetime
+        duration:
+          type: integer
+        reschduleDate:
+          type: string
+          format: datetime
+      example:
+        duration: 1
+        endDate: endDate
+        reschduleDate: reschduleDate
+        executionDate: executionDate
+        id: 0
+        dagId: dagId
+        tryNumber: 6
+        taskId: taskId
+        startDate: startDate
   responses:
     UnauthorizedError:
       description: Access token is missing or invalid

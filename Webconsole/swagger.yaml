@@ -41,7 +41,7 @@ paths:
       summary: List all pets
       operationId: listUsers
       security: 
-        - bearerAuth: []
+        - bearerAuth: ['Admin']
       tags:
         - User
       # parameters:
@@ -75,7 +75,7 @@ paths:
       summary: User Register
       operationId: createUser
       security: 
-        - bearerAuth: []
+        - bearerAuth: ['Admin']
       tags:
         - User
       requestBody:
@@ -132,7 +132,7 @@ paths:
       summary: "Retrieve user roles by userName"
       operationId: getUserRoles
       security:
-        - bearerAuth: []
+        - bearerAuth: ['Admin']
       tags:
         - "User"
       parameters: 
@@ -159,6 +159,8 @@ paths:
     get: 
       summary: Retrieve airflow DAGs
       operationId: getDags
+      security: 
+        - bearerAuth: ['Op','Viewer','User']
       tags: 
         - Dag
       responses:
@@ -180,6 +182,8 @@ paths:
     get:
       summary: retrieve dags schedule from airflow
       operationId: getTasks
+      security: 
+        - bearerAuth: ['Op','Viewer','User']
       tags: 
         - Task
       responses:
@@ -201,6 +205,8 @@ paths:
     get:
       summary: retrieve dags schedule from airflow
       operationId: getTaskSchedule
+      security: 
+        - bearerAuth: ['Op','Viewer']
       tags: 
         - Task
       responses:
@@ -222,6 +228,8 @@ paths:
     get:
       summary: retrieve dags schedule from airflow
       operationId: getJobs
+      security: 
+        - bearerAuth: ['Op','Viewer']
       tags: 
         - Job
       responses:
@@ -245,6 +253,8 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT    # optional, arbitrary value for documentation purposes
+      
+      
   schemas:
     User:
       type: object

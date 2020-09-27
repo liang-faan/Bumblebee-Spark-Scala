@@ -19,11 +19,21 @@ module.exports.getUser = function getUser(req, res, next, userName) {
       utils.writeJson(res, response);
     })
     .catch(function (response) {
-      utils.writeJson(res, response,404);
+      utils.writeJson(res, response, 404);
     });
 };
 
-module.exports.listUsers = function listUsers(req, res, next) {
+module.exports.getUserRoles = function getUserRoles(req, res, next, userName) {
+  User.getUserRoles(userName)
+    .then(function (response) {
+      utils.writeJson(res, response);
+    })
+    .catch(function (response) {
+      utils.writeJson(res, response);
+    });
+};
+
+module.exports.listUsers = function listUsers (req, res, next) {
   User.listUsers()
     .then(function (response) {
       utils.writeJson(res, response);
