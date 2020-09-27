@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 const config = require('../Config')
 // const crypto = require('crypto')
-const bcrypt =require('bcrypt')
+// const bcrypt =require('bcrypt')
 const {hash, same} = require('../utils/PasswordSecurity')
 
 exports.TokenVerify = function (req, scopes, schema) {
@@ -34,13 +34,13 @@ exports.verifyPassword = function (password, combined, callback) {
 
     var encodedPassword = combined.split(":")
 
-    const hashStr = bcrypt.hashSync("shen20121",12);// Store hash in your password DB.
+    // const hashStr = bcrypt.hashSync("shen20121",12);// Store hash in your password DB.
 
-    console.log(hashStr.toString('utf8'))
+    // console.log(hashStr.toString('utf8'))
 
-    same("shen20121", encodedPassword[2]).then(function(resolve, reject){
-        console.log(resolve)
-    });
+    // same("shen20121", encodedPassword[2]).then(function(resolve, reject){
+        // console.log(resolve)
+    // });
 
     // hash("shen20121").then(function(resolve, reject){
     //     console.log(resolve);
