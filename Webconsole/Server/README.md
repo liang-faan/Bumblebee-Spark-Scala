@@ -139,3 +139,12 @@ var expressAppConfig = oas3Tools.expressAppConfig(path.join(__dirname, 'api/open
   }
 
 ```
+
+### Cross-platform install of npm package sqlite3
+```
+https://stackoverflow.com/questions/45192449/cross-platform-install-of-npm-package-sqlite3
+
+download linux version sqlite3;
+
+./node_modules/.bin/node-pre-gyp install --directory=./node_modules/sqlite3 --target_platform=linux 
+```

@@ -4,7 +4,7 @@ import config from '../../config';
 import {getAccessToken} from '../auth'
 
 export function constructUrl(relativeUrl) {
-    return (config.https ? 'https://' : 'http://').concat(config.hostname, ":", config.port, relativeUrl);
+    return (config.protocal).concat("://",config.hostname, ":", config.port, relativeUrl);
 }
 
 export function constructAuthenticationHeaders() {
