@@ -23,18 +23,12 @@ object Csv2Json {
     logger.info("input file name: {}", input)
     logger.info("output path {}", output)
 
-    logger.info("Inital spark session...")
+    logger.info("Initial spark session...")
     val session = connectToSpark()
     val df = readingCSVfile(session, input)
-    //    /**
-    //     * Remove null string from raw files
-    //     */
-    //    val nonNullDf = df.na.fill("");
-    /*
-    * Based nonNullDf to print Json
-    * */
     val outputDf = processCSVFile(df)
-    transformCSVJson(outputDf, output)
+//    transformCSVJson(outputDf, output)
+    AnalysisCsv.locationClassification(outputDf);
 
   }
 
@@ -103,6 +97,11 @@ object Csv2Json {
     return df
   }
 
+  /**
+   *
+   * @param df processing DataFrame
+   * @return out the DataFrame which processed
+   */
   def processCSVFile(df: sql.DataFrame): DataFrame = {
     /**
      * Remove null string from raw files
@@ -226,10 +225,16 @@ object Csv2Json {
       , trim(concat_ws(" ", col("context_24"))).as("context_24")
       , trim(concat_ws(" ", col("sgcool_label_text"))).as("sgcool_label_text")
     ).toDF();
-    output.show();
-    return output.na.replace(df.columns, Map("NA" -> ""));
+    val output2 = output.na.replace(df.columns, Map("NA" -> ""));
+    output2.show();
+    return output2;
   }
 
+  /**
+   *
+   * @param df input DataFrame
+   * @param output json output path
+   */
   def transformCSVJson(df: sql.DataFrame, output: String): Unit = {
 
     println("transformCSVJson")
@@ -245,6 +250,11 @@ object Csv2Json {
     }
   }
 
+  /**
+   *
+   * @param row convert each row into JSON String
+   * @return
+   */
   def convertRowToJSON(row: Row): String = {
     var m = row.getValuesMap(row.schema.fieldNames)
     //    logger.info("Dropping NA or empty columns...");
@@ -263,6 +273,12 @@ object Csv2Json {
     return json;
   }
 
+  /**
+   *
+   * @param path the file store path
+   * @param filename file name
+   * @param content file string content
+   */
   def writeToFile(path: String, filename: String, content: String) = {
     val dir = new File(path);
     if (dir.exists()) {
