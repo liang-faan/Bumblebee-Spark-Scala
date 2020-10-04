@@ -54,6 +54,8 @@ resolvers ++= Seq(
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "2.4.6" % "provided",
-  "org.apache.spark" %% "spark-sql" % "2.4.6"
+  "org.apache.spark" %% "spark-sql" % "2.4.6",
+  "org.slf4j" % "slf4j-api" % "1.7.30",
+  "org.slf4j" % "slf4j-simple" % "1.7.30" % Test
 )
 

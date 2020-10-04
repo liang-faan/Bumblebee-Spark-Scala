@@ -1,22 +1,29 @@
 package process
 
-import java.io.{FileOutputStream, ObjectOutputStream, PrintWriter}
+import java.io._
 
 import org.apache.spark.sql
-import org.apache.spark.sql.functions.{col, collect_list, concat_ws, last, monotonically_increasing_id, regexp_extract, trim}
-import org.apache.spark.sql.{DataFrame, Row, SparkSession}
 import org.apache.spark.sql.expressions.Window
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.{DataFrame, Row, SparkSession}
+import org.slf4j.LoggerFactory
 
-import scala.collection.mutable.ListBuffer
 import scala.util.parsing.json.JSONObject
 
 object Csv2Json {
 
+  val logger = LoggerFactory.getLogger(Csv2Json.getClass);
+
   def main(args: Array[String]): Unit = {
+
 
     val input = args(0)
     val output = args(1)
 
+    logger.info("input file name: {}", input)
+    logger.info("output path {}", output)
+
+    logger.info("Inital spark session...")
     val session = connectToSpark()
     val df = readingCSVfile(session, input)
     //    /**
@@ -32,28 +39,67 @@ object Csv2Json {
   }
 
   def connectToSpark(): SparkSession = {
-    val session = SparkSession.builder().appName("CSV to json conversion")
-      .master("local").getOrCreate()
+    val session = SparkSession.builder().appName("CSV to json conversion").master("local").getOrCreate()
     return session
   }
 
   def readingCSVfile(session: SparkSession, input: String): sql.DataFrame = {
-    val df = session
-      .read
-      .format("com.databricks.spark.csv")
+    val df = session.read.format("com.databricks.spark.csv")
       .options(Map("inferSchema" -> "false", "delimiter" -> ",", "header" -> "true", "multiline" -> "true"))
-      .schema("accession_no_csv string, Image string, object_work_type string, title_text string, preference string, " +
-        "title_language string, creator_2 string, creator_1 string, creator_role string, creation_date string, " +
-        "creation_place_original_location string, styles_periods_indexing_terms string, inscriptions string, " +
-        "inscription_language string, scale_type string, shape string, materials_name string, techniques_name string, " +
-        "object_colour string, edition_description string, physical_appearance string, subject_terms_1 string, " +
-        "subject_terms_2 string, subject_terms_3 string, subject_terms_4 string, context_1 string, context_2 string, context_3 string, " +
-        "context_4 string, context_5 string, context_6 string, context_7 string, context_8 string, context_9 string, context_10 string, " +
-        "context_11 string, context_12 string, context_13 string, context_14 string, context_15 string, context_16 string, " +
-        "context_17 string, context_18 string, context_19 string, context_20 string, context_21 string, context_22 string, " +
-        "context_23 string, context_24 string, sgcool_label_text string")
-      //      .csv("inputfile/Consolidated_R2_20190327.csv")
+      .schema("accession_no_csv string, " +
+        "Image string, " +
+        "object_work_type string, " +
+        "title_text string, " +
+        "preference string, " +
+        "title_language string, " +
+        "creator_2 string, " +
+        "creator_1 string, " +
+        "creator_role string, " +
+        "creation_date string, " +
+        "creation_place_original_location string, " +
+        "styles_periods_indexing_terms string, " +
+        "inscriptions string, " +
+        "inscription_language string, " +
+        "scale_type string, " +
+        "shape string, " +
+        "materials_name string, " +
+        "techniques_name string, " +
+        "object_colour string, " +
+        "edition_description string, " +
+        "physical_appearance string, " +
+        "subject_terms_1 string, " +
+        "subject_terms_2 string, " +
+        "subject_terms_3 string, " +
+        "subject_terms_4 string, " +
+        "context_1 string, " +
+        "context_2 string, " +
+        "context_3 string, " +
+        "context_4 string, " +
+        "context_5 string, " +
+        "context_6 string, " +
+        "context_7 string, " +
+        "context_8 string, " +
+        "context_9 string, " +
+        "context_10 string, " +
+        "context_11 string, " +
+        "context_12 string, " +
+        "context_13 string, " +
+        "context_14 string, " +
+        "context_15 string, " +
+        "context_16 string, " +
+        "context_17 string, " +
+        "context_18 string, " +
+        "context_19 string, " +
+        "context_20 string, " +
+        "context_21 string, " +
+        "context_22 string, " +
+        "context_23 string, " +
+        "context_24 string, " +
+        "sgcool_label_text string")
       .csv(input)
+    logger.info("DataFrame schema...")
+    df.printSchema();
+    logger.info("DataFrame size {}", df.count());
     return df
   }
 
@@ -62,6 +108,7 @@ object Csv2Json {
      * Remove null string from raw files
      */
     //    val nonNullDf = df.na.fill("");
+
     /**
      * fill with last good observation
      */
@@ -69,7 +116,10 @@ object Csv2Json {
     val partitionWindow = Window.orderBy("idx")
     val Df2 = dataWithIndex.withColumn("accession_no_csv", last("accession_no_csv", true) over (partitionWindow))
 
-    val F201700091DfMerged = Df2.filter(col("accession_no_csv").isNotNull).groupBy("accession_no_csv")
+    /**
+     * Merged the records with same id: accession_no_csv
+     */
+    val DfMerged = Df2.filter(col("accession_no_csv").isNotNull).groupBy("accession_no_csv")
       .agg(collect_list("Image").as("Image")
         , collect_list("object_work_type").as("object_work_type")
         , collect_list("title_text").as("title_text")
@@ -121,7 +171,10 @@ object Csv2Json {
         , collect_list("sgcool_label_text").as("sgcool_label_text"))
       .toDF();
 
-    val output = F201700091DfMerged.select(
+    /**
+     * remove special characters of each column
+     */
+    val output = DfMerged.select(
       trim(col("accession_no_csv")).as("accession_no_csv"),
       trim(concat_ws(" ", col("Image"))).as("Image")
       , trim(concat_ws(" ", col("object_work_type"))).as("object_work_type")
@@ -174,56 +227,60 @@ object Csv2Json {
       , trim(concat_ws(" ", col("sgcool_label_text"))).as("sgcool_label_text")
     ).toDF();
     output.show()
-    //    F201700091DfMerged.show(40);
-    //    df.filter($"value" === 1);
-    //    var dfNulls=df.filter($"")
-    //    val nullDfJoined = notNullDf.join(nullDf,notNullDf("idx_notNulls") gt nullDf("idx_nulls"),"left");
-
-    //    df.show(30)
-    //    dataWithIndex.show(30)
-    //    notNullDf.show(10)
-    //    nullDf.show(10)
-    //    Df2.show(30)
-    //    nullDfJoined.show(10);
-
-    //    df.printSchema()
-    //    println("Dataframe's schema:")
     return output;
   }
 
   def transformCSVJson(df: sql.DataFrame, output: String): Unit = {
+
     println("transformCSVJson")
 
-    //    val listJson = new ListBuffer[java.lang.String]();
+    /**
+     * searching expected format file name
+     * replace all special characters in the file name
+     */
     df.filter(col("accession_no_csv").rlike("^[\\d]{4}-[\\d]*")).collect().foreach { row =>
-//      println(row.getAs("accession_no_csv").toString);
-      val  fileName = "./Data/outputJson/"+row.getAs("accession_no_csv").toString().trim().replaceAll("[\\n,\\r]","")+".json";
-      println(fileName);
-      val outputStream = new PrintWriter(fileName);
-      outputStream.write(convertRowToJSON(row));
-      outputStream.close()
+      val fileName = row.getAs("accession_no_csv").toString().trim().replaceAll("[\\n,\\r]", "__") + ".json";
+      val content = convertRowToJSON(row);
+      writeToFile(output, fileName, content);
     }
-    //
-    //    val outputStream = new ObjectOutputStream(new FileOutputStream("./Data/output.json"));
-    //    outputStream writeObject (listJson)
-    //        df.write
-    //          //      .format("org.apache.spark.sql.execution.datasources.v2.json.JsonDataSourceV2")
-    //          //      .json("inputfile/json/Consolidated_R2_20190327.json")
-    //          .json(output)
   }
 
   def convertRowToJSON(row: Row): String = {
-    val m = row.getValuesMap(row.schema.fieldNames)
-    val json = JSONObject(m).toString()
+    var m = row.getValuesMap(row.schema.fieldNames)
+//    logger.info("Dropping NA or empty columns...");
+    /**
+     * dropping NA or empty columns
+     */
+    m.keys foreach { key =>
+      if("NA".equals(m.getOrElse(key,null))){
+        m = m.-(key);
+      }else if("".equals(m.getOrElse(key, null))){
+        m = m.-(key);
+      }
+    }
+    val json = JSONObject(m).toString();
     return json;
   }
 
+  def writeToFile(path: String, filename: String, content: String) = {
+    val dir = new File(path);
+    if (dir.exists()) {
+      dir.delete();
+      dir.mkdir();
+    }
+    dir.mkdir();
+    val file = new File(path + "/" + filename);
+    try {
+      logger.info("Writing to file {}", filename);
+      val fw = new FileWriter(file.getAbsoluteFile());
+      val bw = new BufferedWriter(fw);
+      bw.write(content);
+      bw.close();
+    }
+    catch {
+      case e: FileNotFoundException => println("Couldn't find that file.")
+      case e: IOException => println("Had an IOException trying to read that file")
+    }
+  }
 }
 
-
-//object DataIngestionObj extends App {
-//
-//  val csv2jsonobj = new Csv2Json
-//  csv2jsonobj.startDataIngestion()
-//
-//}
