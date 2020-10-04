@@ -1,1 +1,16 @@
-{"materials_name" : "brass (alloy)", "object_work_type" : "steamers (cookware)", "object_colour" : "yellow (colour)", "physical_appearance" : "The image displays an idli steamer. It is yellow in colour. The lid of the steamer can be removed from its body. There are two rings attached to the sides of the lid, and two handles are present at its top. There is a silver mould plate present inside the steamer. It has numerous depressions of equal sizes. Two handles are present on the mould plate as well.", "sgcool_label_text" : "This large idli steamer belonged to a temple kitchen in the Kerala region. Idli (a steamed rice cake) is a popular south Indian snack, commonly served for breakfast. The steamer comprises of several mould-plates that are stacked on top of each other. The idli batter would be poured into the moulds and steamed in the large metal container.", "preference" : "main", "title_text" : "Idli Steamer", "creation_date" : "1900 - 1999", "subject_terms_1" : "kitchenware cooking utensils implements (object genre)", "accession_no_csv" : "2016-00233", "shape" : "irregular", "creation_place_original_location" : "Kerala (India)", "subject_terms_2" : "Food steamers Steaming (Cooking) Kitchen utensils", "techniques_name" : "metalworking"}
+{
+  "materials_name": "brass (alloy)",
+  "object_work_type": "steamers (cookware)",
+  "object_colour": "yellow (colour)",
+  "physical_appearance": "The image displays an idli steamer. It is yellow in colour. The lid of the steamer can be removed from its body. There are two rings attached to the sides of the lid, and two handles are present at its top. There is a silver mould plate present inside the steamer. It has numerous depressions of equal sizes. Two handles are present on the mould plate as well.",
+  "sgcool_label_text": "This large idli steamer belonged to a temple kitchen in the Kerala region. Idli (a steamed rice cake) is a popular south Indian snack, commonly served for breakfast. The steamer comprises of several mould-plates that are stacked on top of each other. The idli batter would be poured into the moulds and steamed in the large metal container.",
+  "preference": "main",
+  "title_text": "Idli Steamer",
+  "creation_date": "1900 - 1999",
+  "subject_terms_1": "kitchenware cooking utensils implements (object genre)",
+  "accession_no_csv": "2016-00233",
+  "shape": "irregular",
+  "creation_place_original_location": "Kerala (India)",
+  "subject_terms_2": "Food steamers Steaming (Cooking) Kitchen utensils",
+  "techniques_name": "metalworking"
+}

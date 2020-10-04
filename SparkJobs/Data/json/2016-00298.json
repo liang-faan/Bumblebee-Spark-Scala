@@ -1,1 +1,20 @@
-{"subject_terms_3" : "East India Company Historic buildings Visual arts", "materials_name" : "paper (fiber product) printing paper", "creator_2" : "Illustrated London News", "object_work_type" : "prints (visual works)", "object_colour" : "multicoloured", "physical_appearance" : "This print depicts the historical artefacts relating to the East India Company. Four categories of images take up the entire space of the artwork. Under each set of images, there are texts that name the images. The print has a wooden frame and there are no visible tears or chips on them. The title of the print is displayed at the bottom, in capital letters. The colours on the print do not look smudged.", "sgcool_label_text" : "This print was published in the Illustrated London News on 30 August 1890. It features, clockwise from top left, the mantelpiece formerly in the Directors’ court-room of the old East India House, the old East India House on Leadenhall Street (1648-1726), the old Crosby House at Bishopsgate occupied by the East India Company from 1621 to 1638, the re-faced East India House on Leadenhall Street in 1726, and obverse and reverse views of the Great Seal of the Commonwealth (1651) appended to a warrant of Oliver Cromwell.", "preference" : "main", "creator_1" : "Illustrated London news", "title_text" : "Historical Relics of the Old East India Company", "creation_date" : "1890", "subject_terms_1" : "historic buildings mantels (fireplace components) seals (artifacts) corporate headquarters (built works)", "creator_role" : "publishers", "accession_no_csv" : "2016-00298", "shape" : "rectangular", "creation_place_original_location" : "London (England)", "subject_terms_2" : "East India Company Prints Historic buildings Crosby Hall (London, England) Mantels Corporations, Headquarters", "techniques_name" : "colour printing"}
+{
+  "subject_terms_3": "East India Company Historic buildings Visual arts",
+  "materials_name": "paper (fiber product) printing paper",
+  "creator_2": "Illustrated London News",
+  "object_work_type": "prints (visual works)",
+  "object_colour": "multicoloured",
+  "physical_appearance": "This print depicts the historical artefacts relating to the East India Company. Four categories of images take up the entire space of the artwork. Under each set of images, there are texts that name the images. The print has a wooden frame and there are no visible tears or chips on them. The title of the print is displayed at the bottom, in capital letters. The colours on the print do not look smudged.",
+  "sgcool_label_text": "This print was published in the Illustrated London News on 30 August 1890. It features, clockwise from top left, the mantelpiece formerly in the Directors’ court-room of the old East India House, the old East India House on Leadenhall Street (1648-1726), the old Crosby House at Bishopsgate occupied by the East India Company from 1621 to 1638, the re-faced East India House on Leadenhall Street in 1726, and obverse and reverse views of the Great Seal of the Commonwealth (1651) appended to a warrant of Oliver Cromwell.",
+  "preference": "main",
+  "creator_1": "Illustrated London news",
+  "title_text": "Historical Relics of the Old East India Company",
+  "creation_date": "1890",
+  "subject_terms_1": "historic buildings mantels (fireplace components) seals (artifacts) corporate headquarters (built works)",
+  "creator_role": "publishers",
+  "accession_no_csv": "2016-00298",
+  "shape": "rectangular",
+  "creation_place_original_location": "London (England)",
+  "subject_terms_2": "East India Company Prints Historic buildings Crosby Hall (London, England) Mantels Corporations, Headquarters",
+  "techniques_name": "colour printing"
+}

@@ -1,1 +1,24 @@
-{"context_23" : "1970", "context_24" : "present", "subject_terms_3" : "Photography", "materials_name" : "plastic (organic material) metal", "creator_2" : "Paterson Photographic Equipment", "object_work_type" : "photometers", "object_colour" : "black (colour)", "physical_appearance" : "The light measuring probe is predominantly black in colour, with a silver-surfaced screen. Below the screen, the name of the company, 'Paterson', and the model of the device, 'PDB 2053', are displayed. There is a rotating button with several numerals around its circumference. A wire with a probe is connected from the base of measuring device.", "context_22" : "1970 - present", "sgcool_label_text" : "The light measure probe is used during photographic film processing. This is part of the darkroom photography equipment that was previously used by The Picture Farm, which was set up by the renowned photographer Willie Tang.", "preference" : "main", "context_21" : "45 Jalan Pemimpin, #09-00 Foo Wah Industrial Building, Thomson, Singapore", "title_text" : "Paterson light measure probe", "creation_date" : "1980s-1990s", "subject_terms_1" : "photographic equipment light measuring devices light meters (measuring devices)", "creator_role" : "manufacturers", "context_20" : "The set of equipment was used by The Picture Farm Pte Ltd", "accession_no_csv" : "2016-00669", "shape" : "irregular", "creation_place_original_location" : "Singapore Tipton (England)", "subject_terms_2" : "Photography Equipment and supplies Measuring instruments Probes (Electronic instruments) Photometry", "techniques_name" : "forming (physical activity) metalworking"}
+{
+  "context_23": "1970",
+  "context_24": "present",
+  "subject_terms_3": "Photography",
+  "materials_name": "plastic (organic material) metal",
+  "creator_2": "Paterson Photographic Equipment",
+  "object_work_type": "photometers",
+  "object_colour": "black (colour)",
+  "physical_appearance": "The light measuring probe is predominantly black in colour, with a silver-surfaced screen. Below the screen, the name of the company, 'Paterson', and the model of the device, 'PDB 2053', are displayed. There is a rotating button with several numerals around its circumference. A wire with a probe is connected from the base of measuring device.",
+  "context_22": "1970 - present",
+  "sgcool_label_text": "The light measure probe is used during photographic film processing. This is part of the darkroom photography equipment that was previously used by The Picture Farm, which was set up by the renowned photographer Willie Tang.",
+  "preference": "main",
+  "context_21": "45 Jalan Pemimpin, #09-00 Foo Wah Industrial Building, Thomson, Singapore",
+  "title_text": "Paterson light measure probe",
+  "creation_date": "1980s-1990s",
+  "subject_terms_1": "photographic equipment light measuring devices light meters (measuring devices)",
+  "creator_role": "manufacturers",
+  "context_20": "The set of equipment was used by The Picture Farm Pte Ltd",
+  "accession_no_csv": "2016-00669",
+  "shape": "irregular",
+  "creation_place_original_location": "Singapore Tipton (England)",
+  "subject_terms_2": "Photography Equipment and supplies Measuring instruments Probes (Electronic instruments) Photometry",
+  "techniques_name": "forming (physical activity) metalworking"
+}

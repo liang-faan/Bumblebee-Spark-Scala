@@ -1,1 +1,20 @@
-{"subject_terms_3" : "visual arts  watercolour painting", "materials_name" : "paper (fibre product)  watercolour (paint) watercolour paper pencils (marking material)", "creator_2" : "William Simpson", "object_work_type" : "watercolours (paintings)", "object_colour" : "multicoloured", "physical_appearance" : "This is a watercolour painting that depicts a bustling street in Bombay in the 19th century. Horse carriages are seen to be passing amidst a throng of people, evidencing the busy nature of the streets. The plethora of costumes worn by the figures in the image also points to the cosmopolitan nature of the city.", "sgcool_label_text" : "The watercolour shows a bustling street in Bombay in the 19th century. A European gentleman in a top hat rides in a carriage between merchants and street sellers. It shows the cosmopolitan nature of port cities at the time, with everyone jostling for space on the busy streets. \r\n\r\nWilliam Simpson (1823-1899) was a successful topographical artist who after a series of acclaimed images of the Crimean War, was commissioned in 1859 by the publishers Day and Son, to produce images of India for publication. On his return he produced the book India: Ancient and Modern London, 1867, a series of illustrations with a descriptive text by John William Kaye. He made several later trips to India as well.\r\n", "preference" : "main", "creator_1" : "Simpson, William, 1823-1899", "title_text" : "Street Scene in Bombay", "creation_date" : "1862", "subject_terms_1" : "perspective views (images)  colonialism  carriages (vehicles)  merchants street vendors street scenes", "creator_role" : "watercolourists painters (artists)", "accession_no_csv" : "2017-00259", "shape" : "rectangular", "creation_place_original_location" : "Great Britain", "subject_terms_2" : "Cosmopolitanism  Imperialism  Perspective  Merchants Street vendors  Mumbai (India)", "techniques_name" : "watercolour painting (technique) sketching linear perspective (technique)"}
+{
+  "subject_terms_3": "visual arts  watercolour painting",
+  "materials_name": "paper (fibre product)  watercolour (paint) watercolour paper pencils (marking material)",
+  "creator_2": "William Simpson",
+  "object_work_type": "watercolours (paintings)",
+  "object_colour": "multicoloured",
+  "physical_appearance": "This is a watercolour painting that depicts a bustling street in Bombay in the 19th century. Horse carriages are seen to be passing amidst a throng of people, evidencing the busy nature of the streets. The plethora of costumes worn by the figures in the image also points to the cosmopolitan nature of the city.",
+  "sgcool_label_text": "The watercolour shows a bustling street in Bombay in the 19th century. A European gentleman in a top hat rides in a carriage between merchants and street sellers. It shows the cosmopolitan nature of port cities at the time, with everyone jostling for space on the busy streets. \r\n\r\nWilliam Simpson (1823-1899) was a successful topographical artist who after a series of acclaimed images of the Crimean War, was commissioned in 1859 by the publishers Day and Son, to produce images of India for publication. On his return he produced the book India: Ancient and Modern London, 1867, a series of illustrations with a descriptive text by John William Kaye. He made several later trips to India as well.\r\n",
+  "preference": "main",
+  "creator_1": "Simpson, William, 1823-1899",
+  "title_text": "Street Scene in Bombay",
+  "creation_date": "1862",
+  "subject_terms_1": "perspective views (images)  colonialism  carriages (vehicles)  merchants street vendors street scenes",
+  "creator_role": "watercolourists painters (artists)",
+  "accession_no_csv": "2017-00259",
+  "shape": "rectangular",
+  "creation_place_original_location": "Great Britain",
+  "subject_terms_2": "Cosmopolitanism  Imperialism  Perspective  Merchants Street vendors  Mumbai (India)",
+  "techniques_name": "watercolour painting (technique) sketching linear perspective (technique)"
+}

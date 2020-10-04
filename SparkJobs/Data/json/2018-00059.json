@@ -1,1 +1,22 @@
-{"subject_terms_4" : "Nederlandsche Oost-Indische Compagnie Jakarta (inhabited place) East Indies (general region) Java (island)", "materials_name" : "paper (fiber product)", "creator_2" : "Gerard van Keulen", "object_work_type" : "pictorial maps maps (documents)", "object_colour" : "multicoloured", "physical_appearance" : "This is a multicoloured map of Java which was created by Gerard Van Keulen. This map, divided into western and eastern parts, has an inset map and view of Batavia.There are many lines of text in Dutch throughout the map specifying the names of places in Dutch-colonised Java in the 18th century.", "sgcool_label_text" : "This two-part map of Java was produced by Gerard van Keulen, an engraver, mathematician and hydrographer for the Dutch East India Company. It was published later by his son Johannes van Keulen II in Part VI of his collection of sea charts, the Zee Fakkel, in 1653. Apart from the main map which shows both West and East Java, the insets provide a map and view of Batavia.", "preference" : "main", "creator_1" : "not indicated", "title_text" : "Van Keulen's Map of Java", "creation_date" : "c1753", "subject_terms_1" : "seas cartography (discipline) topography (attribute) hydrography", "creator_role" : "engravers (printmakers)  hydrographers mathematicians", "styles_periods_indexing_terms" : "not indicated", "accession_no_csv" : "2018-00059", "shape" : "rectangular", "creation_place_original_location" : "not indicated", "subject_terms_2" : "Pictorial maps Navigation Seas Cartography Hydrography", "techniques_name" : "papermaking copper engraving (printing process) hand coloring", "scale_type" : "not indicated"}
+{
+  "subject_terms_4": "Nederlandsche Oost-Indische Compagnie Jakarta (inhabited place) East Indies (general region) Java (island)",
+  "materials_name": "paper (fiber product)",
+  "creator_2": "Gerard van Keulen",
+  "object_work_type": "pictorial maps maps (documents)",
+  "object_colour": "multicoloured",
+  "physical_appearance": "This is a multicoloured map of Java which was created by Gerard Van Keulen. This map, divided into western and eastern parts, has an inset map and view of Batavia.There are many lines of text in Dutch throughout the map specifying the names of places in Dutch-colonised Java in the 18th century.",
+  "sgcool_label_text": "This two-part map of Java was produced by Gerard van Keulen, an engraver, mathematician and hydrographer for the Dutch East India Company. It was published later by his son Johannes van Keulen II in Part VI of his collection of sea charts, the Zee Fakkel, in 1653. Apart from the main map which shows both West and East Java, the insets provide a map and view of Batavia.",
+  "preference": "main",
+  "creator_1": "not indicated",
+  "title_text": "Van Keulen's Map of Java",
+  "creation_date": "c1753",
+  "subject_terms_1": "seas cartography (discipline) topography (attribute) hydrography",
+  "creator_role": "engravers (printmakers)  hydrographers mathematicians",
+  "styles_periods_indexing_terms": "not indicated",
+  "accession_no_csv": "2018-00059",
+  "shape": "rectangular",
+  "creation_place_original_location": "not indicated",
+  "subject_terms_2": "Pictorial maps Navigation Seas Cartography Hydrography",
+  "techniques_name": "papermaking copper engraving (printing process) hand coloring",
+  "scale_type": "not indicated"
+}

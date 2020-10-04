@@ -226,8 +226,8 @@ object Csv2Json {
       , trim(concat_ws(" ", col("context_24"))).as("context_24")
       , trim(concat_ws(" ", col("sgcool_label_text"))).as("sgcool_label_text")
     ).toDF();
-    output.show()
-    return output;
+    output.show();
+    return output.na.replace(df.columns, Map("NA" -> ""));
   }
 
   def transformCSVJson(df: sql.DataFrame, output: String): Unit = {
@@ -247,14 +247,15 @@ object Csv2Json {
 
   def convertRowToJSON(row: Row): String = {
     var m = row.getValuesMap(row.schema.fieldNames)
-//    logger.info("Dropping NA or empty columns...");
+    //    logger.info("Dropping NA or empty columns...");
     /**
      * dropping NA or empty columns
      */
     m.keys foreach { key =>
-      if("NA".equals(m.getOrElse(key,null))){
-        m = m.-(key);
-      }else if("".equals(m.getOrElse(key, null))){
+      //      if("NA".equals(m.getOrElse(key,null))){
+      //        m = m.-(key);
+      //      }else
+      if ("".equals(m.getOrElse(key, null))) {
         m = m.-(key);
       }
     }

@@ -1,1 +1,16 @@
-{"materials_name" : "wood (plant material) metal", "object_work_type" : "canes (walking sticks)", "object_colour" : "brown (color) black (color)", "physical_appearance" : "This is a wooden walking stick. It has a brown body with black patterns. The walking stick is topped by a gold knob. The face of the stick is decorated with foliage motifs and crowned with an eight-pointed star.", "sgcool_label_text" : "The body of this wooden walking stick has a brown grain with black patterns. It is topped by a gold knob, its facets decorated with foliate designs and crowned with an eight-pointed star. Walking sticks with a golden attachment were popular in 19th century Europe and often completed a gentleman’s ensemble. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.", "preference" : "main", "title_text" : "Cane with Gold Top", "creation_date" : "19th-20th century", "subject_terms_1" : "foliage (motif) cultural diffusion", "accession_no_csv" : "2016-00702", "shape" : "irregular", "creation_place_original_location" : "Europe", "subject_terms_2" : "Staffs (Sticks, canes, etc.) Motifs Culture diffusion", "techniques_name" : "woodcarving"}
+{
+  "materials_name": "wood (plant material) metal",
+  "object_work_type": "canes (walking sticks)",
+  "object_colour": "brown (color) black (color)",
+  "physical_appearance": "This is a wooden walking stick. It has a brown body with black patterns. The walking stick is topped by a gold knob. The face of the stick is decorated with foliage motifs and crowned with an eight-pointed star.",
+  "sgcool_label_text": "The body of this wooden walking stick has a brown grain with black patterns. It is topped by a gold knob, its facets decorated with foliate designs and crowned with an eight-pointed star. Walking sticks with a golden attachment were popular in 19th century Europe and often completed a gentleman’s ensemble. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.",
+  "preference": "main",
+  "title_text": "Cane with Gold Top",
+  "creation_date": "19th-20th century",
+  "subject_terms_1": "foliage (motif) cultural diffusion",
+  "accession_no_csv": "2016-00702",
+  "shape": "irregular",
+  "creation_place_original_location": "Europe",
+  "subject_terms_2": "Staffs (Sticks, canes, etc.) Motifs Culture diffusion",
+  "techniques_name": "woodcarving"
+}

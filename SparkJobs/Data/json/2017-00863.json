@@ -1,1 +1,25 @@
-{"subject_terms_3" : "Visual Arts", "context_2" : "exhibitions (events)", "creator_2" : "Po Po", "object_work_type" : "mirrors", "object_colour" : "white (colour)", "physical_appearance" : "This is a mirror with its back scratched out in the shape of a human figure.", "sgcool_label_text" : "\"The silver coating on the back of a mirror is scratched out in shape of a human figure, an effect that leads a viewer to encounter a disjoined image of oneself, where an object behind the mirror appears jarringly next to the reflected image.  Inspired by Plato's objection against the idea of art imitating nature, the abstracted and fragmented \"\"reflection\"\" of reality experienced through this work presents a view of the world that is never coherent or complete.\r", "preference" : "main", "context_1" : "Out of Myth, Onto Logical", "context_5" : "13-Sep-15", "title_text" : "Incomplete Mirror #4", "creation_date" : "1991-1996", "subject_terms_1" : "reflections (perceived properties)", "context_4" : "1-Aug-15", "context_8" : "planners", "creator_role" : "artists (visual artists)", "accession_no_csv" : "2017-00863", "shape" : "Rectangular", "creation_place_original_location" : "Burma", "subject_terms_2" : "Mirrors", "context_3" : "1-Aug-2015 - 13-Sep-2015", "techniques_name" : "scraping?", "context_7" : "Yavuz Gallery"}
+{
+  "subject_terms_3": "Visual Arts",
+  "context_2": "exhibitions (events)",
+  "creator_2": "Po Po",
+  "object_work_type": "mirrors",
+  "object_colour": "white (colour)",
+  "physical_appearance": "This is a mirror with its back scratched out in the shape of a human figure.",
+  "sgcool_label_text": "\"The silver coating on the back of a mirror is scratched out in shape of a human figure, an effect that leads a viewer to encounter a disjoined image of oneself, where an object behind the mirror appears jarringly next to the reflected image.  Inspired by Plato's objection against the idea of art imitating nature, the abstracted and fragmented \"\"reflection\"\" of reality experienced through this work presents a view of the world that is never coherent or complete.\r",
+  "preference": "main",
+  "context_1": "Out of Myth, Onto Logical",
+  "context_5": "13-Sep-15",
+  "title_text": "Incomplete Mirror #4",
+  "creation_date": "1991-1996",
+  "subject_terms_1": "reflections (perceived properties)",
+  "context_4": "1-Aug-15",
+  "context_8": "planners",
+  "creator_role": "artists (visual artists)",
+  "accession_no_csv": "2017-00863",
+  "shape": "Rectangular",
+  "creation_place_original_location": "Burma",
+  "subject_terms_2": "Mirrors",
+  "context_3": "1-Aug-2015 - 13-Sep-2015",
+  "techniques_name": "scraping?",
+  "context_7": "Yavuz Gallery"
+}

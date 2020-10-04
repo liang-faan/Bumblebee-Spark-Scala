@@ -1,1 +1,23 @@
-{"context_23" : "1930", "context_24" : "1939", "subject_terms_3" : "Fashion design", "materials_name" : "wool (textile)", "object_work_type" : "jackets (garments)", "object_colour" : "black (colour)", "physical_appearance" : "This is a single-breasted, black light wool long jacket. It is collared, has a slit at the bottom, and has a singular button that holds the front together.", "context_22" : "1930s", "sgcool_label_text" : "The long jacket was considered the appropriate formal wear for men during the early Republican period in China and Hong Kong. There was an interest in Western fashion after the collapse of the Qing dynasty. This Western style long jacket belonged to Mr Kaan Tat Choi, who was a successful businessman in the bullion business in Hong Kong. Mr Kaan expanded his business to Malaya in the 1920s, acquiring several rubber plantations along the east coast of Malaya. He also opened a bullion trading company called “Yee Shing” at 20 Canal Road in Singapore in the 1930s.", "preference" : "main", "context_21" : "20 Canal Road in Singapore", "title_text" : "Men’s single-breasted, black light wool long jacket", "creation_date" : "1920s", "subject_terms_1" : "full evening dress?  fashion design  menswear", "context_20" : "Bullion Trading Company “Yee Shing”", "styles_periods_indexing_terms" : "Chinese (culture or style)", "accession_no_csv" : "2017-00803", "shape" : "T-shaped?", "creation_place_original_location" : "Hong Kong (China)  Hong Kong (China)", "subject_terms_2" : "Jackets  Wool  Fashion design  Men's clothing", "techniques_name" : "sewing (needleworking technique)"}
+{
+  "context_23": "1930",
+  "context_24": "1939",
+  "subject_terms_3": "Fashion design",
+  "materials_name": "wool (textile)",
+  "object_work_type": "jackets (garments)",
+  "object_colour": "black (colour)",
+  "physical_appearance": "This is a single-breasted, black light wool long jacket. It is collared, has a slit at the bottom, and has a singular button that holds the front together.",
+  "context_22": "1930s",
+  "sgcool_label_text": "The long jacket was considered the appropriate formal wear for men during the early Republican period in China and Hong Kong. There was an interest in Western fashion after the collapse of the Qing dynasty. This Western style long jacket belonged to Mr Kaan Tat Choi, who was a successful businessman in the bullion business in Hong Kong. Mr Kaan expanded his business to Malaya in the 1920s, acquiring several rubber plantations along the east coast of Malaya. He also opened a bullion trading company called “Yee Shing” at 20 Canal Road in Singapore in the 1930s.",
+  "preference": "main",
+  "context_21": "20 Canal Road in Singapore",
+  "title_text": "Men’s single-breasted, black light wool long jacket",
+  "creation_date": "1920s",
+  "subject_terms_1": "full evening dress?  fashion design  menswear",
+  "context_20": "Bullion Trading Company “Yee Shing”",
+  "styles_periods_indexing_terms": "Chinese (culture or style)",
+  "accession_no_csv": "2017-00803",
+  "shape": "T-shaped?",
+  "creation_place_original_location": "Hong Kong (China)  Hong Kong (China)",
+  "subject_terms_2": "Jackets  Wool  Fashion design  Men's clothing",
+  "techniques_name": "sewing (needleworking technique)"
+}

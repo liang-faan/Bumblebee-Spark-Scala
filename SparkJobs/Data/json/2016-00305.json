@@ -1,1 +1,20 @@
-{"materials_name" : "paper (fiber product) printing paper", "creator_2" : "Francois Valentijn", "object_work_type" : "maps (documents) copper engravings (visual works)", "object_colour" : "multicoloured", "physical_appearance" : "\"The map depicts the islands of the Banda. Different colours are used on the different islands, ranging from pink to turquoise to yellow. The scale that is being utilized in this map is 1 : 09. Straight black lines that run diagonal, vertical, and horizontal extend out from the two compasses that are located on the left and right of the map from its middle. Pictorial representations of mountains and hills are drawn in all six of the islands. There is an image of an active volcano with lava flowing out, in the island designated as, \"\"Goenong Api\"\".   \"", "sgcool_label_text" : "Francois Valentijn (1666–1727) was a minister, naturalist and writer who served the Dutch V.O.C. in the East Indies in the late 17th and early 18th centuries. His monumental work Oud en Nieuw Oost-Indien (Old and New East-India), published between 1724 and 1726, offers a comprehensive mapping of the East Indies with a large selection of scale maps and views. This chart of the Banda islands was published in that work. It illustrates the active volcano on Goenong Api (Gunung Api).", "preference" : "main", "creator_1" : "Valentijn, Francois, 1666 - 1727", "title_text" : "Nieuwe caart der Eylanden van Banda (New Chart of the Banda Islands)", "creation_date" : "1726", "subject_terms_1" : "colonial settlements islands (landforms) volcanic eruptions", "creator_role" : "mapmakers", "accession_no_csv" : "2016-00305", "shape" : "rectangular", "creation_place_original_location" : "Holland (Netherlands : Province)", "subject_terms_2" : "Colonization East Indies Maps Islands Nederlandsche Oost-Indische Compagnie Volcanic eruptions Banda Islands (Indonesia) depictions (visual works)", "techniques_name" : "mapmaking (process) colour printing", "scale_type" : "1:09"}
+{
+  "materials_name": "paper (fiber product) printing paper",
+  "creator_2": "Francois Valentijn",
+  "object_work_type": "maps (documents) copper engravings (visual works)",
+  "object_colour": "multicoloured",
+  "physical_appearance": "\"The map depicts the islands of the Banda. Different colours are used on the different islands, ranging from pink to turquoise to yellow. The scale that is being utilized in this map is 1 : 09. Straight black lines that run diagonal, vertical, and horizontal extend out from the two compasses that are located on the left and right of the map from its middle. Pictorial representations of mountains and hills are drawn in all six of the islands. There is an image of an active volcano with lava flowing out, in the island designated as, \"\"Goenong Api\"\".   \"",
+  "sgcool_label_text": "Francois Valentijn (1666–1727) was a minister, naturalist and writer who served the Dutch V.O.C. in the East Indies in the late 17th and early 18th centuries. His monumental work Oud en Nieuw Oost-Indien (Old and New East-India), published between 1724 and 1726, offers a comprehensive mapping of the East Indies with a large selection of scale maps and views. This chart of the Banda islands was published in that work. It illustrates the active volcano on Goenong Api (Gunung Api).",
+  "preference": "main",
+  "creator_1": "Valentijn, Francois, 1666 - 1727",
+  "title_text": "Nieuwe caart der Eylanden van Banda (New Chart of the Banda Islands)",
+  "creation_date": "1726",
+  "subject_terms_1": "colonial settlements islands (landforms) volcanic eruptions",
+  "creator_role": "mapmakers",
+  "accession_no_csv": "2016-00305",
+  "shape": "rectangular",
+  "creation_place_original_location": "Holland (Netherlands : Province)",
+  "subject_terms_2": "Colonization East Indies Maps Islands Nederlandsche Oost-Indische Compagnie Volcanic eruptions Banda Islands (Indonesia) depictions (visual works)",
+  "techniques_name": "mapmaking (process) colour printing",
+  "scale_type": "1:09"
+}

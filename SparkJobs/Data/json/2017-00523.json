@@ -1,1 +1,26 @@
-{"subject_terms_3" : "1942-1945 Japanese occupation Wars", "context_2" : "world wars", "materials_name" : "paper (fiber product) printing paper", "creator_2" : "United States Military Academy", "object_work_type" : "topographic maps military maps", "object_colour" : "multicoloured", "physical_appearance" : "This topographical map is rectangular in shape and its perimeter is marked by a pair of black lines. The training map is not crumpled and the ink is not smudged. Apart from being predominantly beige, lines, notes, and drawings in both red and blue are featured as well. The map depicts the territory of French Indochina when it was invaded by Japan during WWII.", "sgcool_label_text" : "This is a topographical training map produced by West Point, the United States Military Academy, intended for use by its cadets. It documents the Japanese invasion of Burma from January to May 1942, with the movements of the Axis forces indicated in red and that of the Allied forces in blue.", "preference" : "main", "context_6" : "United States", "context_1" : "World War, 1939 - 1945", "context_5" : "1945", "title_text" : "\"West Point training map titled \"\"The War with Japan: Invasion of Burma (January-May 1942)\"\"\"", "creation_date" : "1959", "subject_terms_1" : "world wars cartographic materials military centers military history", "context_4" : "1939", "creator_role" : "Creator", "accession_no_csv" : "2017-00523", "shape" : "rectangular", "creation_place_original_location" : "United States", "subject_terms_2" : "World War, 1939 - 1945 United States Military Academy Military maps Topographic Maps", "context_3" : "1939 - 1945", "techniques_name" : "colour printing", "scale_type" : "1 : 50 (inch: miles)"}
+{
+  "subject_terms_3": "1942-1945 Japanese occupation Wars",
+  "context_2": "world wars",
+  "materials_name": "paper (fiber product) printing paper",
+  "creator_2": "United States Military Academy",
+  "object_work_type": "topographic maps military maps",
+  "object_colour": "multicoloured",
+  "physical_appearance": "This topographical map is rectangular in shape and its perimeter is marked by a pair of black lines. The training map is not crumpled and the ink is not smudged. Apart from being predominantly beige, lines, notes, and drawings in both red and blue are featured as well. The map depicts the territory of French Indochina when it was invaded by Japan during WWII.",
+  "sgcool_label_text": "This is a topographical training map produced by West Point, the United States Military Academy, intended for use by its cadets. It documents the Japanese invasion of Burma from January to May 1942, with the movements of the Axis forces indicated in red and that of the Allied forces in blue.",
+  "preference": "main",
+  "context_6": "United States",
+  "context_1": "World War, 1939 - 1945",
+  "context_5": "1945",
+  "title_text": "\"West Point training map titled \"\"The War with Japan: Invasion of Burma (January-May 1942)\"\"\"",
+  "creation_date": "1959",
+  "subject_terms_1": "world wars cartographic materials military centers military history",
+  "context_4": "1939",
+  "creator_role": "Creator",
+  "accession_no_csv": "2017-00523",
+  "shape": "rectangular",
+  "creation_place_original_location": "United States",
+  "subject_terms_2": "World War, 1939 - 1945 United States Military Academy Military maps Topographic Maps",
+  "context_3": "1939 - 1945",
+  "techniques_name": "colour printing",
+  "scale_type": "1 : 50 (inch: miles)"
+}

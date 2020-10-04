@@ -1,1 +1,16 @@
-{"materials_name" : "plastic (organic material) metal", "object_work_type" : "hand tools", "object_colour" : "multicoloured", "physical_appearance" : "A set of four hand tools are displayed in the image. Two of them are long while the other two are short. The long pair of hand tools contains a wooden L-shaped handle, while the short pair contains a wooden curved handle. On one of the short pair of hand tools, there is a hfinger-sized hole in its handle. All four hand tools have a metal shaft that curves inwards to form hooks.", "sgcool_label_text" : "These tools belonged to Mr Neo Kim Teah, who had worked as a coolie in Singapore from the 1950s to the 1970s. Part of his job was to unload sackfuls of rice from boats docked at the Singapore River, and to transport them to the godowns. Such tools were essential during this process. Mr Neo had arrived in Singapore as a young child in the late 1930s and he had stayed in the Sungei Kadut area.", "preference" : "main", "title_text" : "Tools used for picking up rice sacks", "creation_date" : "1950s-1970s", "subject_terms_1" : "tools hooks (object genres) implements (object genre)", "accession_no_csv" : "2016-00583", "shape" : "L-shaped", "creation_place_original_location" : "Singapore", "subject_terms_2" : "Tools Hooks", "techniques_name" : "forming (physical activity) metalworking"}
+{
+  "materials_name": "plastic (organic material) metal",
+  "object_work_type": "hand tools",
+  "object_colour": "multicoloured",
+  "physical_appearance": "A set of four hand tools are displayed in the image. Two of them are long while the other two are short. The long pair of hand tools contains a wooden L-shaped handle, while the short pair contains a wooden curved handle. On one of the short pair of hand tools, there is a hfinger-sized hole in its handle. All four hand tools have a metal shaft that curves inwards to form hooks.",
+  "sgcool_label_text": "These tools belonged to Mr Neo Kim Teah, who had worked as a coolie in Singapore from the 1950s to the 1970s. Part of his job was to unload sackfuls of rice from boats docked at the Singapore River, and to transport them to the godowns. Such tools were essential during this process. Mr Neo had arrived in Singapore as a young child in the late 1930s and he had stayed in the Sungei Kadut area.",
+  "preference": "main",
+  "title_text": "Tools used for picking up rice sacks",
+  "creation_date": "1950s-1970s",
+  "subject_terms_1": "tools hooks (object genres) implements (object genre)",
+  "accession_no_csv": "2016-00583",
+  "shape": "L-shaped",
+  "creation_place_original_location": "Singapore",
+  "subject_terms_2": "Tools Hooks",
+  "techniques_name": "forming (physical activity) metalworking"
+}
