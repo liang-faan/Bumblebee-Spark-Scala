@@ -7,7 +7,7 @@ import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.functions.{col, udf}
 import org.apache.spark.ml.feature.{CountVectorizer, RegexTokenizer, StopWordsRemover, StringIndexer}
 
-object AnalysisCsv {
+object CountryModelTraining {
   def locationClassification(df: DataFrame): DataFrame = {
 
     /**
