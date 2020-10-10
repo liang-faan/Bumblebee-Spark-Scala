@@ -28,7 +28,7 @@ object Csv2Json {
     val df = readingCSVfile(session, input)
     val outputDf = processCSVFile(df)
 //    transformCSVJson(outputDf, output)
-    CountryModelTraining.locationClassification(outputDf);
+    CountryModelTraining.locationClassification(session, outputDf);
 
   }
 
