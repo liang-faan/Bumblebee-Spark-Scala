@@ -1,18 +1,1 @@
-{
-  "subject_terms_3": "Photography",
-  "materials_name": "paper (fiber product)",
-  "creator_2": "Not indicated",
-  "object_work_type": "black-and-white photographs photographs",
-  "object_colour": "grey monochrome",
-  "physical_appearance": "The image shows a black-and-white photograph. It is rectangular and it features a planked walkway with rows of stores on either sides. There are numerous signboards at the top of these stores, and all of them display Chinese characters. At the bottom left hand side of the photograph, two men can be seen. One of the is leaning on a door while the other is turning his head towards the direction where the photograph was captured.",
-  "sgcool_label_text": "Not indicated",
-  "preference": "main",
-  "title_text": "Photo of Canton",
-  "creation_date": "Not indicated",
-  "subject_terms_1": "stores",
-  "accession_no_csv": "2014-00202",
-  "shape": "rectangular",
-  "creation_place_original_location": "China",
-  "subject_terms_2": "Black-and-white photography Stores, Retail Guangzhou (China)",
-  "techniques_name": "printing (process) photographic processes"
-}
+{"id":"2014-00202","title":"Photo of Canton","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2014-00202\nImage:\nobject_work_type:black-and-white photographs photographs\ntitle_text:Photo of Canton\npreference:main\ntitle_language:\ncreator_2:Not indicated\ncreation_date:Not indicated\ncreation_place_original_location:China\ninscriptions:\ninscription_language:\nshape:rectangular\nmaterials_name:paper (fiber product)\ntechniques_name:printing (process) photographic processes\nobject_colour:grey monochrome\nphysical_appearance:The image shows a black-and-white photograph. It is rectangular and it features a planked walkway with rows of stores on either sides. There are numerous signboards at the top of these stores\n and all of them display Chinese characters. At the bottom left hand side of the photograph\n two men can be seen. One of the is leaning on a door while the other is turning his head towards the direction where the photograph was captured.\nsubject_terms_1:stores\nsubject_terms_2:Black-and-white photography Stores\n Retail Guangzhou (China)\nsubject_terms_3:Photography\nsgcool_label_text:Not indicated","createdDate":"20201018182635","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2014-00202","Image":"","object_work_type":"black-and-white photographs photographs","title_text":"Photo of Canton","preference":"main","title_language":"","creator_2":"Not indicated","creation_date":"Not indicated","creation_place_original_location":"China","inscriptions":"","inscription_language":"","shape":"rectangular","materials_name":"paper (fiber product)","techniques_name":"printing (process) photographic processes","object_colour":"grey monochrome","physical_appearance":"The image shows a black-and-white photograph. It is rectangular and it features a planked walkway with rows of stores on either sides. There are numerous signboards at the top of these stores, and all of them display Chinese characters. At the bottom left hand side of the photograph, two men can be seen. One of the is leaning on a door while the other is turning his head towards the direction where the photograph was captured.","subject_terms_1":"stores","subject_terms_2":"Black-and-white photography Stores, Retail Guangzhou (China)","subject_terms_3":"Photography","sgcool_label_text":"Not indicated"},"nlpDate":"20201018182635","connectorId":0,"tags":{}}

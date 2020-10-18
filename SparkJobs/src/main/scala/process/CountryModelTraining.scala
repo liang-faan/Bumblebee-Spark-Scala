@@ -1,14 +1,17 @@
 package process
 
 import org.apache.spark.ml.Pipeline
-import org.apache.spark.ml.classification.LogisticRegression
+import org.apache.spark.ml.classification.{LogisticRegression, MultilayerPerceptronClassifier}
 import org.apache.spark.ml.evaluation.MulticlassClassificationEvaluator
 import org.apache.spark.sql.{DataFrame, SparkSession}
-import org.apache.spark.sql.functions.{col, explode, split, udf}
-import org.apache.spark.ml.feature.{CountVectorizer, RegexTokenizer, StopWordsRemover, StringIndexer}
+import org.apache.spark.sql.functions.{col, explode, lower, split, udf}
+import org.apache.spark.ml.feature.{CountVectorizer, IndexToString, RegexTokenizer, StopWordsRemover, StringIndexer, Word2Vec}
 import org.apache.spark.sql.types.{StringType, StructField, StructType}
 
 object CountryModelTraining {
+
+  final val VECTOR_SIZE = 100;
+
   def locationClassification(session: SparkSession, df: DataFrame): DataFrame = {
 
     /**
@@ -52,87 +55,126 @@ object CountryModelTraining {
     /**
      * count by location, but the location some has multiple words
      */
-        dfLocation.groupBy(col("creation_place_original_location"))
-          .count()
-          .orderBy(col("count").desc)
-          .show(50);
+    dfLocation.groupBy(col("creation_place_original_location"))
+      .count()
+      .orderBy(col("count").desc)
+      .show(50);
     /**
      * Join Countries List
      */
 
-   val labeledCountryDfLocation = dfLocation.join(countriesList, col("creation_place_original_location").contains(col("countryName")));
-
-    labeledCountryDfLocation.show(100)
+    val labeledCountryDfLocation = dfLocation.join(countriesList, col("creation_place_original_location")
+      .contains(col("countryName")));
 
     /**
      * Spark pipeline analyze
      */
 
+    /**
+     * convert creation_place_original_location into locationText array.
+     */
     val regexTokenizer = new RegexTokenizer();
     regexTokenizer.setInputCol("creation_place_original_location");
-    regexTokenizer.setOutputCol("location");
-    regexTokenizer.+("\\w+");
-
+    regexTokenizer.setOutputCol("locationText");
+    regexTokenizer.setPattern("\\W") //text to be predict
+    //    regexTokenizer.+("\\w+");
     /**
      * default set to true and all token become lower case
      */
-    regexTokenizer.setToLowercase(false);
+    regexTokenizer.setToLowercase(true);
 
-    val tokenized = regexTokenizer.transform(dfLocation);
-    val countTokens = udf { (words: Seq[String]) => words.length }
-    tokenized.select("*")
-      .withColumn("tokens", countTokens(col("location")))
-      .filter(col("tokens").equalTo(1))
-      .show(false);
+    //    val tokenized = regexTokenizer.transform(labeledCountryDfLocation);
+    //    tokenized.show(100)
 
-    val add_stopwords = Array("not", "indicated", "great", "rt", "t", "c", "the")
+    /**
+     * display tokens before predict
+     */
+    //    val countTokens = udf { (words: Seq[String]) => words.length }
+    //    tokenized.select("*")
+    //      .withColumn("tokens", countTokens(col("locationText")))
+    //      .filter(col("tokens").equalTo(1))
+    //      .show(false);
+
+    val add_stopwords = Array("not", "indicated", "are", "is", "at", "the", "created", "by")
     val stopwordsRemover = new StopWordsRemover();
     stopwordsRemover.setStopWords(add_stopwords);
-    stopwordsRemover.setInputCol("location").setOutputCol("filtered_location");
+    stopwordsRemover.setInputCol("locationText").setOutputCol("filteredLocationText"); //filtered text
 
-    val countVectorizer = new CountVectorizer();
-    countVectorizer.setInputCol("filtered_location")
-      .setOutputCol("features")
-      .setVocabSize(10000)
-      .setMinDF(5);
+    /**
+     * configure labels
+     */
+    val stringIndex = new StringIndexer()
+      .setInputCol("countryName")
+      .setOutputCol("countryLabel")
+      .fit(labeledCountryDfLocation);
 
-    val stringIndex = new StringIndexer();
-    stringIndex.setInputCol("creation_place_original_location").setOutputCol("label");
+    println("stringIndex.labels.size {}", stringIndex.labels.size);
+
+    stringIndex.labels.foreach {
+      str =>
+        println(str)
+    }
+
+    /**
+     * Create word vectors
+     */
+    val word2Vec = new Word2Vec().setInputCol("filteredLocationText").setOutputCol("features").setVectorSize(VECTOR_SIZE).setMinCount(1)
+
+    val layers = Array[Int](VECTOR_SIZE, 6, 5, stringIndex.labels.size);
+    val mlpc = new MultilayerPerceptronClassifier()
+      .setLayers(layers)
+      .setBlockSize(512)
+      .setSeed(1234L)
+      .setMaxIter(128)
+      .setFeaturesCol("features")
+      .setLabelCol("countryLabel")
+      .setPredictionCol("prediction");
+
+    /**
+     * prediction labels
+     */
+
+    val labelConverter = new IndexToString()
+      .setInputCol("prediction")
+      .setOutputCol("predictionLabel")
+      .setLabels(stringIndex.labels);
 
     /**
      * based on Spark pipeline to extract the data
      */
 
+
     val pipeline = new Pipeline();
-    pipeline.setStages(Array(regexTokenizer, stopwordsRemover, countVectorizer, stringIndex));
-
-    val pipelinefit = pipeline.fit(dfLocation);
-
-    val dataset = pipelinefit.transform(dfLocation);
-    dataset.show(20);
+    pipeline.setStages(Array(stringIndex, regexTokenizer, stopwordsRemover, word2Vec, mlpc, labelConverter));
 
     /**
      * random split the data
      */
 
-    val Array(trainingData, testData) = dataset.randomSplit(Array(0.7, 0.3), 100);
-
+    val Array(trainingData, testData) = labeledCountryDfLocation.randomSplit(Array(0.8, 0.2), 112);
     println(trainingData.count());
     println(testData.count());
 
 
+    val pipelinefit = pipeline.fit(trainingData);
+
+    pipelinefit.save("");// => input text -> API input json -> model -> come out recommand
+    /**
+     * evaluate the result
+     */
+
+    val dataset = pipelinefit.transform(testData);
+    dataset.show(20);
+
+    val evaluator = new MulticlassClassificationEvaluator().setLabelCol("countryLabel").setPredictionCol("prediction").setMetricName("accuracy")
+    val predictionAccuracy = evaluator.evaluate(dataset);
+    println("Testing Accuracy is %2.4f".format(predictionAccuracy * 100) + "%")
+
     /**
      * Model Training and Evaluation
      */
-
-    val logicRegression = new LogisticRegression().setMaxIter(20).setRegParam(0.3).setElasticNetParam(0);
-    val lrModel = logicRegression.fit(trainingData);
-    val prediction = lrModel.transform(testData);
-    prediction.show();
-
-    val evaluator = new MulticlassClassificationEvaluator().setPredictionCol("prediction");
-    println(evaluator.evaluate(prediction));
-
-    return dataset;
+    val resultTransfer= pipelinefit.transform(dfLocation);
+    resultTransfer.show(50)
+    return resultTransfer;
   }
 }

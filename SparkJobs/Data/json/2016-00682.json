@@ -1,17 +1,1 @@
-{
-  "materials_name": "cord (fiber product)",
-  "object_work_type": "pouches",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is an octagonal shaped pouch. It is knitted from tough cord. The pouch has a green strap. It opens by a flap at the top. The edges are bordered by red, white and pink knitted cord.",
-  "sgcool_label_text": "This octagonal shaped pouch is knitted from a tough purple cord. The pouch is attached with a green strap and comprises of 2 pockets. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.",
-  "preference": "alternate main",
-  "title_text": "Pouch Knitted Cord Pouch",
-  "creation_date": "20th century",
-  "subject_terms_1": "purses (ladies' accessories) Peranakan",
-  "styles_periods_indexing_terms": "Peranakan",
-  "accession_no_csv": "2016-00682",
-  "shape": "octagonal",
-  "creation_place_original_location": "Straits Settlements Singapore",
-  "subject_terms_2": "Pouches (Containers) Handbags Peranakan (Asian people)",
-  "techniques_name": "knitting (process)"
-}
+{"id":"2016-00682","title":"Pouch Knitted Cord Pouch","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00682\nImage:\nobject_work_type:pouches\ntitle_text:Pouch Knitted Cord Pouch\npreference:alternate main\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Straits Settlements Singapore\nstyles_periods_indexing_terms:Peranakan\ninscriptions:\ninscription_language:\nshape:octagonal\nmaterials_name:cord (fiber product)\ntechniques_name:knitting (process)\nobject_colour:multicolored\nphysical_appearance:This is an octagonal shaped pouch. It is knitted from tough cord. The pouch has a green strap. It opens by a flap at the top. The edges are bordered by red\n white and pink knitted cord.\nsubject_terms_1:purses (ladies\\u0027 accessories) Peranakan\nsubject_terms_2:Pouches (Containers) Handbags Peranakan (Asian people)\nsubject_terms_3:\nsgcool_label_text:This octagonal shaped pouch is knitted from a tough purple cord. The pouch is attached with a green strap and comprises of 2 pockets. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.","createdDate":"20201018182635","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00682","Image":"","object_work_type":"pouches","title_text":"Pouch Knitted Cord Pouch","preference":"alternate main","title_language":"","creation_date":"20th century","creation_place_original_location":"Straits Settlements Singapore","styles_periods_indexing_terms":"Peranakan","inscriptions":"","inscription_language":"","shape":"octagonal","materials_name":"cord (fiber product)","techniques_name":"knitting (process)","object_colour":"multicolored","physical_appearance":"This is an octagonal shaped pouch. It is knitted from tough cord. The pouch has a green strap. It opens by a flap at the top. The edges are bordered by red, white and pink knitted cord.","subject_terms_1":"purses (ladies\u0027 accessories) Peranakan","subject_terms_2":"Pouches (Containers) Handbags Peranakan (Asian people)","subject_terms_3":"","sgcool_label_text":"This octagonal shaped pouch is knitted from a tough purple cord. The pouch is attached with a green strap and comprises of 2 pockets. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."},"nlpDate":"20201018182635","connectorId":0,"tags":{}}

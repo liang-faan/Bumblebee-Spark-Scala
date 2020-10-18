@@ -1,18 +1,1 @@
-{
-  "subject_terms_3": "Geographical areas and countries",
-  "materials_name": "paper (fiber product)",
-  "object_work_type": "maps (documents)",
-  "object_colour": "multicoloured",
-  "physical_appearance": "This is a World War II map of Southeast Asia and Northern Australia. It is an overview of the Southern Co-Prosperity Sphere. It was issued by the Japanese Intelligency agency.",
-  "sgcool_label_text": "This map provides an overview of the Southern Co-Prosperity Sphere, of northern Australia and Southeast Asia. Issued by the Japanese intelligence agency, there is also an inset map in the lower left corner that depicts Australia and Southeast Asia in the larger region.",
-  "preference": "main",
-  "title_text": "WWII Japanese Map of Southeast Asia and Northern Australia",
-  "creation_date": "1942",
-  "subject_terms_1": "cartography (discipline)",
-  "accession_no_csv": "2017-00846",
-  "shape": "Rectangular",
-  "creation_place_original_location": "Japan",
-  "subject_terms_2": "Maps  Greater East Asia Co-prosperity Sphere  Southeast Asia  Australia, Northern  World War, 1939-1945 Cartography",
-  "techniques_name": "mapmaking (process)",
-  "scale_type": "0:500km"
-}
+{"id":"2017-00846","title":"WWII Japanese Map of Southeast Asia and Northern Australia","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00846\nImage:\nobject_work_type:maps (documents)\ntitle_text:WWII Japanese Map of Southeast Asia and Northern Australia\npreference:main\ntitle_language:\ncreation_date:1942\ncreation_place_original_location:Japan\ninscriptions:\ninscription_language:\nscale_type:0:500km\nshape:Rectangular\nmaterials_name:paper (fiber product)\ntechniques_name:mapmaking (process)\nobject_colour:multicoloured\nphysical_appearance:This is a World War II map of Southeast Asia and Northern Australia. It is an overview of the Southern Co-Prosperity Sphere. It was issued by the Japanese Intelligency agency.\nsubject_terms_1:cartography (discipline)\nsubject_terms_2:Maps  Greater East Asia Co-prosperity Sphere  Southeast Asia  Australia\n Northern  World War\n 1939-1945 Cartography\nsubject_terms_3:Geographical areas and countries\nsgcool_label_text:This map provides an overview of the Southern Co-Prosperity Sphere\n of northern Australia and Southeast Asia. Issued by the Japanese intelligence agency\n there is also an inset map in the lower left corner that depicts Australia and Southeast Asia in the larger region.","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00846","Image":"","object_work_type":"maps (documents)","title_text":"WWII Japanese Map of Southeast Asia and Northern Australia","preference":"main","title_language":"","creation_date":"1942","creation_place_original_location":"Japan","inscriptions":"","inscription_language":"","scale_type":"0:500km","shape":"Rectangular","materials_name":"paper (fiber product)","techniques_name":"mapmaking (process)","object_colour":"multicoloured","physical_appearance":"This is a World War II map of Southeast Asia and Northern Australia. It is an overview of the Southern Co-Prosperity Sphere. It was issued by the Japanese Intelligency agency.","subject_terms_1":"cartography (discipline)","subject_terms_2":"Maps  Greater East Asia Co-prosperity Sphere  Southeast Asia  Australia, Northern  World War, 1939-1945 Cartography","subject_terms_3":"Geographical areas and countries","sgcool_label_text":"This map provides an overview of the Southern Co-Prosperity Sphere, of northern Australia and Southeast Asia. Issued by the Japanese intelligence agency, there is also an inset map in the lower left corner that depicts Australia and Southeast Asia in the larger region."},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

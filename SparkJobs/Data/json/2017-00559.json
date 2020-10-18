@@ -1,17 +1,1 @@
-{
-  "subject_terms_3": "Decorative arts",
-  "materials_name": "metal",
-  "object_work_type": "seals (artifacts)",
-  "object_colour": "black (colour)",
-  "physical_appearance": "\"This is a metal seal whose base is inscribed with a stylised \"\"J\"\". \"",
-  "sgcool_label_text": "Not indicated",
-  "preference": "alternate main",
-  "title_text": "2 'Cap Mohor' (Business or brand seals) Seal With Circular Base",
-  "creation_date": "19th-20th century",
-  "subject_terms_1": "stamping (marking)  merchants  business (commercial function)",
-  "accession_no_csv": "2017-00559",
-  "shape": "circular (shape)",
-  "creation_place_original_location": "Straits Settlements",
-  "subject_terms_2": "Stamp seals  Business  Merchants  Straits Settlements",
-  "techniques_name": "inscribing"
-}
+{"id":"2017-00559","title":"2 \u0027Cap Mohor\u0027 (Business or brand seals) Seal With Circular Base","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00559\nImage:\nobject_work_type:seals (artifacts)\ntitle_text:2 \\u0027Cap Mohor\\u0027 (Business or brand seals) Seal With Circular Base\npreference:alternate main\ntitle_language:\ncreation_date:19th-20th century\ncreation_place_original_location:Straits Settlements\ninscriptions:\ninscription_language:\nshape:circular (shape)\nmaterials_name:metal\ntechniques_name:inscribing\nobject_colour:black (colour)\nphysical_appearance:\\This is a metal seal whose base is inscribed with a stylised \\\\J\\\\. \\\nsubject_terms_1:stamping (marking)  merchants  business (commercial function)\nsubject_terms_2:Stamp seals  Business  Merchants  Straits Settlements\nsubject_terms_3:Decorative arts\nsubject_terms_4:\nsgcool_label_text:Not indicated","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00559","Image":"","object_work_type":"seals (artifacts)","title_text":"2 \u0027Cap Mohor\u0027 (Business or brand seals) Seal With Circular Base","preference":"alternate main","title_language":"","creation_date":"19th-20th century","creation_place_original_location":"Straits Settlements","inscriptions":"","inscription_language":"","shape":"circular (shape)","materials_name":"metal","techniques_name":"inscribing","object_colour":"black (colour)","physical_appearance":"\"This is a metal seal whose base is inscribed with a stylised \"\"J\"\". \"","subject_terms_1":"stamping (marking)  merchants  business (commercial function)","subject_terms_2":"Stamp seals  Business  Merchants  Straits Settlements","subject_terms_3":"Decorative arts","subject_terms_4":"","sgcool_label_text":"Not indicated"},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

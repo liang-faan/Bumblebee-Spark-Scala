@@ -1,16 +1,1 @@
-{
-  "materials_name": "glass (material) (?)",
-  "creator_2": "Not indicated",
-  "object_work_type": "inkwells",
-  "object_colour": "light blue",
-  "physical_appearance": "The image displays an inkwell. It is made in the shape of an octagon and is light blue in colour. The inkwell has a top that is detachable and a circular hole on it.",
-  "sgcool_label_text": "Not indicated",
-  "preference": "main",
-  "title_text": "Inkwell",
-  "creation_date": "Not indicated",
-  "accession_no_csv": "2014-00209",
-  "shape": "octagonal",
-  "creation_place_original_location": "Singapore",
-  "subject_terms_2": "Inkwells",
-  "techniques_name": "forming (physical activity)"
-}
+{"id":"2014-00209","title":"Inkwell","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2014-00209\nImage:\nobject_work_type:inkwells\ntitle_text:Inkwell\npreference:main\ntitle_language:\ncreator_2:Not indicated\ncreation_date:Not indicated\ncreation_place_original_location:Singapore\ninscriptions:\ninscription_language:\nshape:octagonal\nmaterials_name:glass (material) (?)\ntechniques_name:forming (physical activity)\nobject_colour:light blue\nphysical_appearance:The image displays an inkwell. It is made in the shape of an octagon and is light blue in colour. The inkwell has a top that is detachable and a circular hole on it.\nsubject_terms_2:Inkwells\nsgcool_label_text:Not indicated","createdDate":"20201018182635","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2014-00209","Image":"","object_work_type":"inkwells","title_text":"Inkwell","preference":"main","title_language":"","creator_2":"Not indicated","creation_date":"Not indicated","creation_place_original_location":"Singapore","inscriptions":"","inscription_language":"","shape":"octagonal","materials_name":"glass (material) (?)","techniques_name":"forming (physical activity)","object_colour":"light blue","physical_appearance":"The image displays an inkwell. It is made in the shape of an octagon and is light blue in colour. The inkwell has a top that is detachable and a circular hole on it.","subject_terms_2":"Inkwells","sgcool_label_text":"Not indicated"},"nlpDate":"20201018182635","connectorId":0,"tags":{}}

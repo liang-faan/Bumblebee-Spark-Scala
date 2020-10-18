@@ -1,18 +1,1 @@
-{
-  "subject_terms_3": "Ceramics Chinese decorative arts",
-  "materials_name": "ceramic (material) ceramic glaze",
-  "object_work_type": "lamps (lighting devices) ceramic ware (visual works)",
-  "object_colour": "white (color) blue (color)",
-  "physical_appearance": "This lamp is composed of three circular ceramic plates, attached together by chains. Each plate is decorated with blue glaze, with a scrolling foliage pattern. The top plate has a large hook in the middle, while the other two plates have four smaller pegs attached on its body. The plates have slightly scallop-shaped edges.",
-  "preference": "alternate main",
-  "title_text": "Lamp Chinese ceramic lamp",
-  "creation_date": "19th century",
-  "subject_terms_1": "foliage (motif) leaf scrolls",
-  "styles_periods_indexing_terms": "Chinese ceramics style",
-  "accession_no_csv": "2016-00637",
-  "shape": "irregular",
-  "creation_place_original_location": "China",
-  "subject_terms_2": "Lamps Ceramics Motifs",
-  "Image": "(no family image, image is 2016-00637-001)",
-  "techniques_name": "firing (technique) pottery glazing (process or technique)"
-}
+{"id":"2016-00637","title":"Lamp Chinese ceramic lamp","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00637\nImage:(no family image\n image is 2016-00637-001)\nobject_work_type:lamps (lighting devices) ceramic ware (visual works)\ntitle_text:Lamp Chinese ceramic lamp\npreference:alternate main\ntitle_language:\ncreation_date:19th century\ncreation_place_original_location:China\nstyles_periods_indexing_terms:Chinese ceramics style\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:ceramic (material) ceramic glaze\ntechniques_name:firing (technique) pottery glazing (process or technique)\nobject_colour:white (color) blue (color)\nphysical_appearance:This lamp is composed of three circular ceramic plates\n attached together by chains. Each plate is decorated with blue glaze\n with a scrolling foliage pattern. The top plate has a large hook in the middle\n while the other two plates have four smaller pegs attached on its body. The plates have slightly scallop-shaped edges.\nsubject_terms_1:foliage (motif) leaf scrolls\nsubject_terms_2:Lamps Ceramics Motifs\nsubject_terms_3:Ceramics Chinese decorative arts","createdDate":"20201018182635","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00637","Image":"(no family image, image is 2016-00637-001)","object_work_type":"lamps (lighting devices) ceramic ware (visual works)","title_text":"Lamp Chinese ceramic lamp","preference":"alternate main","title_language":"","creation_date":"19th century","creation_place_original_location":"China","styles_periods_indexing_terms":"Chinese ceramics style","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"ceramic (material) ceramic glaze","techniques_name":"firing (technique) pottery glazing (process or technique)","object_colour":"white (color) blue (color)","physical_appearance":"This lamp is composed of three circular ceramic plates, attached together by chains. Each plate is decorated with blue glaze, with a scrolling foliage pattern. The top plate has a large hook in the middle, while the other two plates have four smaller pegs attached on its body. The plates have slightly scallop-shaped edges.","subject_terms_1":"foliage (motif) leaf scrolls","subject_terms_2":"Lamps Ceramics Motifs","subject_terms_3":"Ceramics Chinese decorative arts"},"nlpDate":"20201018182635","connectorId":0,"tags":{}}

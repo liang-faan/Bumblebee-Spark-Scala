@@ -1,16 +1,1 @@
-{
-  "subject_terms_3": "Decorative arts",
-  "materials_name": "glass (material) textile materials",
-  "object_work_type": "bags (costume accessories)",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is a bag with decorative beadwork embroidery. It is rectangular in shape, with two straps at the top. The border is lined with pink textile frills. The center of the bag features a stylized beaded design of a plant. It is surrounded by a geometric pattern.",
-  "preference": "alternate main",
-  "title_text": "Bag Beaded bag",
-  "creation_date": "20th century",
-  "subject_terms_1": "beadwork (visual works) embroidery (visual works) foliage (motif) geometric motifs",
-  "accession_no_csv": "2017-00659",
-  "shape": "irregular",
-  "creation_place_original_location": "Gujarat (India)",
-  "subject_terms_2": "Bags Embroidery Motifs",
-  "techniques_name": "sewing (needleworking technique) embroidering"
-}
+{"id":"2017-00659","title":"Bag Beaded bag","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00659\nImage:\nobject_work_type:bags (costume accessories)\ntitle_text:Bag Beaded bag\npreference:alternate main\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Gujarat (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:glass (material) textile materials\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:This is a bag with decorative beadwork embroidery. It is rectangular in shape\n with two straps at the top. The border is lined with pink textile frills. The center of the bag features a stylized beaded design of a plant. It is surrounded by a geometric pattern.\nsubject_terms_1:beadwork (visual works) embroidery (visual works) foliage (motif) geometric motifs\nsubject_terms_2:Bags Embroidery Motifs\nsubject_terms_3:Decorative arts\nsubject_terms_4:","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00659","Image":"","object_work_type":"bags (costume accessories)","title_text":"Bag Beaded bag","preference":"alternate main","title_language":"","creation_date":"20th century","creation_place_original_location":"Gujarat (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"glass (material) textile materials","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"This is a bag with decorative beadwork embroidery. It is rectangular in shape, with two straps at the top. The border is lined with pink textile frills. The center of the bag features a stylized beaded design of a plant. It is surrounded by a geometric pattern.","subject_terms_1":"beadwork (visual works) embroidery (visual works) foliage (motif) geometric motifs","subject_terms_2":"Bags Embroidery Motifs","subject_terms_3":"Decorative arts","subject_terms_4":""},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

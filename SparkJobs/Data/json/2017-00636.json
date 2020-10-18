@@ -1,16 +1,1 @@
-{
-  "subject_terms_3": "Textile art and design",
-  "materials_name": "glass (material) cotton (textile)",
-  "object_work_type": "hangings (coverings)",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is a chakla or a hanging textile. It features a cotton weave with embroidery work. The chakla is decorated with stylized depictions of two figures riding on elephants, with the Hindu god Ganesha in the center. On the bottom, there are five dangling panels, with stylized depictions of birds, flowers, and a human figure.",
-  "preference": "main alternate",
-  "title_text": "Hanging Chakla",
-  "creation_date": "20th century",
-  "subject_terms_1": "embroidery (visual works) flower (motif) birds (motifs) deities depictions (visual works) swastikas beadwork (visual works)",
-  "accession_no_csv": "2017-00636",
-  "shape": "irregular",
-  "creation_place_original_location": "Gujarat (India)",
-  "subject_terms_2": "Draperies Embroidery Motifs Ganesha (Hindu deity)",
-  "techniques_name": "sewing (needleworking technique) embroidering"
-}
+{"id":"2017-00636","title":"Hanging Chakla","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00636\nImage:\nobject_work_type:hangings (coverings)\ntitle_text:Hanging Chakla\npreference:main alternate\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Gujarat (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:glass (material) cotton (textile)\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:This is a chakla or a hanging textile. It features a cotton weave with embroidery work. The chakla is decorated with stylized depictions of two figures riding on elephants\n with the Hindu god Ganesha in the center. On the bottom\n there are five dangling panels\n with stylized depictions of birds\n flowers\n and a human figure.\nsubject_terms_1:embroidery (visual works) flower (motif) birds (motifs) deities depictions (visual works) swastikas beadwork (visual works)\nsubject_terms_2:Draperies Embroidery Motifs Ganesha (Hindu deity)\nsubject_terms_3:Textile art and design\nsubject_terms_4:","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00636","Image":"","object_work_type":"hangings (coverings)","title_text":"Hanging Chakla","preference":"main alternate","title_language":"","creation_date":"20th century","creation_place_original_location":"Gujarat (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"glass (material) cotton (textile)","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"This is a chakla or a hanging textile. It features a cotton weave with embroidery work. The chakla is decorated with stylized depictions of two figures riding on elephants, with the Hindu god Ganesha in the center. On the bottom, there are five dangling panels, with stylized depictions of birds, flowers, and a human figure.","subject_terms_1":"embroidery (visual works) flower (motif) birds (motifs) deities depictions (visual works) swastikas beadwork (visual works)","subject_terms_2":"Draperies Embroidery Motifs Ganesha (Hindu deity)","subject_terms_3":"Textile art and design","subject_terms_4":""},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

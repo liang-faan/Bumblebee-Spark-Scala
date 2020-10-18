@@ -1,18 +1,1 @@
-{
-  "subject_terms_3": "Indian costumes",
-  "materials_name": "silk (textile) brocade (textile)",
-  "object_work_type": "skirts (garments) womenswear",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is a red silk brocade skirt. It features a gold brocade pattern with leaf motifs, and a floral motif banel along the hem. It is a mid-length skirt.",
-  "sgcool_label_text": "Silk brocade skirt, or chania, worn by the Jain community of Kutch",
-  "preference": "main",
-  "title_language": "English",
-  "title_text": "Brocade skirt",
-  "creation_date": "20th century",
-  "subject_terms_1": "folk costume oak leaf (motif) flower (motif)",
-  "accession_no_csv": "2017-00603",
-  "shape": "irregular",
-  "creation_place_original_location": "Kachchh (India)",
-  "subject_terms_2": "Ethnic costume Skirts Motifs Brocade Jains",
-  "techniques_name": "sewing (needleworking technique) brocading"
-}
+{"id":"2017-00603","title":"Brocade skirt","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00603\nImage:\nobject_work_type:skirts (garments) womenswear\ntitle_text:Brocade skirt\npreference:main\ntitle_language:English\ncreation_date:20th century\ncreation_place_original_location:Kachchh (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:silk (textile) brocade (textile)\ntechniques_name:sewing (needleworking technique) brocading\nobject_colour:multicolored\nphysical_appearance:This is a red silk brocade skirt. It features a gold brocade pattern with leaf motifs\n and a floral motif banel along the hem. It is a mid-length skirt.\nsubject_terms_1:folk costume oak leaf (motif) flower (motif)\nsubject_terms_2:Ethnic costume Skirts Motifs Brocade Jains\nsubject_terms_3:Indian costumes\nsubject_terms_4:\nsgcool_label_text:Silk brocade skirt\n or chania\n worn by the Jain community of Kutch","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00603","Image":"","object_work_type":"skirts (garments) womenswear","title_text":"Brocade skirt","preference":"main","title_language":"English","creation_date":"20th century","creation_place_original_location":"Kachchh (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"silk (textile) brocade (textile)","techniques_name":"sewing (needleworking technique) brocading","object_colour":"multicolored","physical_appearance":"This is a red silk brocade skirt. It features a gold brocade pattern with leaf motifs, and a floral motif banel along the hem. It is a mid-length skirt.","subject_terms_1":"folk costume oak leaf (motif) flower (motif)","subject_terms_2":"Ethnic costume Skirts Motifs Brocade Jains","subject_terms_3":"Indian costumes","subject_terms_4":"","sgcool_label_text":"Silk brocade skirt, or chania, worn by the Jain community of Kutch"},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

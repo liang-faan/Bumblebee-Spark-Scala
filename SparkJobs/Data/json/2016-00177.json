@@ -1,16 +1,1 @@
-{
-  "materials_name": "cloth",
-  "object_work_type": "housecoats womenswear",
-  "object_colour": "brown colours",
-  "physical_appearance": "This is a batik housecoat that has medium length sleeves. It has varying shades of brown as its colours and there are patterns all over the costume. It contains two front pockets near the region of the hips and a vertically running zipper in place of buttons in front at the centre. A collar is present as well. There are no visible tears on the cheongsam.",
-  "sgcool_label_text": "This is a brown batik housecoat that was worn for less formal occasions. The housecoat has a zip at the front for easy wearing and has two front pockets.",
-  "preference": "main",
-  "title_text": "Brown batik housecoat",
-  "creation_date": "Not indicated",
-  "subject_terms_1": "dresses (garments) allover patterns",
-  "accession_no_csv": "2016-00177",
-  "shape": "irregular",
-  "creation_place_original_location": "Singapore",
-  "subject_terms_2": "Motifs Coats Women's clothing",
-  "techniques_name": "batik machine sewing (technique)"
-}
+{"id":"2016-00177","title":"Brown batik housecoat","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00177\nImage:\nobject_work_type:housecoats womenswear\ntitle_text:Brown batik housecoat\npreference:main\ntitle_language:\ncreation_date:Not indicated\ncreation_place_original_location:Singapore\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:cloth\ntechniques_name:batik machine sewing (technique)\nobject_colour:brown colours\nphysical_appearance:This is a batik housecoat that has medium length sleeves. It has varying shades of brown as its colours and there are patterns all over the costume. It contains two front pockets near the region of the hips and a vertically running zipper in place of buttons in front at the centre. A collar is present as well. There are no visible tears on the cheongsam.\nsubject_terms_1:dresses (garments) allover patterns\nsubject_terms_2:Motifs Coats Women\\u0027s clothing\nsgcool_label_text:This is a brown batik housecoat that was worn for less formal occasions. The housecoat has a zip at the front for easy wearing and has two front pockets.","createdDate":"20201018182635","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00177","Image":"","object_work_type":"housecoats womenswear","title_text":"Brown batik housecoat","preference":"main","title_language":"","creation_date":"Not indicated","creation_place_original_location":"Singapore","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"cloth","techniques_name":"batik machine sewing (technique)","object_colour":"brown colours","physical_appearance":"This is a batik housecoat that has medium length sleeves. It has varying shades of brown as its colours and there are patterns all over the costume. It contains two front pockets near the region of the hips and a vertically running zipper in place of buttons in front at the centre. A collar is present as well. There are no visible tears on the cheongsam.","subject_terms_1":"dresses (garments) allover patterns","subject_terms_2":"Motifs Coats Women\u0027s clothing","sgcool_label_text":"This is a brown batik housecoat that was worn for less formal occasions. The housecoat has a zip at the front for easy wearing and has two front pockets."},"nlpDate":"20201018182635","connectorId":0,"tags":{}}

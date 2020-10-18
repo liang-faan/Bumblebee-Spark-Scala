@@ -1,16 +1,1 @@
-{
-  "subject_terms_3": "Textile art and design",
-  "materials_name": "glass (material) textile materials",
-  "object_work_type": "coverings for soft furnishings",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is a cushion cover. It is square in shape, featuring a multicolored geometric scroling border and a cotton weave in the center. The front features a stylized embroidery of birds perched on a tree, with small flowers surrounding it.",
-  "preference": "main",
-  "title_text": "Cushion cover",
-  "creation_date": "20th century",
-  "subject_terms_1": "embroidery (visual works) foliage (motif) flower (motif) birds (motifs) beadwork (visual works) cushions",
-  "accession_no_csv": "2017-00651",
-  "shape": "square (shape)",
-  "creation_place_original_location": "Gujarat (India)",
-  "subject_terms_2": "Pillowcases Embroidery Motifs Cushions",
-  "techniques_name": "sewing (needleworking technique) embroidering"
-}
+{"id":"2017-00651","title":"Cushion cover","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00651\nImage:\nobject_work_type:coverings for soft furnishings\ntitle_text:Cushion cover\npreference:main\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Gujarat (India)\ninscriptions:\ninscription_language:\nshape:square (shape)\nmaterials_name:glass (material) textile materials\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:This is a cushion cover. It is square in shape\n featuring a multicolored geometric scroling border and a cotton weave in the center. The front features a stylized embroidery of birds perched on a tree\n with small flowers surrounding it.\nsubject_terms_1:embroidery (visual works) foliage (motif) flower (motif) birds (motifs) beadwork (visual works) cushions\nsubject_terms_2:Pillowcases Embroidery Motifs Cushions\nsubject_terms_3:Textile art and design\nsubject_terms_4:","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00651","Image":"","object_work_type":"coverings for soft furnishings","title_text":"Cushion cover","preference":"main","title_language":"","creation_date":"20th century","creation_place_original_location":"Gujarat (India)","inscriptions":"","inscription_language":"","shape":"square (shape)","materials_name":"glass (material) textile materials","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"This is a cushion cover. It is square in shape, featuring a multicolored geometric scroling border and a cotton weave in the center. The front features a stylized embroidery of birds perched on a tree, with small flowers surrounding it.","subject_terms_1":"embroidery (visual works) foliage (motif) flower (motif) birds (motifs) beadwork (visual works) cushions","subject_terms_2":"Pillowcases Embroidery Motifs Cushions","subject_terms_3":"Textile art and design","subject_terms_4":""},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

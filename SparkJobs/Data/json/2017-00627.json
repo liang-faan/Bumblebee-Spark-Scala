@@ -1,17 +1,1 @@
-{
-  "subject_terms_3": "Textile art and design",
-  "materials_name": "glass (material) cotton (textile)",
-  "object_work_type": "hangings (coverings)",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is a pair of doorway hangings. It is 'L'-shaped, with small fabric hooks along the border. Each hanging consist of several panels, with stylised figures of flowers, animals, and human beings. There are sewn-on inscriptions at the bottom of each hanging.",
-  "preference": "main alternate",
-  "title_language": "English",
-  "title_text": "Doorway hanging Todaliya",
-  "creation_date": "20th century",
-  "subject_terms_1": "embroidery (visual works) flower (motif) depictions (visual works) beadwork (visual works)",
-  "accession_no_csv": "2017-00627",
-  "shape": "irregular",
-  "creation_place_original_location": "Gujarat (India)",
-  "subject_terms_2": "Draperies Embroidery Motifs",
-  "techniques_name": "sewing (needleworking technique) embroidering"
-}
+{"id":"2017-00627","title":"Doorway hanging Todaliya","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00627\nImage:\nobject_work_type:hangings (coverings)\ntitle_text:Doorway hanging Todaliya\npreference:main alternate\ntitle_language:English\ncreation_date:20th century\ncreation_place_original_location:Gujarat (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:glass (material) cotton (textile)\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:This is a pair of doorway hangings. It is \\u0027L\\u0027-shaped\n with small fabric hooks along the border. Each hanging consist of several panels\n with stylised figures of flowers\n animals\n and human beings. There are sewn-on inscriptions at the bottom of each hanging.\nsubject_terms_1:embroidery (visual works) flower (motif) depictions (visual works) beadwork (visual works)\nsubject_terms_2:Draperies Embroidery Motifs\nsubject_terms_3:Textile art and design\nsubject_terms_4:","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00627","Image":"","object_work_type":"hangings (coverings)","title_text":"Doorway hanging Todaliya","preference":"main alternate","title_language":"English","creation_date":"20th century","creation_place_original_location":"Gujarat (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"glass (material) cotton (textile)","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"This is a pair of doorway hangings. It is \u0027L\u0027-shaped, with small fabric hooks along the border. Each hanging consist of several panels, with stylised figures of flowers, animals, and human beings. There are sewn-on inscriptions at the bottom of each hanging.","subject_terms_1":"embroidery (visual works) flower (motif) depictions (visual works) beadwork (visual works)","subject_terms_2":"Draperies Embroidery Motifs","subject_terms_3":"Textile art and design","subject_terms_4":""},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

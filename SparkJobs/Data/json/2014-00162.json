@@ -1,16 +1,1 @@
-{
-  "materials_name": "metal",
-  "creator_2": "Not indicated",
-  "object_work_type": "condiment vessels holders (containers)",
-  "object_colour": "grey (colour)",
-  "physical_appearance": "\"The image shows a condiment holder. It has four circular slots and a ringed handle. It is grey in colour. Spherical stands at its base support the entire structure of the condiment. \"\"Strand Hotel Rangoon\"\" is engraved on the surface at the front. \"",
-  "sgcool_label_text": "Not indicated",
-  "preference": "main",
-  "title_text": "Condiment Holder",
-  "creation_date": "Not indicated",
-  "subject_terms_1": "kitchenware utensils",
-  "accession_no_csv": "2014-00162",
-  "creation_place_original_location": "Singapore",
-  "subject_terms_2": "Kitchen utensils Implements, utensils, etc. Containers Strand Hotel (Rangoon, Burma)",
-  "techniques_name": "metalworking"
-}
+{"id":"2014-00162","title":"Condiment Holder","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2014-00162\nImage:\nobject_work_type:condiment vessels holders (containers)\ntitle_text:Condiment Holder\npreference:main\ntitle_language:\ncreator_2:Not indicated\ncreation_date:Not indicated\ncreation_place_original_location:Singapore\ninscriptions:\ninscription_language:\nmaterials_name:metal\ntechniques_name:metalworking\nobject_colour:grey (colour)\nphysical_appearance:\\The image shows a condiment holder. It has four circular slots and a ringed handle. It is grey in colour. Spherical stands at its base support the entire structure of the condiment. \\\\Strand Hotel Rangoon\\\\ is engraved on the surface at the front. \\\nsubject_terms_1:kitchenware utensils\nsubject_terms_2:Kitchen utensils Implements\n utensils\n etc. Containers Strand Hotel (Rangoon\n Burma)\nsgcool_label_text:Not indicated","createdDate":"20201018182635","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2014-00162","Image":"","object_work_type":"condiment vessels holders (containers)","title_text":"Condiment Holder","preference":"main","title_language":"","creator_2":"Not indicated","creation_date":"Not indicated","creation_place_original_location":"Singapore","inscriptions":"","inscription_language":"","materials_name":"metal","techniques_name":"metalworking","object_colour":"grey (colour)","physical_appearance":"\"The image shows a condiment holder. It has four circular slots and a ringed handle. It is grey in colour. Spherical stands at its base support the entire structure of the condiment. \"\"Strand Hotel Rangoon\"\" is engraved on the surface at the front. \"","subject_terms_1":"kitchenware utensils","subject_terms_2":"Kitchen utensils Implements, utensils, etc. Containers Strand Hotel (Rangoon, Burma)","sgcool_label_text":"Not indicated"},"nlpDate":"20201018182635","connectorId":0,"tags":{}}

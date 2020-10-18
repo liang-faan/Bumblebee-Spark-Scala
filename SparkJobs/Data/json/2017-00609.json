@@ -1,17 +1,1 @@
-{
-  "subject_terms_3": "Indian costumes",
-  "materials_name": "silk (textile) silver thread",
-  "object_work_type": "trousers womenswear",
-  "object_colour": "silver (color)",
-  "physical_appearance": "This is a pair of silk trousers. It is silver in colour, with dense gold embroided floral and foliage along the bottom. The trousers are mid-length.",
-  "sgcool_label_text": "Women's trousers worn by the Halai Memon community of Kutch. Manufactured in North India",
-  "preference": "alternate main",
-  "title_text": "Trousers White silk trousers",
-  "creation_date": "20th century",
-  "subject_terms_1": "folk costume flower (motif) foliage (motif)",
-  "accession_no_csv": "2017-00609",
-  "shape": "irregular",
-  "creation_place_original_location": "Kachchh (India)",
-  "subject_terms_2": "Ethnic costume Pants Motifs Memons",
-  "techniques_name": "sewing (needleworking technique)"
-}
+{"id":"2017-00609","title":"Trousers White silk trousers","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00609\nImage:\nobject_work_type:trousers womenswear\ntitle_text:Trousers White silk trousers\npreference:alternate main\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Kachchh (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:silk (textile) silver thread\ntechniques_name:sewing (needleworking technique)\nobject_colour:silver (color)\nphysical_appearance:This is a pair of silk trousers. It is silver in colour\n with dense gold embroided floral and foliage along the bottom. The trousers are mid-length.\nsubject_terms_1:folk costume flower (motif) foliage (motif)\nsubject_terms_2:Ethnic costume Pants Motifs Memons\nsubject_terms_3:Indian costumes\nsubject_terms_4:\nsgcool_label_text:Women\\u0027s trousers worn by the Halai Memon community of Kutch. Manufactured in North India","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00609","Image":"","object_work_type":"trousers womenswear","title_text":"Trousers White silk trousers","preference":"alternate main","title_language":"","creation_date":"20th century","creation_place_original_location":"Kachchh (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"silk (textile) silver thread","techniques_name":"sewing (needleworking technique)","object_colour":"silver (color)","physical_appearance":"This is a pair of silk trousers. It is silver in colour, with dense gold embroided floral and foliage along the bottom. The trousers are mid-length.","subject_terms_1":"folk costume flower (motif) foliage (motif)","subject_terms_2":"Ethnic costume Pants Motifs Memons","subject_terms_3":"Indian costumes","subject_terms_4":"","sgcool_label_text":"Women\u0027s trousers worn by the Halai Memon community of Kutch. Manufactured in North India"},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

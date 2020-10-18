@@ -1,18 +1,1 @@
-{
-  "subject_terms_3": "Textile art and design Indian costumes",
-  "materials_name": "silk (textile) cotton (textile)",
-  "object_work_type": "textiles (visual works)",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is a long piece of cloth used as a turban. It features a horizontal striped design, with diamond scrolls presented in multiple colours. The ends of the cloth on the right are left unhemmed and frayed. The left end of the cloth is laid out, while the rest of the length of the fabric is collected on the right.",
-  "sgcool_label_text": "Handwoven turban cloth, used by the Meghwal, Ahir or Rabari communities of Gujarat and Rajasthan",
-  "preference": "main",
-  "title_language": "English",
-  "title_text": "Turban cloth",
-  "creation_date": "20th century",
-  "subject_terms_1": "lozenges turbans folk costume cloth",
-  "accession_no_csv": "2017-00606",
-  "shape": "rectangular",
-  "creation_place_original_location": "Kachchh (India)",
-  "subject_terms_2": "Textile fabrics Motifs Turbans Ethnic costume Rabaris Dhangar (South Asian people)",
-  "techniques_name": "sewing (needleworking technique)"
-}
+{"id":"2017-00606","title":"Turban cloth","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00606\nImage:\nobject_work_type:textiles (visual works)\ntitle_text:Turban cloth\npreference:main\ntitle_language:English\ncreation_date:20th century\ncreation_place_original_location:Kachchh (India)\ninscriptions:\ninscription_language:\nshape:rectangular\nmaterials_name:silk (textile) cotton (textile)\ntechniques_name:sewing (needleworking technique)\nobject_colour:multicolored\nphysical_appearance:This is a long piece of cloth used as a turban. It features a horizontal striped design\n with diamond scrolls presented in multiple colours. The ends of the cloth on the right are left unhemmed and frayed. The left end of the cloth is laid out\n while the rest of the length of the fabric is collected on the right.\nsubject_terms_1:lozenges turbans folk costume cloth\nsubject_terms_2:Textile fabrics Motifs Turbans Ethnic costume Rabaris Dhangar (South Asian people)\nsubject_terms_3:Textile art and design Indian costumes\nsubject_terms_4:\nsgcool_label_text:Handwoven turban cloth\n used by the Meghwal\n Ahir or Rabari communities of Gujarat and Rajasthan","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00606","Image":"","object_work_type":"textiles (visual works)","title_text":"Turban cloth","preference":"main","title_language":"English","creation_date":"20th century","creation_place_original_location":"Kachchh (India)","inscriptions":"","inscription_language":"","shape":"rectangular","materials_name":"silk (textile) cotton (textile)","techniques_name":"sewing (needleworking technique)","object_colour":"multicolored","physical_appearance":"This is a long piece of cloth used as a turban. It features a horizontal striped design, with diamond scrolls presented in multiple colours. The ends of the cloth on the right are left unhemmed and frayed. The left end of the cloth is laid out, while the rest of the length of the fabric is collected on the right.","subject_terms_1":"lozenges turbans folk costume cloth","subject_terms_2":"Textile fabrics Motifs Turbans Ethnic costume Rabaris Dhangar (South Asian people)","subject_terms_3":"Textile art and design Indian costumes","subject_terms_4":"","sgcool_label_text":"Handwoven turban cloth, used by the Meghwal, Ahir or Rabari communities of Gujarat and Rajasthan"},"nlpDate":"20201018182636","connectorId":0,"tags":{}}

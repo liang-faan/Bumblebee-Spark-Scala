@@ -1,18 +1,1 @@
-{
-  "subject_terms_3": "Indian costumes",
-  "materials_name": "cotton (textile) silk (textile)",
-  "object_work_type": "cholis womenswear",
-  "object_colour": "multicolored",
-  "physical_appearance": "This is an embroidered choli. It features a dense embroided design along the lower half of the garment, with geometric patterns. The sleeves feature a gold brocade panel.",
-  "sgcool_label_text": "A blouse from the Dhebaria Rebari community of Kutch, Gujarat",
-  "preference": "main alternate",
-  "title_language": "English",
-  "title_text": "Embroidered Blouse Choli",
-  "creation_date": "20th century",
-  "subject_terms_1": "folk costume embroidery (visual works) geometric motifs blouses (main garments) tops (garments, general)",
-  "accession_no_csv": "2017-00599",
-  "shape": "irregular",
-  "creation_place_original_location": "Kachchh (India)",
-  "subject_terms_2": "Ethnic costume Blouses Embroidery Brocade Motifs Rabaris",
-  "techniques_name": "sewing (needleworking technique) embroidering"
-}
+{"id":"2017-00599","title":"Embroidered Blouse Choli","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00599\nImage:\nobject_work_type:cholis womenswear\ntitle_text:Embroidered Blouse Choli\npreference:main alternate\ntitle_language:English\ncreation_date:20th century\ncreation_place_original_location:Kachchh (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:cotton (textile) silk (textile)\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:This is an embroidered choli. It features a dense embroided design along the lower half of the garment\n with geometric patterns. The sleeves feature a gold brocade panel.\nsubject_terms_1:folk costume embroidery (visual works) geometric motifs blouses (main garments) tops (garments\n general)\nsubject_terms_2:Ethnic costume Blouses Embroidery Brocade Motifs Rabaris\nsubject_terms_3:Indian costumes\nsubject_terms_4:\nsgcool_label_text:A blouse from the Dhebaria Rebari community of Kutch\n Gujarat","createdDate":"20201018182636","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00599","Image":"","object_work_type":"cholis womenswear","title_text":"Embroidered Blouse Choli","preference":"main alternate","title_language":"English","creation_date":"20th century","creation_place_original_location":"Kachchh (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"cotton (textile) silk (textile)","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"This is an embroidered choli. It features a dense embroided design along the lower half of the garment, with geometric patterns. The sleeves feature a gold brocade panel.","subject_terms_1":"folk costume embroidery (visual works) geometric motifs blouses (main garments) tops (garments, general)","subject_terms_2":"Ethnic costume Blouses Embroidery Brocade Motifs Rabaris","subject_terms_3":"Indian costumes","subject_terms_4":"","sgcool_label_text":"A blouse from the Dhebaria Rebari community of Kutch, Gujarat"},"nlpDate":"20201018182636","connectorId":0,"tags":{}}
