@@ -5,6 +5,7 @@ import java.util.Date
 
 import com.google.gson.GsonBuilder
 import jsonclass.{Metadata, OutputCsv, Tag}
+import org.apache.commons.io.{FileSystemUtils, FileUtils}
 import org.apache.spark.sql
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
@@ -26,22 +27,42 @@ object Csv2Json {
 
     val input = args(0)
     val output = args(1)
+    val outputCsvPath = args(2)
 
     logger.info("input file name: {}", input)
     logger.info("output path {}", output)
+    logger.info("output path {}", outputCsvPath)
 
     logger.info("Initial spark session...")
     val session = connectToSpark()
     val df = readingCSVfile(session, input)
     val outputDf = processCSVFile(df)
 
-    transformCSVJson(outputDf, output)
+    transformCSVJson(outputDf, output, outputCsvPath)
     //val locationIdentifier = CountryModelTraining.locationClassification(session, outputDf);
 
   }
 
   def connectToSpark(): SparkSession = {
     val session = SparkSession.builder().appName("CSV to json conversion").master("local").getOrCreate()
+    /*val session = SparkSession.builder()
+      .appName("CSV to json conversion")
+      .master("spark://sparkvm.centralus.cloudapp.azure.com:7077")
+      .config("spark.driver.port", "20002")
+//      .config("spark.driver.host", "192.168.0.168")
+//      .config("spark.driver.bindAddress", "39.109.219.164")
+            .config("spark.driver.bindAddress", "192.168.0.168")
+            .config("spark.driver.host", "39.109.219.164")
+      .config("spark.blockManager.port", "6060")
+      .config("spark.executor.memory", "8g")
+
+      /**
+       * esSparkConf.setIfMissing("spark.driver.port", "20002")
+       * esSparkConf.setIfMissing("spark.driver.host", "MAC_OS_LAN_IP")
+       * esSparkConf.setIfMissing("spark.driver.bindAddress", "0.0.0.0")
+       * esSparkConf.setIfMissing("spark.blockManager.port", "6060")
+       */
+      .getOrCreate()*/
     return session
   }
 
@@ -140,7 +161,7 @@ object Csv2Json {
    * @param df     input DataFrame
    * @param output json output path
    */
-  def transformCSVJson(df: sql.DataFrame, output: String): Unit = {
+  def transformCSVJson(df: sql.DataFrame, output: String, outputCsvPath: String): Unit = {
 
     println("transformCSVJson")
 
@@ -156,10 +177,25 @@ object Csv2Json {
     //      writeToFile(output, fileName, content);
     //    }
 
+    val filterResult = df.filter(col("accession_no_csv").rlike("^[\\d]{4}-[\\d]*"))
+
+    val outputCsvFolder = new File(outputCsvPath);
+    if(outputCsvFolder.exists())
+    FileUtils.deleteDirectory(outputCsvFolder);
+
+
+    filterResult.coalesce(1).write
+      .format("csv")
+      .option("header", "true")
+      .save(outputCsvPath)
+
+
+    renameCsvOutput(outputCsvPath, "csv", "output.csv")
+
     /**
      * Convert Row to Object
      */
-    val result = df.filter(col("accession_no_csv").rlike("^[\\d]{4}-[\\d]*")).as(Encoders.product[Metadata]).collect()
+    val result = filterResult.as(Encoders.product[Metadata]).collect()
 
     println(result.size)
     //    val outputObjectList = new util.ArrayList[OutputCsv]();
@@ -231,7 +267,7 @@ object Csv2Json {
     val dir = new File(path);
     if (dir.exists()) {
       dir.delete();
-      dir.mkdir();
+      //      dir.mkdir();
     }
     dir.mkdir();
     val file = new File(path + "/" + filename);
@@ -246,6 +282,19 @@ object Csv2Json {
       case e: FileNotFoundException => println("Couldn't find that file.")
       case e: IOException => println("Had an IOException trying to read that file")
     }
+  }
+
+  def renameCsvOutput(path: String, fileType: String, newName: String): Unit = {
+    val directory: File = new File(path);
+    assert(directory.isDirectory)
+
+    val csvFiles = directory.listFiles.filter(d =>
+      d.isFile && d.getName.endsWith(fileType)
+    )
+    csvFiles.foreach(file => {
+      file.renameTo(new File(path+"/"+newName))
+      println(file.getAbsolutePath)
+    })
   }
 }
 
