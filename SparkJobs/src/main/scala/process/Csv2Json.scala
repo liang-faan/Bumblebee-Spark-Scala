@@ -5,7 +5,7 @@ import java.util.Date
 
 import com.google.gson.GsonBuilder
 import jsonclass.{Metadata, OutputCsv, Tag}
-import org.apache.commons.io.{FileSystemUtils, FileUtils}
+import org.apache.commons.io.FileUtils
 import org.apache.spark.sql
 import org.apache.spark.sql.expressions.Window
 import org.apache.spark.sql.functions._
@@ -156,6 +156,8 @@ object Csv2Json {
     return output2;
   }
 
+  val uuid = udf(() => java.util.UUID.randomUUID().toString)
+
   /**
    *
    * @param df     input DataFrame
@@ -180,11 +182,17 @@ object Csv2Json {
     val filterResult = df.filter(col("accession_no_csv").rlike("^[\\d]{4}-[\\d]*"))
 
     val outputCsvFolder = new File(outputCsvPath);
-    if(outputCsvFolder.exists())
-    FileUtils.deleteDirectory(outputCsvFolder);
+    if (outputCsvFolder.exists())
+      FileUtils.deleteDirectory(outputCsvFolder);
 
-
-    filterResult.coalesce(1).write
+    filterResult.withColumn("id", uuid())
+      .select(
+        col("id"),
+        col("accession_no_csv"),
+        col("object_work_type"),
+        col("title_text")
+      )
+      .coalesce(1).write
       .format("csv")
       .option("header", "true")
       .save(outputCsvPath)
@@ -199,7 +207,7 @@ object Csv2Json {
 
     println(result.size)
     //    val outputObjectList = new util.ArrayList[OutputCsv]();
-    val gson = new GsonBuilder().setDateFormat("yyyyMMddHHmmss").create();
+    val gson = new GsonBuilder().setDateFormat("yyyyMMddHHmmss").setPrettyPrinting().create();
     result.foreach(meta => {
       val fileName = meta.accession_no_csv.trim().replaceAll("[\\n,\\r]", "__") + ".json";
       val outputObj = new OutputCsv(
@@ -230,7 +238,10 @@ object Csv2Json {
       );
       //      outputObjectList.add(outputObj);
       writeToFile(output, fileName, gson.toJson(outputObj));
+//      KafkaUtils.messageProducer("books-testing-messages-broadcast",UUID.randomUUID().toString, outputObj)
     })
+
+
     //    println(outputObjectList.size());
   }
 
@@ -292,7 +303,7 @@ object Csv2Json {
       d.isFile && d.getName.endsWith(fileType)
     )
     csvFiles.foreach(file => {
-      file.renameTo(new File(path+"/"+newName))
+      file.renameTo(new File(path + "/" + newName))
       println(file.getAbsolutePath)
     })
   }
