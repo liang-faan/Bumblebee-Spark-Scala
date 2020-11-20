@@ -1,1 +1,37 @@
-{"id":"2014-00206","title":"Items Related to Doris Geddes","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2014-00206\nImage:\nobject_work_type:brochures advertising cards picture postcards newsletters clippings (information artifacts) black-and-white photographs\ntitle_text:Items Related to Doris Geddes\npreference:main\ntitle_language:\ncreator_2:The Straits Times Dexter Colour New York\n Inc\ncreator_1:Straits times NA\ncreator_role:publishers creators\ncreation_date:19540816 19540726\ncreation_place_original_location:Singapore\ninscriptions:\ninscription_language:\nshape:irregular rectangular\nmaterials_name:paper (fiber product) printing paper\ntechniques_name:printing processes\nobject_colour:varies\nsubject_terms_1:hotels (public accommodations) advertisements retail stores group portraits colour photographs dresses (garments) couturiers (dressmakers) newspapers recreation parties (events) tours (journeys)\nsubject_terms_2:Brochures Raffles Hotel advertising Stores\n Retail Advertising cards postcards Dresses Fashion designers Portraits\n Group Portrait photography Newspapers Newsletters Recreation parties Black-and-white photography Tours\nsubject_terms_3:Media and advertising Retail Portrait photography Fashion design Daily newspapers Newsletters Raffles Hotel National holidays\nsgcool_label_text:Not indicated","createdDate":"20201119143404","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2014-00206","Image":"","object_work_type":"brochures advertising cards picture postcards newsletters clippings (information artifacts) black-and-white photographs","title_text":"Items Related to Doris Geddes","preference":"main","title_language":"","creator_2":"The Straits Times Dexter Colour New York, Inc","creator_1":"Straits times NA","creator_role":"publishers creators","creation_date":"19540816 19540726","creation_place_original_location":"Singapore","inscriptions":"","inscription_language":"","shape":"irregular rectangular","materials_name":"paper (fiber product) printing paper","techniques_name":"printing processes","object_colour":"varies","subject_terms_1":"hotels (public accommodations) advertisements retail stores group portraits colour photographs dresses (garments) couturiers (dressmakers) newspapers recreation parties (events) tours (journeys)","subject_terms_2":"Brochures Raffles Hotel advertising Stores, Retail Advertising cards postcards Dresses Fashion designers Portraits, Group Portrait photography Newspapers Newsletters Recreation parties Black-and-white photography Tours","subject_terms_3":"Media and advertising Retail Portrait photography Fashion design Daily newspapers Newsletters Raffles Hotel National holidays","sgcool_label_text":"Not indicated"},"nlpDate":"20201119143404","connectorId":0,"tags":{}}
+{
+  "id": "2014-00206",
+  "title": "Items Related to Doris Geddes",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2014-00206\n\n  Image: \n\n  object_work_type: brochures advertising cards picture postcards newsletters clippings (information artifacts) black-and-white photographs\n\n  title_text: Items Related to Doris Geddes\n\n  preference: main\n\n  title_language: \n\n  creator_2: The Straits Times Dexter Colour New York\n Inc\n\n  creator_1: Straits times NA\n\n  creator_role: publishers creators\n\n  creation_date: 19540816 19540726\n\n  creation_place_original_location: Singapore\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular rectangular\n\n  materials_name: paper (fiber product) printing paper\n\n  techniques_name: printing processes\n\n  object_colour: varies\n\n  subject_terms_1: hotels (public accommodations) advertisements retail stores group portraits colour photographs dresses (garments) couturiers (dressmakers) newspapers recreation parties (events) tours (journeys)\n\n  subject_terms_2: Brochures Raffles Hotel advertising Stores\n Retail Advertising cards postcards Dresses Fashion designers Portraits\n Group Portrait photography Newspapers Newsletters Recreation parties Black-and-white photography Tours\n\n  subject_terms_3: Media and advertising Retail Portrait photography Fashion design Daily newspapers Newsletters Raffles Hotel National holidays\n\n  sgcool_label_text: Not indicated\n",
+  "createdDate": "20201120223706",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2014-00206",
+    "Image": "",
+    "object_work_type": "brochures advertising cards picture postcards newsletters clippings (information artifacts) black-and-white photographs",
+    "title_text": "Items Related to Doris Geddes",
+    "preference": "main",
+    "title_language": "",
+    "creator_2": "The Straits Times Dexter Colour New York, Inc",
+    "creator_1": "Straits times NA",
+    "creator_role": "publishers creators",
+    "creation_date": "19540816 19540726",
+    "creation_place_original_location": "Singapore",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular rectangular",
+    "materials_name": "paper (fiber product) printing paper",
+    "techniques_name": "printing processes",
+    "object_colour": "varies",
+    "subject_terms_1": "hotels (public accommodations) advertisements retail stores group portraits colour photographs dresses (garments) couturiers (dressmakers) newspapers recreation parties (events) tours (journeys)",
+    "subject_terms_2": "Brochures Raffles Hotel advertising Stores, Retail Advertising cards postcards Dresses Fashion designers Portraits, Group Portrait photography Newspapers Newsletters Recreation parties Black-and-white photography Tours",
+    "subject_terms_3": "Media and advertising Retail Portrait photography Fashion design Daily newspapers Newsletters Raffles Hotel National holidays",
+    "sgcool_label_text": "Not indicated"
+  },
+  "nlpDate": "20201120223706",
+  "connectorId": 0,
+  "tags": {}
+}

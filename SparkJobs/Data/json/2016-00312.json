@@ -1,1 +1,35 @@
-{"id":"2016-00312","title":"Elephant head bangles","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00312\nImage:\nobject_work_type:bangles\ntitle_text:Elephant head bangles\npreference:main\ntitle_language:\ncreation_place_original_location:India\nstyles_periods_indexing_terms:Mughal\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:gold (metal) enamel paint quartz crystal diamond (mineral)\ntechniques_name:forging (metal forming) carving (processes) painting (image making)\nobject_colour:multicolored\nphysical_appearance:This is a pair of bangles that are closed by a clasp in the shape of elephant heads. It is decorated with gold and enamel paint. Small pieces of diamonds lined the outside of the bangle\n while the inside is painted with floral motifs.\nsubject_terms_1:foliage (motif) flower (motif) jewelry\nsubject_terms_2:Bracelets Diamond jewelry\n Mogul Empire Motifs\nsubject_terms_3:Jewellery Indian decorative arts\nsgcool_label_text:A pair of gold and enamelled elephant head bangles\n decorated with precious stones\n and exquisite pink enamelling on the inside of the shank.\\r\\nThis object shows the taste for luxury objects in Northern India in the 19th century. In Mughal India there was a great revival in the art of rock crystal carving\n and Mughal craftsmen reached new heights of technical virtuosity especially during the reign of Shah Jahan (1628-1658). The motifs in the gem work and enamelling of flowers\n plants\n scrolling vines and animal forms allude to paradise gardens on earth. It would have been highly prized and made for a privileged few.\\r\\n","createdDate":"20201119143405","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00312","Image":"","object_work_type":"bangles","title_text":"Elephant head bangles","preference":"main","title_language":"","creation_place_original_location":"India","styles_periods_indexing_terms":"Mughal","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"gold (metal) enamel paint quartz crystal diamond (mineral)","techniques_name":"forging (metal forming) carving (processes) painting (image making)","object_colour":"multicolored","physical_appearance":"This is a pair of bangles that are closed by a clasp in the shape of elephant heads. It is decorated with gold and enamel paint. Small pieces of diamonds lined the outside of the bangle, while the inside is painted with floral motifs.","subject_terms_1":"foliage (motif) flower (motif) jewelry","subject_terms_2":"Bracelets Diamond jewelry, Mogul Empire Motifs","subject_terms_3":"Jewellery Indian decorative arts","sgcool_label_text":"A pair of gold and enamelled elephant head bangles, decorated with precious stones, and exquisite pink enamelling on the inside of the shank.\r\nThis object shows the taste for luxury objects in Northern India in the 19th century. In Mughal India there was a great revival in the art of rock crystal carving, and Mughal craftsmen reached new heights of technical virtuosity especially during the reign of Shah Jahan (1628-1658). The motifs in the gem work and enamelling of flowers, plants, scrolling vines and animal forms allude to paradise gardens on earth. It would have been highly prized and made for a privileged few.\r\n"},"nlpDate":"20201119143405","connectorId":0,"tags":{}}
+{
+  "id": "2016-00312",
+  "title": "Elephant head bangles",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00312\n\n  Image: \n\n  object_work_type: bangles\n\n  title_text: Elephant head bangles\n\n  preference: main\n\n  title_language: \n\n  creation_place_original_location: India\n\n  styles_periods_indexing_terms: Mughal\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: gold (metal) enamel paint quartz crystal diamond (mineral)\n\n  techniques_name: forging (metal forming) carving (processes) painting (image making)\n\n  object_colour: multicolored\n\n  physical_appearance: This is a pair of bangles that are closed by a clasp in the shape of elephant heads. It is decorated with gold and enamel paint. Small pieces of diamonds lined the outside of the bangle\n while the inside is painted with floral motifs.\n\n  subject_terms_1: foliage (motif) flower (motif) jewelry\n\n  subject_terms_2: Bracelets Diamond jewelry\n Mogul Empire Motifs\n\n  subject_terms_3: Jewellery Indian decorative arts\n\n  sgcool_label_text: A pair of gold and enamelled elephant head bangles\n decorated with precious stones\n and exquisite pink enamelling on the inside of the shank.\\r\\nThis object shows the taste for luxury objects in Northern India in the 19th century. In Mughal India there was a great revival in the art of rock crystal carving\n and Mughal craftsmen reached new heights of technical virtuosity especially during the reign of Shah Jahan (1628-1658). The motifs in the gem work and enamelling of flowers\n plants\n scrolling vines and animal forms allude to paradise gardens on earth. It would have been highly prized and made for a privileged few.\\r\\n\n",
+  "createdDate": "20201120223706",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00312",
+    "Image": "",
+    "object_work_type": "bangles",
+    "title_text": "Elephant head bangles",
+    "preference": "main",
+    "title_language": "",
+    "creation_place_original_location": "India",
+    "styles_periods_indexing_terms": "Mughal",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "gold (metal) enamel paint quartz crystal diamond (mineral)",
+    "techniques_name": "forging (metal forming) carving (processes) painting (image making)",
+    "object_colour": "multicolored",
+    "physical_appearance": "This is a pair of bangles that are closed by a clasp in the shape of elephant heads. It is decorated with gold and enamel paint. Small pieces of diamonds lined the outside of the bangle, while the inside is painted with floral motifs.",
+    "subject_terms_1": "foliage (motif) flower (motif) jewelry",
+    "subject_terms_2": "Bracelets Diamond jewelry, Mogul Empire Motifs",
+    "subject_terms_3": "Jewellery Indian decorative arts",
+    "sgcool_label_text": "A pair of gold and enamelled elephant head bangles, decorated with precious stones, and exquisite pink enamelling on the inside of the shank.\r\nThis object shows the taste for luxury objects in Northern India in the 19th century. In Mughal India there was a great revival in the art of rock crystal carving, and Mughal craftsmen reached new heights of technical virtuosity especially during the reign of Shah Jahan (1628-1658). The motifs in the gem work and enamelling of flowers, plants, scrolling vines and animal forms allude to paradise gardens on earth. It would have been highly prized and made for a privileged few.\r\n"
+  },
+  "nlpDate": "20201120223706",
+  "connectorId": 0,
+  "tags": {}
+}

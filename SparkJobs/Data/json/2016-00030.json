@@ -1,1 +1,35 @@
-{"id":"2016-00030","title":"Ewer Brass ewer","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00030\nImage:\nobject_work_type:ablution ewers\ntitle_text:Ewer Brass ewer\npreference:alternate main\ntitle_language:\ncreation_date:17th or early 18th century\ncreation_place_original_location:Deccan (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:brass (alloy)\ntechniques_name:welding\nobject_colour:bronze\nphysical_appearance:This is a brass ewer. It has a pear-shaped body with flat sides. It has a slender handle on the left\n and an S-shaped spout on the right. There is a hinged lid\n and a circular\n flaring base. The body of the ewer is engraved with scrolling arabesque motifs.\nsubject_terms_1:ablutions ewers (vessels) palmette (motif) scrolls (motifs) Islamic (culture or style)\nsubject_terms_2:Ewers Ablutions (Islamic law) Motifs Islam\nsubject_terms_3:Heritage and Culture\nsgcool_label_text:Because the Quran states that “we made everything alive from water” (surah 21:30)\n ewers carry great significance. Usually paired with a matching basin\n ewers are used by Muslims to wash their hands before prayer and many other acitivities. Because of their durability\n brass and bronze were commonly used to make ewers and other vessels to hold liquids.","createdDate":"20201119143405","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00030","Image":"","object_work_type":"ablution ewers","title_text":"Ewer Brass ewer","preference":"alternate main","title_language":"","creation_date":"17th or early 18th century","creation_place_original_location":"Deccan (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"brass (alloy)","techniques_name":"welding","object_colour":"bronze","physical_appearance":"This is a brass ewer. It has a pear-shaped body with flat sides. It has a slender handle on the left, and an S-shaped spout on the right. There is a hinged lid, and a circular, flaring base. The body of the ewer is engraved with scrolling arabesque motifs.","subject_terms_1":"ablutions ewers (vessels) palmette (motif) scrolls (motifs) Islamic (culture or style)","subject_terms_2":"Ewers Ablutions (Islamic law) Motifs Islam","subject_terms_3":"Heritage and Culture","sgcool_label_text":"Because the Quran states that “we made everything alive from water” (surah 21:30), ewers carry great significance. Usually paired with a matching basin, ewers are used by Muslims to wash their hands before prayer and many other acitivities. Because of their durability, brass and bronze were commonly used to make ewers and other vessels to hold liquids."},"nlpDate":"20201119143405","connectorId":0,"tags":{}}
+{
+  "id": "2016-00030",
+  "title": "Ewer Brass ewer",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00030\n\n  Image: \n\n  object_work_type: ablution ewers\n\n  title_text: Ewer Brass ewer\n\n  preference: alternate main\n\n  title_language: \n\n  creation_date: 17th or early 18th century\n\n  creation_place_original_location: Deccan (India)\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: brass (alloy)\n\n  techniques_name: welding\n\n  object_colour: bronze\n\n  physical_appearance: This is a brass ewer. It has a pear-shaped body with flat sides. It has a slender handle on the left\n and an S-shaped spout on the right. There is a hinged lid\n and a circular\n flaring base. The body of the ewer is engraved with scrolling arabesque motifs.\n\n  subject_terms_1: ablutions ewers (vessels) palmette (motif) scrolls (motifs) Islamic (culture or style)\n\n  subject_terms_2: Ewers Ablutions (Islamic law) Motifs Islam\n\n  subject_terms_3: Heritage and Culture\n\n  sgcool_label_text: Because the Quran states that “we made everything alive from water” (surah 21:30)\n ewers carry great significance. Usually paired with a matching basin\n ewers are used by Muslims to wash their hands before prayer and many other acitivities. Because of their durability\n brass and bronze were commonly used to make ewers and other vessels to hold liquids.\n",
+  "createdDate": "20201120223706",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00030",
+    "Image": "",
+    "object_work_type": "ablution ewers",
+    "title_text": "Ewer Brass ewer",
+    "preference": "alternate main",
+    "title_language": "",
+    "creation_date": "17th or early 18th century",
+    "creation_place_original_location": "Deccan (India)",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "brass (alloy)",
+    "techniques_name": "welding",
+    "object_colour": "bronze",
+    "physical_appearance": "This is a brass ewer. It has a pear-shaped body with flat sides. It has a slender handle on the left, and an S-shaped spout on the right. There is a hinged lid, and a circular, flaring base. The body of the ewer is engraved with scrolling arabesque motifs.",
+    "subject_terms_1": "ablutions ewers (vessels) palmette (motif) scrolls (motifs) Islamic (culture or style)",
+    "subject_terms_2": "Ewers Ablutions (Islamic law) Motifs Islam",
+    "subject_terms_3": "Heritage and Culture",
+    "sgcool_label_text": "Because the Quran states that “we made everything alive from water” (surah 21:30), ewers carry great significance. Usually paired with a matching basin, ewers are used by Muslims to wash their hands before prayer and many other acitivities. Because of their durability, brass and bronze were commonly used to make ewers and other vessels to hold liquids."
+  },
+  "nlpDate": "20201120223706",
+  "connectorId": 0,
+  "tags": {}
+}

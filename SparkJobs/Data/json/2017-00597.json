@@ -1,1 +1,36 @@
-{"id":"2017-00597","title":"Embroidered Blouse Choli","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00597\nImage:\nobject_work_type:cholis womenswear\ntitle_text:Embroidered Blouse Choli\npreference:main alternate\ntitle_language:English\ncreation_date:20th century\ncreation_place_original_location:Kachchh (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:silk (textile)\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:This is an embroidered choli. It is a cropped yellow blouse\n with embroidered cross stitch motif along the chest and embroided floral designs along the sleeves. There is a pair of embroidered men on each side panel.\nsubject_terms_1:folk costume embroidery (visual works) flower (motif) crosses (motif) tops (garments\n general) blouses (main garments)\nsubject_terms_2:Ethnic costume Blouses Embroidery Jains\nsubject_terms_3:Indian costumes\nsubject_terms_4:\nsgcool_label_text:This embroidered blouse would have been worn by a woman of the Kutchi Jain community. It features a cross-stitch like motif across the sleeves and chest\n with a pair of embroidered English gentlement embroidered on to the side panels on either side.","createdDate":"20201119143406","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00597","Image":"","object_work_type":"cholis womenswear","title_text":"Embroidered Blouse Choli","preference":"main alternate","title_language":"English","creation_date":"20th century","creation_place_original_location":"Kachchh (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"silk (textile)","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"This is an embroidered choli. It is a cropped yellow blouse, with embroidered cross stitch motif along the chest and embroided floral designs along the sleeves. There is a pair of embroidered men on each side panel.","subject_terms_1":"folk costume embroidery (visual works) flower (motif) crosses (motif) tops (garments, general) blouses (main garments)","subject_terms_2":"Ethnic costume Blouses Embroidery Jains","subject_terms_3":"Indian costumes","subject_terms_4":"","sgcool_label_text":"This embroidered blouse would have been worn by a woman of the Kutchi Jain community. It features a cross-stitch like motif across the sleeves and chest, with a pair of embroidered English gentlement embroidered on to the side panels on either side."},"nlpDate":"20201119143406","connectorId":0,"tags":{}}
+{
+  "id": "2017-00597",
+  "title": "Embroidered Blouse Choli",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2017-00597\n\n  Image: \n\n  object_work_type: cholis womenswear\n\n  title_text: Embroidered Blouse Choli\n\n  preference: main alternate\n\n  title_language: English\n\n  creation_date: 20th century\n\n  creation_place_original_location: Kachchh (India)\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: silk (textile)\n\n  techniques_name: sewing (needleworking technique) embroidering\n\n  object_colour: multicolored\n\n  physical_appearance: This is an embroidered choli. It is a cropped yellow blouse\n with embroidered cross stitch motif along the chest and embroided floral designs along the sleeves. There is a pair of embroidered men on each side panel.\n\n  subject_terms_1: folk costume embroidery (visual works) flower (motif) crosses (motif) tops (garments\n general) blouses (main garments)\n\n  subject_terms_2: Ethnic costume Blouses Embroidery Jains\n\n  subject_terms_3: Indian costumes\n\n  subject_terms_4: \n\n  sgcool_label_text: This embroidered blouse would have been worn by a woman of the Kutchi Jain community. It features a cross-stitch like motif across the sleeves and chest\n with a pair of embroidered English gentlement embroidered on to the side panels on either side.\n",
+  "createdDate": "20201120223708",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2017-00597",
+    "Image": "",
+    "object_work_type": "cholis womenswear",
+    "title_text": "Embroidered Blouse Choli",
+    "preference": "main alternate",
+    "title_language": "English",
+    "creation_date": "20th century",
+    "creation_place_original_location": "Kachchh (India)",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "silk (textile)",
+    "techniques_name": "sewing (needleworking technique) embroidering",
+    "object_colour": "multicolored",
+    "physical_appearance": "This is an embroidered choli. It is a cropped yellow blouse, with embroidered cross stitch motif along the chest and embroided floral designs along the sleeves. There is a pair of embroidered men on each side panel.",
+    "subject_terms_1": "folk costume embroidery (visual works) flower (motif) crosses (motif) tops (garments, general) blouses (main garments)",
+    "subject_terms_2": "Ethnic costume Blouses Embroidery Jains",
+    "subject_terms_3": "Indian costumes",
+    "subject_terms_4": "",
+    "sgcool_label_text": "This embroidered blouse would have been worn by a woman of the Kutchi Jain community. It features a cross-stitch like motif across the sleeves and chest, with a pair of embroidered English gentlement embroidered on to the side panels on either side."
+  },
+  "nlpDate": "20201120223708",
+  "connectorId": 0,
+  "tags": {}
+}

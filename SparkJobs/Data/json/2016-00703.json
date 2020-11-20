@@ -1,1 +1,35 @@
-{"id":"2016-00703","title":"Top Hat with Box","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00703\nImage:\nobject_work_type:opera hats\ntitle_text:Top Hat with Box\npreference:main\ntitle_language:\ncreation_date:19th-20th century\ncreation_place_original_location:Great Britain\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:silk (textile) paper (fiber product)\ntechniques_name:sewing (needleworking technique)\nobject_colour:black (color) red (color)\nphysical_appearance:This is a top hat with a red box. The top hat is foldable\n It is covered with black silk fabric and adorned with a single black grosgrain ribbon.\nsubject_terms_1:top hats cultural diffusion boxes (containers)\nsubject_terms_2:Hats Culture diffusion\nsubject_terms_3:\nsgcool_label_text:This is an example of a Gibus hat\n a top hat fitted with an internal spring mechanism which could be used to collapse and fold the hat. Covered with a black silk fabric\n it is adorned with a single black grosgrain ribbon. The mark of its maker is vaguely visible. A red box seemingly custom made to hold the hat accompanies it. A shopmark can be made out on the underside\n including the word ‘England’. \\r\\n\\r\\nThe Gibus hat was named after the man who patented it in 1837\n Antoine Gibus. It was held under the arm and paired with an opera clock. Top hats were staple to an European gentleman’s wardrobe for much of the 19th century. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.","createdDate":"20201119143405","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00703","Image":"","object_work_type":"opera hats","title_text":"Top Hat with Box","preference":"main","title_language":"","creation_date":"19th-20th century","creation_place_original_location":"Great Britain","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"silk (textile) paper (fiber product)","techniques_name":"sewing (needleworking technique)","object_colour":"black (color) red (color)","physical_appearance":"This is a top hat with a red box. The top hat is foldable, It is covered with black silk fabric and adorned with a single black grosgrain ribbon.","subject_terms_1":"top hats cultural diffusion boxes (containers)","subject_terms_2":"Hats Culture diffusion","subject_terms_3":"","sgcool_label_text":"This is an example of a Gibus hat, a top hat fitted with an internal spring mechanism which could be used to collapse and fold the hat. Covered with a black silk fabric, it is adorned with a single black grosgrain ribbon. The mark of its maker is vaguely visible. A red box seemingly custom made to hold the hat accompanies it. A shopmark can be made out on the underside, including the word ‘England’. \r\n\r\nThe Gibus hat was named after the man who patented it in 1837, Antoine Gibus. It was held under the arm and paired with an opera clock. Top hats were staple to an European gentleman’s wardrobe for much of the 19th century. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."},"nlpDate":"20201119143405","connectorId":0,"tags":{}}
+{
+  "id": "2016-00703",
+  "title": "Top Hat with Box",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00703\n\n  Image: \n\n  object_work_type: opera hats\n\n  title_text: Top Hat with Box\n\n  preference: main\n\n  title_language: \n\n  creation_date: 19th-20th century\n\n  creation_place_original_location: Great Britain\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: silk (textile) paper (fiber product)\n\n  techniques_name: sewing (needleworking technique)\n\n  object_colour: black (color) red (color)\n\n  physical_appearance: This is a top hat with a red box. The top hat is foldable\n It is covered with black silk fabric and adorned with a single black grosgrain ribbon.\n\n  subject_terms_1: top hats cultural diffusion boxes (containers)\n\n  subject_terms_2: Hats Culture diffusion\n\n  subject_terms_3: \n\n  sgcool_label_text: This is an example of a Gibus hat\n a top hat fitted with an internal spring mechanism which could be used to collapse and fold the hat. Covered with a black silk fabric\n it is adorned with a single black grosgrain ribbon. The mark of its maker is vaguely visible. A red box seemingly custom made to hold the hat accompanies it. A shopmark can be made out on the underside\n including the word ‘England’. \\r\\n\\r\\nThe Gibus hat was named after the man who patented it in 1837\n Antoine Gibus. It was held under the arm and paired with an opera clock. Top hats were staple to an European gentleman’s wardrobe for much of the 19th century. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.\n",
+  "createdDate": "20201120223707",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00703",
+    "Image": "",
+    "object_work_type": "opera hats",
+    "title_text": "Top Hat with Box",
+    "preference": "main",
+    "title_language": "",
+    "creation_date": "19th-20th century",
+    "creation_place_original_location": "Great Britain",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "silk (textile) paper (fiber product)",
+    "techniques_name": "sewing (needleworking technique)",
+    "object_colour": "black (color) red (color)",
+    "physical_appearance": "This is a top hat with a red box. The top hat is foldable, It is covered with black silk fabric and adorned with a single black grosgrain ribbon.",
+    "subject_terms_1": "top hats cultural diffusion boxes (containers)",
+    "subject_terms_2": "Hats Culture diffusion",
+    "subject_terms_3": "",
+    "sgcool_label_text": "This is an example of a Gibus hat, a top hat fitted with an internal spring mechanism which could be used to collapse and fold the hat. Covered with a black silk fabric, it is adorned with a single black grosgrain ribbon. The mark of its maker is vaguely visible. A red box seemingly custom made to hold the hat accompanies it. A shopmark can be made out on the underside, including the word ‘England’. \r\n\r\nThe Gibus hat was named after the man who patented it in 1837, Antoine Gibus. It was held under the arm and paired with an opera clock. Top hats were staple to an European gentleman’s wardrobe for much of the 19th century. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."
+  },
+  "nlpDate": "20201120223707",
+  "connectorId": 0,
+  "tags": {}
+}

@@ -1,1 +1,36 @@
-{"id":"2014-00206-017","title":"Celebration of the Opening of the Little Shop, Raffles Hotel, 1947 Items Related to Doris Geddes","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2014-00206-017\nImage:\nobject_work_type:black-and-white photographs\ntitle_text:Celebration of the Opening of the Little Shop\n Raffles Hotel\n 1947 Items Related to Doris Geddes\npreference:main alternate\ntitle_language:\ncreation_date:Not indicated\ncreation_place_original_location:Singapore\ninscriptions:\ninscription_language:\nshape:rectangular\nmaterials_name:paper (fiber product) printing paper\ntechniques_name:printing processes\nobject_colour:grey (colour) monochrome\nphysical_appearance:\\The image displays a black-and-white photograph. The photograph is encased in a black frame and it has a white border. Seven people are featured and they are posing and looking in the direction where the photograph was captured. They are separated in two groups\n one with three people and the other with four. Both groups are posing in front of a building\n at the open doors. Balustrades can be seen at the top of the building. There are numerous potted plants around them. Below the image\n \\\\Doris Geddes and friends celebrate opening of the Little Shop\nsubject_terms_1:Raffles Hotel hotels (public accommodations) celebrations retail stores\nsubject_terms_2:1947\\\\ is stated \\ Portraits\n Group Raffles Hotel Stores\n Retail\nsubject_terms_3:group portraits Raffles Hotel Retail\nsubject_terms_4:Black-and-white photography\ncontext_1:Portrait photography","createdDate":"20201119143404","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2014-00206-017","Image":"","object_work_type":"black-and-white photographs","title_text":"Celebration of the Opening of the Little Shop, Raffles Hotel, 1947 Items Related to Doris Geddes","preference":"main alternate","title_language":"","creation_date":"Not indicated","creation_place_original_location":"Singapore","inscriptions":"","inscription_language":"","shape":"rectangular","materials_name":"paper (fiber product) printing paper","techniques_name":"printing processes","object_colour":"grey (colour) monochrome","physical_appearance":"\"The image displays a black-and-white photograph. The photograph is encased in a black frame and it has a white border. Seven people are featured and they are posing and looking in the direction where the photograph was captured. They are separated in two groups, one with three people and the other with four. Both groups are posing in front of a building, at the open doors. Balustrades can be seen at the top of the building. There are numerous potted plants around them. Below the image, \"\"Doris Geddes and friends celebrate opening of the Little Shop","subject_terms_1":"Raffles Hotel hotels (public accommodations) celebrations retail stores","subject_terms_2":"1947\"\" is stated \" Portraits, Group Raffles Hotel Stores, Retail","subject_terms_3":"group portraits Raffles Hotel Retail","subject_terms_4":"Black-and-white photography","context_1":"Portrait photography"},"nlpDate":"20201119143404","connectorId":0,"tags":{}}
+{
+  "id": "2014-00206-017",
+  "title": "Celebration of the Opening of the Little Shop, Raffles Hotel, 1947 Items Related to Doris Geddes",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2014-00206-017\n\n  Image: \n\n  object_work_type: black-and-white photographs\n\n  title_text: Celebration of the Opening of the Little Shop\n Raffles Hotel\n 1947 Items Related to Doris Geddes\n\n  preference: main alternate\n\n  title_language: \n\n  creation_date: Not indicated\n\n  creation_place_original_location: Singapore\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: rectangular\n\n  materials_name: paper (fiber product) printing paper\n\n  techniques_name: printing processes\n\n  object_colour: grey (colour) monochrome\n\n  physical_appearance: \\The image displays a black-and-white photograph. The photograph is encased in a black frame and it has a white border. Seven people are featured and they are posing and looking in the direction where the photograph was captured. They are separated in two groups\n one with three people and the other with four. Both groups are posing in front of a building\n at the open doors. Balustrades can be seen at the top of the building. There are numerous potted plants around them. Below the image\n \\\\Doris Geddes and friends celebrate opening of the Little Shop\n\n  subject_terms_1: Raffles Hotel hotels (public accommodations) celebrations retail stores\n\n  subject_terms_2: 1947\\\\ is stated \\ Portraits\n Group Raffles Hotel Stores\n Retail\n\n  subject_terms_3: group portraits Raffles Hotel Retail\n\n  subject_terms_4: Black-and-white photography\n\n  context_1: Portrait photography\n",
+  "createdDate": "20201120223706",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2014-00206-017",
+    "Image": "",
+    "object_work_type": "black-and-white photographs",
+    "title_text": "Celebration of the Opening of the Little Shop, Raffles Hotel, 1947 Items Related to Doris Geddes",
+    "preference": "main alternate",
+    "title_language": "",
+    "creation_date": "Not indicated",
+    "creation_place_original_location": "Singapore",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "rectangular",
+    "materials_name": "paper (fiber product) printing paper",
+    "techniques_name": "printing processes",
+    "object_colour": "grey (colour) monochrome",
+    "physical_appearance": "\"The image displays a black-and-white photograph. The photograph is encased in a black frame and it has a white border. Seven people are featured and they are posing and looking in the direction where the photograph was captured. They are separated in two groups, one with three people and the other with four. Both groups are posing in front of a building, at the open doors. Balustrades can be seen at the top of the building. There are numerous potted plants around them. Below the image, \"\"Doris Geddes and friends celebrate opening of the Little Shop",
+    "subject_terms_1": "Raffles Hotel hotels (public accommodations) celebrations retail stores",
+    "subject_terms_2": "1947\"\" is stated \" Portraits, Group Raffles Hotel Stores, Retail",
+    "subject_terms_3": "group portraits Raffles Hotel Retail",
+    "subject_terms_4": "Black-and-white photography",
+    "context_1": "Portrait photography"
+  },
+  "nlpDate": "20201120223706",
+  "connectorId": 0,
+  "tags": {}
+}

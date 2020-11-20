@@ -1,1 +1,36 @@
-{"id":"2017-00604","title":"Yardage","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00604\nImage:\nobject_work_type:textiles (visual works) yardage\ntitle_text:Yardage\npreference:main\ntitle_language:English\ncreation_date:20th century\ncreation_place_original_location:Rajasthan (India)\ninscriptions:\ninscription_language:\nshape:rectangular\nmaterials_name:wool (textile) cotton (textile)\ntechniques_name:sewing (needleworking technique)\nobject_colour:multicolored\nphysical_appearance:This is a piece of fabric. It features a plaid pattern\n with multicolored embroidery along the bottom hem to create repeated triangular scrolls. The left end of the yardage is laid out\n while the rest of the length of the fabric is collected on the right.\nsubject_terms_1:plaid (pattern) embroidery (visual works) cloth\nsubject_terms_2:Textile fabrics Plaid Embroidery Bishnois\nsubject_terms_3:Textile art and design Indian costumes\nsubject_terms_4:\nsgcool_label_text:This yardage would have been stitched into a skirt\n worn by women of the Bishnoi community of Rajasthan. The handwoven material is made of cotton\n and embroidered in bright wool","createdDate":"20201119143406","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00604","Image":"","object_work_type":"textiles (visual works) yardage","title_text":"Yardage","preference":"main","title_language":"English","creation_date":"20th century","creation_place_original_location":"Rajasthan (India)","inscriptions":"","inscription_language":"","shape":"rectangular","materials_name":"wool (textile) cotton (textile)","techniques_name":"sewing (needleworking technique)","object_colour":"multicolored","physical_appearance":"This is a piece of fabric. It features a plaid pattern, with multicolored embroidery along the bottom hem to create repeated triangular scrolls. The left end of the yardage is laid out, while the rest of the length of the fabric is collected on the right.","subject_terms_1":"plaid (pattern) embroidery (visual works) cloth","subject_terms_2":"Textile fabrics Plaid Embroidery Bishnois","subject_terms_3":"Textile art and design Indian costumes","subject_terms_4":"","sgcool_label_text":"This yardage would have been stitched into a skirt, worn by women of the Bishnoi community of Rajasthan. The handwoven material is made of cotton, and embroidered in bright wool"},"nlpDate":"20201119143406","connectorId":0,"tags":{}}
+{
+  "id": "2017-00604",
+  "title": "Yardage",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2017-00604\n\n  Image: \n\n  object_work_type: textiles (visual works) yardage\n\n  title_text: Yardage\n\n  preference: main\n\n  title_language: English\n\n  creation_date: 20th century\n\n  creation_place_original_location: Rajasthan (India)\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: rectangular\n\n  materials_name: wool (textile) cotton (textile)\n\n  techniques_name: sewing (needleworking technique)\n\n  object_colour: multicolored\n\n  physical_appearance: This is a piece of fabric. It features a plaid pattern\n with multicolored embroidery along the bottom hem to create repeated triangular scrolls. The left end of the yardage is laid out\n while the rest of the length of the fabric is collected on the right.\n\n  subject_terms_1: plaid (pattern) embroidery (visual works) cloth\n\n  subject_terms_2: Textile fabrics Plaid Embroidery Bishnois\n\n  subject_terms_3: Textile art and design Indian costumes\n\n  subject_terms_4: \n\n  sgcool_label_text: This yardage would have been stitched into a skirt\n worn by women of the Bishnoi community of Rajasthan. The handwoven material is made of cotton\n and embroidered in bright wool\n",
+  "createdDate": "20201120223708",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2017-00604",
+    "Image": "",
+    "object_work_type": "textiles (visual works) yardage",
+    "title_text": "Yardage",
+    "preference": "main",
+    "title_language": "English",
+    "creation_date": "20th century",
+    "creation_place_original_location": "Rajasthan (India)",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "rectangular",
+    "materials_name": "wool (textile) cotton (textile)",
+    "techniques_name": "sewing (needleworking technique)",
+    "object_colour": "multicolored",
+    "physical_appearance": "This is a piece of fabric. It features a plaid pattern, with multicolored embroidery along the bottom hem to create repeated triangular scrolls. The left end of the yardage is laid out, while the rest of the length of the fabric is collected on the right.",
+    "subject_terms_1": "plaid (pattern) embroidery (visual works) cloth",
+    "subject_terms_2": "Textile fabrics Plaid Embroidery Bishnois",
+    "subject_terms_3": "Textile art and design Indian costumes",
+    "subject_terms_4": "",
+    "sgcool_label_text": "This yardage would have been stitched into a skirt, worn by women of the Bishnoi community of Rajasthan. The handwoven material is made of cotton, and embroidered in bright wool"
+  },
+  "nlpDate": "20201120223708",
+  "connectorId": 0,
+  "tags": {}
+}

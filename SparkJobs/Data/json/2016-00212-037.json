@@ -1,1 +1,37 @@
-{"id":"2016-00212-037","title":"Photograph album of views and portraits in the Punjab, Cashmere, Ceylon, Burma, Penang, Singapore, and Java Town Church, Rangoon","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00212-037\nImage:\nobject_work_type:black-and-white photographs\ntitle_text:Photograph album of views and portraits in the Punjab\n Cashmere\n Ceylon\n Burma\n Penang\n Singapore\n and Java Town Church\n Rangoon\npreference:alternate main\ntitle_language:\ncreator_2:John Thomson\ncreator_1:Thomson\n J. (John)\n 1837-1921\ncreator_role:photographers\ncreation_date:before 28 Jul 1876\ncreation_place_original_location:Singapore Rangoon (Burma)\ninscriptions:\ninscription_language:\nshape:rectangular\nmaterials_name:albumen (egg white protein) albumen paper paper (fiber product)\ntechniques_name:albumen process\nobject_colour:black-and-white (colors)\nphysical_appearance:This is a photograph of the Town Church in Rangoon\n Burma. There is a fence around the church. The entrance is made of three archways. There is an attached tower structure on the right of the church. Behind the church\n there are smaller roofed buildings on the left and right of the photograph.There is an area of empty land in front of the church at the forefront of the photograph. The title is written at the bottom\n below the photograph.\nsubject_terms_1:churches (buildings) cathedrals (buildings) British Colonial\nsubject_terms_2:Photographs Thomson\n J. (John)\n 1837-1921 Rangoon (Burma) Church buildings Cathedrals\nsubject_terms_3:Photography Religious buildings Churches","createdDate":"20201119143405","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00212-037","Image":"","object_work_type":"black-and-white photographs","title_text":"Photograph album of views and portraits in the Punjab, Cashmere, Ceylon, Burma, Penang, Singapore, and Java Town Church, Rangoon","preference":"alternate main","title_language":"","creator_2":"John Thomson","creator_1":"Thomson, J. (John), 1837-1921","creator_role":"photographers","creation_date":"before 28 Jul 1876","creation_place_original_location":"Singapore Rangoon (Burma)","inscriptions":"","inscription_language":"","shape":"rectangular","materials_name":"albumen (egg white protein) albumen paper paper (fiber product)","techniques_name":"albumen process","object_colour":"black-and-white (colors)","physical_appearance":"This is a photograph of the Town Church in Rangoon, Burma. There is a fence around the church. The entrance is made of three archways. There is an attached tower structure on the right of the church. Behind the church, there are smaller roofed buildings on the left and right of the photograph.There is an area of empty land in front of the church at the forefront of the photograph. The title is written at the bottom, below the photograph.","subject_terms_1":"churches (buildings) cathedrals (buildings) British Colonial","subject_terms_2":"Photographs Thomson, J. (John), 1837-1921 Rangoon (Burma) Church buildings Cathedrals","subject_terms_3":"Photography Religious buildings Churches"},"nlpDate":"20201119143405","connectorId":0,"tags":{}}
+{
+  "id": "2016-00212-037",
+  "title": "Photograph album of views and portraits in the Punjab, Cashmere, Ceylon, Burma, Penang, Singapore, and Java Town Church, Rangoon",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00212-037\n\n  Image: \n\n  object_work_type: black-and-white photographs\n\n  title_text: Photograph album of views and portraits in the Punjab\n Cashmere\n Ceylon\n Burma\n Penang\n Singapore\n and Java Town Church\n Rangoon\n\n  preference: alternate main\n\n  title_language: \n\n  creator_2: John Thomson\n\n  creator_1: Thomson\n J. (John)\n 1837-1921\n\n  creator_role: photographers\n\n  creation_date: before 28 Jul 1876\n\n  creation_place_original_location: Singapore Rangoon (Burma)\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: rectangular\n\n  materials_name: albumen (egg white protein) albumen paper paper (fiber product)\n\n  techniques_name: albumen process\n\n  object_colour: black-and-white (colors)\n\n  physical_appearance: This is a photograph of the Town Church in Rangoon\n Burma. There is a fence around the church. The entrance is made of three archways. There is an attached tower structure on the right of the church. Behind the church\n there are smaller roofed buildings on the left and right of the photograph.There is an area of empty land in front of the church at the forefront of the photograph. The title is written at the bottom\n below the photograph.\n\n  subject_terms_1: churches (buildings) cathedrals (buildings) British Colonial\n\n  subject_terms_2: Photographs Thomson\n J. (John)\n 1837-1921 Rangoon (Burma) Church buildings Cathedrals\n\n  subject_terms_3: Photography Religious buildings Churches\n",
+  "createdDate": "20201120223706",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00212-037",
+    "Image": "",
+    "object_work_type": "black-and-white photographs",
+    "title_text": "Photograph album of views and portraits in the Punjab, Cashmere, Ceylon, Burma, Penang, Singapore, and Java Town Church, Rangoon",
+    "preference": "alternate main",
+    "title_language": "",
+    "creator_2": "John Thomson",
+    "creator_1": "Thomson, J. (John), 1837-1921",
+    "creator_role": "photographers",
+    "creation_date": "before 28 Jul 1876",
+    "creation_place_original_location": "Singapore Rangoon (Burma)",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "rectangular",
+    "materials_name": "albumen (egg white protein) albumen paper paper (fiber product)",
+    "techniques_name": "albumen process",
+    "object_colour": "black-and-white (colors)",
+    "physical_appearance": "This is a photograph of the Town Church in Rangoon, Burma. There is a fence around the church. The entrance is made of three archways. There is an attached tower structure on the right of the church. Behind the church, there are smaller roofed buildings on the left and right of the photograph.There is an area of empty land in front of the church at the forefront of the photograph. The title is written at the bottom, below the photograph.",
+    "subject_terms_1": "churches (buildings) cathedrals (buildings) British Colonial",
+    "subject_terms_2": "Photographs Thomson, J. (John), 1837-1921 Rangoon (Burma) Church buildings Cathedrals",
+    "subject_terms_3": "Photography Religious buildings Churches"
+  },
+  "nlpDate": "20201120223706",
+  "connectorId": 0,
+  "tags": {}
+}

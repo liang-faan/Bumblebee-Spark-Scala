@@ -1,1 +1,36 @@
-{"id":"2016-00683","title":"Two Embroidered Panels Embroided Panels","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00683\nImage:\nobject_work_type:panels (costume components)\ntitle_text:Two Embroidered Panels Embroided Panels\npreference:alternate main\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Straits Settlements Indonesia\nstyles_periods_indexing_terms:Peranakan\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:metal thread silk (textile)\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:These are two panels of cloth embroided with metal thread. The top panel is cream coloured\n with tapering towards the end. The bottom panel is red\n pleated on one side\n and with three metal rings attached on the other.\nsubject_terms_1:belts (costume accessories) embroidery (visual works) Peranakan\nsubject_terms_2:Belts (Clothing) Embroidery Peranakan (Asian people)\nsubject_terms_3:Peranakan costumes\nsgcool_label_text:Both pieces of cloth are embroidered with metal thread and lined on the underside. The cream coloured panel tapers towards one end. The red panel is pleated on one side and has 3 metal rings attached on the other. They could have been used as belts. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.","createdDate":"20201119143405","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00683","Image":"","object_work_type":"panels (costume components)","title_text":"Two Embroidered Panels Embroided Panels","preference":"alternate main","title_language":"","creation_date":"20th century","creation_place_original_location":"Straits Settlements Indonesia","styles_periods_indexing_terms":"Peranakan","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"metal thread silk (textile)","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"These are two panels of cloth embroided with metal thread. The top panel is cream coloured, with tapering towards the end. The bottom panel is red, pleated on one side, and with three metal rings attached on the other.","subject_terms_1":"belts (costume accessories) embroidery (visual works) Peranakan","subject_terms_2":"Belts (Clothing) Embroidery Peranakan (Asian people)","subject_terms_3":"Peranakan costumes","sgcool_label_text":"Both pieces of cloth are embroidered with metal thread and lined on the underside. The cream coloured panel tapers towards one end. The red panel is pleated on one side and has 3 metal rings attached on the other. They could have been used as belts. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."},"nlpDate":"20201119143405","connectorId":0,"tags":{}}
+{
+  "id": "2016-00683",
+  "title": "Two Embroidered Panels Embroided Panels",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00683\n\n  Image: \n\n  object_work_type: panels (costume components)\n\n  title_text: Two Embroidered Panels Embroided Panels\n\n  preference: alternate main\n\n  title_language: \n\n  creation_date: 20th century\n\n  creation_place_original_location: Straits Settlements Indonesia\n\n  styles_periods_indexing_terms: Peranakan\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: metal thread silk (textile)\n\n  techniques_name: sewing (needleworking technique) embroidering\n\n  object_colour: multicolored\n\n  physical_appearance: These are two panels of cloth embroided with metal thread. The top panel is cream coloured\n with tapering towards the end. The bottom panel is red\n pleated on one side\n and with three metal rings attached on the other.\n\n  subject_terms_1: belts (costume accessories) embroidery (visual works) Peranakan\n\n  subject_terms_2: Belts (Clothing) Embroidery Peranakan (Asian people)\n\n  subject_terms_3: Peranakan costumes\n\n  sgcool_label_text: Both pieces of cloth are embroidered with metal thread and lined on the underside. The cream coloured panel tapers towards one end. The red panel is pleated on one side and has 3 metal rings attached on the other. They could have been used as belts. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.\n",
+  "createdDate": "20201120223707",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00683",
+    "Image": "",
+    "object_work_type": "panels (costume components)",
+    "title_text": "Two Embroidered Panels Embroided Panels",
+    "preference": "alternate main",
+    "title_language": "",
+    "creation_date": "20th century",
+    "creation_place_original_location": "Straits Settlements Indonesia",
+    "styles_periods_indexing_terms": "Peranakan",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "metal thread silk (textile)",
+    "techniques_name": "sewing (needleworking technique) embroidering",
+    "object_colour": "multicolored",
+    "physical_appearance": "These are two panels of cloth embroided with metal thread. The top panel is cream coloured, with tapering towards the end. The bottom panel is red, pleated on one side, and with three metal rings attached on the other.",
+    "subject_terms_1": "belts (costume accessories) embroidery (visual works) Peranakan",
+    "subject_terms_2": "Belts (Clothing) Embroidery Peranakan (Asian people)",
+    "subject_terms_3": "Peranakan costumes",
+    "sgcool_label_text": "Both pieces of cloth are embroidered with metal thread and lined on the underside. The cream coloured panel tapers towards one end. The red panel is pleated on one side and has 3 metal rings attached on the other. They could have been used as belts. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."
+  },
+  "nlpDate": "20201120223707",
+  "connectorId": 0,
+  "tags": {}
+}

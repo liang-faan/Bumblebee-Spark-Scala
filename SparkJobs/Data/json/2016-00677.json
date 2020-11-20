@@ -1,1 +1,37 @@
-{"id":"2016-00677","title":"Baju Panjang with Gold Frog Buttons","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00677\nImage:\nobject_work_type:folk costume\ntitle_text:Baju Panjang with Gold Frog Buttons\npreference:main\ntitle_language:\ncreation_date:late 19th - early 20th century\ncreation_place_original_location:Straits Settlements Indonesia\nstyles_periods_indexing_terms:Peranakan\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:silk (textile)\ntechniques_name:sewing (needleworking technique)\nobject_colour:blue (color)\nphysical_appearance:This is a baju panjang. It has a mandarin collar and gold frog buttons. The fabric is decorated with an embroidery of flowers.\nsubject_terms_1:flowers (motifs) Peranakan tops (garments\n general)\nsubject_terms_2:Ethnic costume Motifs Peranakan (Asian people)\nsubject_terms_3:Peranakan costumes\nsubject_terms_4:Baju Panjang\nsgcool_label_text:This baju panjang has a mandarin collar and gold frog buttons. The fabric is thin and embroidered with flowers. In late 19th century Java\n there was a large selection of materials to choose from for the making of baju panjang\n including silk\n European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.","createdDate":"20201119143405","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00677","Image":"","object_work_type":"folk costume","title_text":"Baju Panjang with Gold Frog Buttons","preference":"main","title_language":"","creation_date":"late 19th - early 20th century","creation_place_original_location":"Straits Settlements Indonesia","styles_periods_indexing_terms":"Peranakan","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"silk (textile)","techniques_name":"sewing (needleworking technique)","object_colour":"blue (color)","physical_appearance":"This is a baju panjang. It has a mandarin collar and gold frog buttons. The fabric is decorated with an embroidery of flowers.","subject_terms_1":"flowers (motifs) Peranakan tops (garments, general)","subject_terms_2":"Ethnic costume Motifs Peranakan (Asian people)","subject_terms_3":"Peranakan costumes","subject_terms_4":"Baju Panjang","sgcool_label_text":"This baju panjang has a mandarin collar and gold frog buttons. The fabric is thin and embroidered with flowers. In late 19th century Java, there was a large selection of materials to choose from for the making of baju panjang, including silk, European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."},"nlpDate":"20201119143405","connectorId":0,"tags":{}}
+{
+  "id": "2016-00677",
+  "title": "Baju Panjang with Gold Frog Buttons",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00677\n\n  Image: \n\n  object_work_type: folk costume\n\n  title_text: Baju Panjang with Gold Frog Buttons\n\n  preference: main\n\n  title_language: \n\n  creation_date: late 19th - early 20th century\n\n  creation_place_original_location: Straits Settlements Indonesia\n\n  styles_periods_indexing_terms: Peranakan\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: silk (textile)\n\n  techniques_name: sewing (needleworking technique)\n\n  object_colour: blue (color)\n\n  physical_appearance: This is a baju panjang. It has a mandarin collar and gold frog buttons. The fabric is decorated with an embroidery of flowers.\n\n  subject_terms_1: flowers (motifs) Peranakan tops (garments\n general)\n\n  subject_terms_2: Ethnic costume Motifs Peranakan (Asian people)\n\n  subject_terms_3: Peranakan costumes\n\n  subject_terms_4: Baju Panjang\n\n  sgcool_label_text: This baju panjang has a mandarin collar and gold frog buttons. The fabric is thin and embroidered with flowers. In late 19th century Java\n there was a large selection of materials to choose from for the making of baju panjang\n including silk\n European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.\n",
+  "createdDate": "20201120223707",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00677",
+    "Image": "",
+    "object_work_type": "folk costume",
+    "title_text": "Baju Panjang with Gold Frog Buttons",
+    "preference": "main",
+    "title_language": "",
+    "creation_date": "late 19th - early 20th century",
+    "creation_place_original_location": "Straits Settlements Indonesia",
+    "styles_periods_indexing_terms": "Peranakan",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "silk (textile)",
+    "techniques_name": "sewing (needleworking technique)",
+    "object_colour": "blue (color)",
+    "physical_appearance": "This is a baju panjang. It has a mandarin collar and gold frog buttons. The fabric is decorated with an embroidery of flowers.",
+    "subject_terms_1": "flowers (motifs) Peranakan tops (garments, general)",
+    "subject_terms_2": "Ethnic costume Motifs Peranakan (Asian people)",
+    "subject_terms_3": "Peranakan costumes",
+    "subject_terms_4": "Baju Panjang",
+    "sgcool_label_text": "This baju panjang has a mandarin collar and gold frog buttons. The fabric is thin and embroidered with flowers. In late 19th century Java, there was a large selection of materials to choose from for the making of baju panjang, including silk, European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."
+  },
+  "nlpDate": "20201120223707",
+  "connectorId": 0,
+  "tags": {}
+}

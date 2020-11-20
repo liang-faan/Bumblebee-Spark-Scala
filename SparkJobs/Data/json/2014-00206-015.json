@@ -1,1 +1,35 @@
-{"id":"2014-00206-015","title":"Doris Geddes and a child Items Related to Doris Geddes","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2014-00206-015\nImage:\nobject_work_type:black-and-white photographs\ntitle_text:Doris Geddes and a child Items Related to Doris Geddes\npreference:main alternate\ntitle_language:\ncreation_date:Not indicated\ncreation_place_original_location:Singapore\ninscriptions:\ninscription_language:\nshape:rectangular\nmaterials_name:paper (fiber product) printing paper\ntechniques_name:printing processes\nobject_colour:grey (colour) monochrome\nphysical_appearance:The image shows a photograph that is in black-and-white. It features a lady and a child. They are sitting closely beside one another. Both of them are wearing dresses and the lady adorns multiple jewellery and wears a headress. The child seems to be whispering to the lady\n who is leaning slightly over to listen to her. The background of the photograph suggests that this was taken in the interior of a building.\nsubject_terms_1:children (people by age group) couturiers (dressmakers)\nsubject_terms_2:Black-and-white photography Fashion designers Children\nsubject_terms_3:Portrait photography\nsgcool_label_text:Not indicated","createdDate":"20201119143404","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2014-00206-015","Image":"","object_work_type":"black-and-white photographs","title_text":"Doris Geddes and a child Items Related to Doris Geddes","preference":"main alternate","title_language":"","creation_date":"Not indicated","creation_place_original_location":"Singapore","inscriptions":"","inscription_language":"","shape":"rectangular","materials_name":"paper (fiber product) printing paper","techniques_name":"printing processes","object_colour":"grey (colour) monochrome","physical_appearance":"The image shows a photograph that is in black-and-white. It features a lady and a child. They are sitting closely beside one another. Both of them are wearing dresses and the lady adorns multiple jewellery and wears a headress. The child seems to be whispering to the lady, who is leaning slightly over to listen to her. The background of the photograph suggests that this was taken in the interior of a building.","subject_terms_1":"children (people by age group) couturiers (dressmakers)","subject_terms_2":"Black-and-white photography Fashion designers Children","subject_terms_3":"Portrait photography","sgcool_label_text":"Not indicated"},"nlpDate":"20201119143404","connectorId":0,"tags":{}}
+{
+  "id": "2014-00206-015",
+  "title": "Doris Geddes and a child Items Related to Doris Geddes",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2014-00206-015\n\n  Image: \n\n  object_work_type: black-and-white photographs\n\n  title_text: Doris Geddes and a child Items Related to Doris Geddes\n\n  preference: main alternate\n\n  title_language: \n\n  creation_date: Not indicated\n\n  creation_place_original_location: Singapore\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: rectangular\n\n  materials_name: paper (fiber product) printing paper\n\n  techniques_name: printing processes\n\n  object_colour: grey (colour) monochrome\n\n  physical_appearance: The image shows a photograph that is in black-and-white. It features a lady and a child. They are sitting closely beside one another. Both of them are wearing dresses and the lady adorns multiple jewellery and wears a headress. The child seems to be whispering to the lady\n who is leaning slightly over to listen to her. The background of the photograph suggests that this was taken in the interior of a building.\n\n  subject_terms_1: children (people by age group) couturiers (dressmakers)\n\n  subject_terms_2: Black-and-white photography Fashion designers Children\n\n  subject_terms_3: Portrait photography\n\n  sgcool_label_text: Not indicated\n",
+  "createdDate": "20201120223706",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2014-00206-015",
+    "Image": "",
+    "object_work_type": "black-and-white photographs",
+    "title_text": "Doris Geddes and a child Items Related to Doris Geddes",
+    "preference": "main alternate",
+    "title_language": "",
+    "creation_date": "Not indicated",
+    "creation_place_original_location": "Singapore",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "rectangular",
+    "materials_name": "paper (fiber product) printing paper",
+    "techniques_name": "printing processes",
+    "object_colour": "grey (colour) monochrome",
+    "physical_appearance": "The image shows a photograph that is in black-and-white. It features a lady and a child. They are sitting closely beside one another. Both of them are wearing dresses and the lady adorns multiple jewellery and wears a headress. The child seems to be whispering to the lady, who is leaning slightly over to listen to her. The background of the photograph suggests that this was taken in the interior of a building.",
+    "subject_terms_1": "children (people by age group) couturiers (dressmakers)",
+    "subject_terms_2": "Black-and-white photography Fashion designers Children",
+    "subject_terms_3": "Portrait photography",
+    "sgcool_label_text": "Not indicated"
+  },
+  "nlpDate": "20201120223706",
+  "connectorId": 0,
+  "tags": {}
+}

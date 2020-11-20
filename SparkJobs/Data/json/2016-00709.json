@@ -1,1 +1,37 @@
-{"id":"2016-00709","title":"Black Baju Kurong","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00709\nImage:\nobject_work_type:folk costume womenswear\ntitle_text:Black Baju Kurong\npreference:main\ntitle_language:\ncreation_date:late 19th century\ncreation_place_original_location:Straits Settlements\nstyles_periods_indexing_terms:Peranakan\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:cotton (textile)\ntechniques_name:sewing (needleworking technique)\nobject_colour:black (color)\nphysical_appearance:This is a black baju kurong. It has long sleeves\n a slit neckline\n and does not open in the front.\nsubject_terms_1:Peranakan tops (garments\n general) blouses (main garments)\nsubject_terms_2:Ethnic costume Peranakan (Asian people) Blouses\nsubject_terms_3:Peranakan costumes\nsubject_terms_4:Baju Kurong\nsgcool_label_text:This cotton baju kurong has a slit neckline and does not open in the front. In late 19th century Java\n there was a large selection of materials to choose from for the making of baju panjang\n including silk\n European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.","createdDate":"20201119143405","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00709","Image":"","object_work_type":"folk costume womenswear","title_text":"Black Baju Kurong","preference":"main","title_language":"","creation_date":"late 19th century","creation_place_original_location":"Straits Settlements","styles_periods_indexing_terms":"Peranakan","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"cotton (textile)","techniques_name":"sewing (needleworking technique)","object_colour":"black (color)","physical_appearance":"This is a black baju kurong. It has long sleeves, a slit neckline, and does not open in the front.","subject_terms_1":"Peranakan tops (garments, general) blouses (main garments)","subject_terms_2":"Ethnic costume Peranakan (Asian people) Blouses","subject_terms_3":"Peranakan costumes","subject_terms_4":"Baju Kurong","sgcool_label_text":"This cotton baju kurong has a slit neckline and does not open in the front. In late 19th century Java, there was a large selection of materials to choose from for the making of baju panjang, including silk, European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."},"nlpDate":"20201119143405","connectorId":0,"tags":{}}
+{
+  "id": "2016-00709",
+  "title": "Black Baju Kurong",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00709\n\n  Image: \n\n  object_work_type: folk costume womenswear\n\n  title_text: Black Baju Kurong\n\n  preference: main\n\n  title_language: \n\n  creation_date: late 19th century\n\n  creation_place_original_location: Straits Settlements\n\n  styles_periods_indexing_terms: Peranakan\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: cotton (textile)\n\n  techniques_name: sewing (needleworking technique)\n\n  object_colour: black (color)\n\n  physical_appearance: This is a black baju kurong. It has long sleeves\n a slit neckline\n and does not open in the front.\n\n  subject_terms_1: Peranakan tops (garments\n general) blouses (main garments)\n\n  subject_terms_2: Ethnic costume Peranakan (Asian people) Blouses\n\n  subject_terms_3: Peranakan costumes\n\n  subject_terms_4: Baju Kurong\n\n  sgcool_label_text: This cotton baju kurong has a slit neckline and does not open in the front. In late 19th century Java\n there was a large selection of materials to choose from for the making of baju panjang\n including silk\n European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women.\n",
+  "createdDate": "20201120223707",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00709",
+    "Image": "",
+    "object_work_type": "folk costume womenswear",
+    "title_text": "Black Baju Kurong",
+    "preference": "main",
+    "title_language": "",
+    "creation_date": "late 19th century",
+    "creation_place_original_location": "Straits Settlements",
+    "styles_periods_indexing_terms": "Peranakan",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "cotton (textile)",
+    "techniques_name": "sewing (needleworking technique)",
+    "object_colour": "black (color)",
+    "physical_appearance": "This is a black baju kurong. It has long sleeves, a slit neckline, and does not open in the front.",
+    "subject_terms_1": "Peranakan tops (garments, general) blouses (main garments)",
+    "subject_terms_2": "Ethnic costume Peranakan (Asian people) Blouses",
+    "subject_terms_3": "Peranakan costumes",
+    "subject_terms_4": "Baju Kurong",
+    "sgcool_label_text": "This cotton baju kurong has a slit neckline and does not open in the front. In late 19th century Java, there was a large selection of materials to choose from for the making of baju panjang, including silk, European cotton and velvet. It is part of a donation which contains a mixture of garments worn by Peranakan men and women."
+  },
+  "nlpDate": "20201120223707",
+  "connectorId": 0,
+  "tags": {}
+}

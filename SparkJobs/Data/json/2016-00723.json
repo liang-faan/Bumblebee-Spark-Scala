@@ -1,1 +1,35 @@
-{"id":"2016-00723","title":"A Group of 4 Laces Four laces","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2016-00723\nImage:\nobject_work_type:lace (needlework)\ntitle_text:A Group of 4 Laces Four laces\npreference:alternate main\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Straits Settlements Indonesia France\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:cotton (textile) paper (fiber product)\ntechniques_name:sewing (needleworking technique)\nobject_colour:white (color)\nphysical_appearance:This is a set of four laces. Two of them are strips of lace of varying lengths and design. Another two are needlepoint lace in the form of the letter \\u0027F\\u0027. The needlepoint lace letters are still attached to their paper packaging.\nsubject_terms_1:scrolls (motifs) flower (motif) trimming (material) needlepoint (visual works) exports\nsubject_terms_2:Bobbin lace Motifs Needlepoint lace Exports\nsubject_terms_3:Textile art and design\nsgcool_label_text:There are 2 strips of lace of varying lengths and design and 2 needlepoint lace letter F produced in France. The making of bobbin lace was an established tradition in port cities like Malacca and Palembang by the early 20th century.It is part of a donation which contains a mixture of materials used in the making of kebayas and baju panjangs.","createdDate":"20201119143406","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2016-00723","Image":"","object_work_type":"lace (needlework)","title_text":"A Group of 4 Laces Four laces","preference":"alternate main","title_language":"","creation_date":"20th century","creation_place_original_location":"Straits Settlements Indonesia France","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"cotton (textile) paper (fiber product)","techniques_name":"sewing (needleworking technique)","object_colour":"white (color)","physical_appearance":"This is a set of four laces. Two of them are strips of lace of varying lengths and design. Another two are needlepoint lace in the form of the letter \u0027F\u0027. The needlepoint lace letters are still attached to their paper packaging.","subject_terms_1":"scrolls (motifs) flower (motif) trimming (material) needlepoint (visual works) exports","subject_terms_2":"Bobbin lace Motifs Needlepoint lace Exports","subject_terms_3":"Textile art and design","sgcool_label_text":"There are 2 strips of lace of varying lengths and design and 2 needlepoint lace letter F produced in France. The making of bobbin lace was an established tradition in port cities like Malacca and Palembang by the early 20th century.It is part of a donation which contains a mixture of materials used in the making of kebayas and baju panjangs."},"nlpDate":"20201119143406","connectorId":0,"tags":{}}
+{
+  "id": "2016-00723",
+  "title": "A Group of 4 Laces Four laces",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2016-00723\n\n  Image: \n\n  object_work_type: lace (needlework)\n\n  title_text: A Group of 4 Laces Four laces\n\n  preference: alternate main\n\n  title_language: \n\n  creation_date: 20th century\n\n  creation_place_original_location: Straits Settlements Indonesia France\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: cotton (textile) paper (fiber product)\n\n  techniques_name: sewing (needleworking technique)\n\n  object_colour: white (color)\n\n  physical_appearance: This is a set of four laces. Two of them are strips of lace of varying lengths and design. Another two are needlepoint lace in the form of the letter \\u0027F\\u0027. The needlepoint lace letters are still attached to their paper packaging.\n\n  subject_terms_1: scrolls (motifs) flower (motif) trimming (material) needlepoint (visual works) exports\n\n  subject_terms_2: Bobbin lace Motifs Needlepoint lace Exports\n\n  subject_terms_3: Textile art and design\n\n  sgcool_label_text: There are 2 strips of lace of varying lengths and design and 2 needlepoint lace letter F produced in France. The making of bobbin lace was an established tradition in port cities like Malacca and Palembang by the early 20th century.It is part of a donation which contains a mixture of materials used in the making of kebayas and baju panjangs.\n",
+  "createdDate": "20201120223707",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2016-00723",
+    "Image": "",
+    "object_work_type": "lace (needlework)",
+    "title_text": "A Group of 4 Laces Four laces",
+    "preference": "alternate main",
+    "title_language": "",
+    "creation_date": "20th century",
+    "creation_place_original_location": "Straits Settlements Indonesia France",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "cotton (textile) paper (fiber product)",
+    "techniques_name": "sewing (needleworking technique)",
+    "object_colour": "white (color)",
+    "physical_appearance": "This is a set of four laces. Two of them are strips of lace of varying lengths and design. Another two are needlepoint lace in the form of the letter \u0027F\u0027. The needlepoint lace letters are still attached to their paper packaging.",
+    "subject_terms_1": "scrolls (motifs) flower (motif) trimming (material) needlepoint (visual works) exports",
+    "subject_terms_2": "Bobbin lace Motifs Needlepoint lace Exports",
+    "subject_terms_3": "Textile art and design",
+    "sgcool_label_text": "There are 2 strips of lace of varying lengths and design and 2 needlepoint lace letter F produced in France. The making of bobbin lace was an established tradition in port cities like Malacca and Palembang by the early 20th century.It is part of a donation which contains a mixture of materials used in the making of kebayas and baju panjangs."
+  },
+  "nlpDate": "20201120223707",
+  "connectorId": 0,
+  "tags": {}
+}

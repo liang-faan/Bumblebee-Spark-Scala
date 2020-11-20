@@ -1,1 +1,35 @@
-{"id":"2017-00644","title":"Doorway hanging Todaliyan","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-00644\nImage:\nobject_work_type:hangings (coverings)\ntitle_text:Doorway hanging Todaliyan\npreference:main alternate\ntitle_language:\ncreation_date:20th century\ncreation_place_original_location:Gujarat (India)\ninscriptions:\ninscription_language:\nshape:irregular\nmaterials_name:glass (material) cotton (textile)\ntechniques_name:sewing (needleworking technique) embroidering\nobject_colour:multicolored\nphysical_appearance:This is a pair of doorway hangings or todaliyan. They are \\u0027L\\u0027 shaped\n featuring cotton weave with embroidery work. The hangings have a dark red border. They are decorated with panels depicting stylized figures\n deities and foliage.\nsubject_terms_1:embroidery (visual works) foliage (motif) deities depictions (visual works) birds (motifs) beadwork (visual works)\nsubject_terms_2:Draperies Embroidery Motifs Gods\nsubject_terms_3:Textile art and design\nsubject_terms_4:","createdDate":"20201119143406","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-00644","Image":"","object_work_type":"hangings (coverings)","title_text":"Doorway hanging Todaliyan","preference":"main alternate","title_language":"","creation_date":"20th century","creation_place_original_location":"Gujarat (India)","inscriptions":"","inscription_language":"","shape":"irregular","materials_name":"glass (material) cotton (textile)","techniques_name":"sewing (needleworking technique) embroidering","object_colour":"multicolored","physical_appearance":"This is a pair of doorway hangings or todaliyan. They are \u0027L\u0027 shaped, featuring cotton weave with embroidery work. The hangings have a dark red border. They are decorated with panels depicting stylized figures, deities and foliage.","subject_terms_1":"embroidery (visual works) foliage (motif) deities depictions (visual works) birds (motifs) beadwork (visual works)","subject_terms_2":"Draperies Embroidery Motifs Gods","subject_terms_3":"Textile art and design","subject_terms_4":""},"nlpDate":"20201119143406","connectorId":0,"tags":{}}
+{
+  "id": "2017-00644",
+  "title": "Doorway hanging Todaliyan",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2017-00644\n\n  Image: \n\n  object_work_type: hangings (coverings)\n\n  title_text: Doorway hanging Todaliyan\n\n  preference: main alternate\n\n  title_language: \n\n  creation_date: 20th century\n\n  creation_place_original_location: Gujarat (India)\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: irregular\n\n  materials_name: glass (material) cotton (textile)\n\n  techniques_name: sewing (needleworking technique) embroidering\n\n  object_colour: multicolored\n\n  physical_appearance: This is a pair of doorway hangings or todaliyan. They are \\u0027L\\u0027 shaped\n featuring cotton weave with embroidery work. The hangings have a dark red border. They are decorated with panels depicting stylized figures\n deities and foliage.\n\n  subject_terms_1: embroidery (visual works) foliage (motif) deities depictions (visual works) birds (motifs) beadwork (visual works)\n\n  subject_terms_2: Draperies Embroidery Motifs Gods\n\n  subject_terms_3: Textile art and design\n\n  subject_terms_4: \n",
+  "createdDate": "20201120223708",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2017-00644",
+    "Image": "",
+    "object_work_type": "hangings (coverings)",
+    "title_text": "Doorway hanging Todaliyan",
+    "preference": "main alternate",
+    "title_language": "",
+    "creation_date": "20th century",
+    "creation_place_original_location": "Gujarat (India)",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "irregular",
+    "materials_name": "glass (material) cotton (textile)",
+    "techniques_name": "sewing (needleworking technique) embroidering",
+    "object_colour": "multicolored",
+    "physical_appearance": "This is a pair of doorway hangings or todaliyan. They are \u0027L\u0027 shaped, featuring cotton weave with embroidery work. The hangings have a dark red border. They are decorated with panels depicting stylized figures, deities and foliage.",
+    "subject_terms_1": "embroidery (visual works) foliage (motif) deities depictions (visual works) birds (motifs) beadwork (visual works)",
+    "subject_terms_2": "Draperies Embroidery Motifs Gods",
+    "subject_terms_3": "Textile art and design",
+    "subject_terms_4": ""
+  },
+  "nlpDate": "20201120223708",
+  "connectorId": 0,
+  "tags": {}
+}

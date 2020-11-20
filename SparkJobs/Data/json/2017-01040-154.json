@@ -1,1 +1,36 @@
-{"id":"2017-01040-154","title":"\"Personal photograph album titled \"\"Sixteen Months in Singapore\"\"\" Sixteen Months in Singapore: Photograph of durian branch","source":"Bumblebee","path":"./Data/json/","content":"accession_no_csv:2017-01040-154\nImage:\nobject_work_type:black-and-white photographs photographs\ntitle_text:\\Personal photograph album titled \\\\Sixteen Months in Singapore\\\\\\ Sixteen Months in Singapore: Photograph of durian branch\npreference:alternate main\ntitle_language:\ncreation_date:1951-1952\ncreation_place_original_location:Singapore\ninscriptions:\ninscription_language:\nshape:rectangular\nmaterials_name:paper (fiber product)\ntechniques_name:photographic processes\nobject_colour:black-and-white (colors)\nphysical_appearance:This is a black-and-white photograph. It is rectangular in shape and landscape in orientation. It features the branches of a durian tree. There are several durian fruits seen on the branches\n in the center and on the right. There is an inscription at the bottom left of the photograph in white. There are no tears or folds seen on the photograph.\nsubject_terms_1:snapshots trees fruit (plant components)\nsubject_terms_2:Photographs Durian\nsubject_terms_3:Photography Plants\nsubject_terms_4:\nsgcool_label_text:This is a personal photograph album that belonged to a Corporal A. Silver who spent 16 months in Singapore between 1951 and 1952. Silver was presumably a Jewish lady who was stationed in Singapore to serve at the Royal Air Force (RAF) Hospital at Changi. The album contains photographs that document her working and personal life\n including friends she made within the Jewish community in Singapore.","createdDate":"20201119143407","version":0,"latest":false,"roles":[],"metadata":{"accession_no_csv":"2017-01040-154","Image":"","object_work_type":"black-and-white photographs photographs","title_text":"\"Personal photograph album titled \"\"Sixteen Months in Singapore\"\"\" Sixteen Months in Singapore: Photograph of durian branch","preference":"alternate main","title_language":"","creation_date":"1951-1952","creation_place_original_location":"Singapore","inscriptions":"","inscription_language":"","shape":"rectangular","materials_name":"paper (fiber product)","techniques_name":"photographic processes","object_colour":"black-and-white (colors)","physical_appearance":"This is a black-and-white photograph. It is rectangular in shape and landscape in orientation. It features the branches of a durian tree. There are several durian fruits seen on the branches, in the center and on the right. There is an inscription at the bottom left of the photograph in white. There are no tears or folds seen on the photograph.","subject_terms_1":"snapshots trees fruit (plant components)","subject_terms_2":"Photographs Durian","subject_terms_3":"Photography Plants","subject_terms_4":"","sgcool_label_text":"This is a personal photograph album that belonged to a Corporal A. Silver who spent 16 months in Singapore between 1951 and 1952. Silver was presumably a Jewish lady who was stationed in Singapore to serve at the Royal Air Force (RAF) Hospital at Changi. The album contains photographs that document her working and personal life, including friends she made within the Jewish community in Singapore."},"nlpDate":"20201119143407","connectorId":0,"tags":{}}
+{
+  "id": "2017-01040-154",
+  "title": "\"Personal photograph album titled \"\"Sixteen Months in Singapore\"\"\" Sixteen Months in Singapore: Photograph of durian branch",
+  "source": "Bumblebee",
+  "path": "./Data/json/",
+  "content": "\n  accession_no_csv: 2017-01040-154\n\n  Image: \n\n  object_work_type: black-and-white photographs photographs\n\n  title_text: \\Personal photograph album titled \\\\Sixteen Months in Singapore\\\\\\ Sixteen Months in Singapore: Photograph of durian branch\n\n  preference: alternate main\n\n  title_language: \n\n  creation_date: 1951-1952\n\n  creation_place_original_location: Singapore\n\n  inscriptions: \n\n  inscription_language: \n\n  shape: rectangular\n\n  materials_name: paper (fiber product)\n\n  techniques_name: photographic processes\n\n  object_colour: black-and-white (colors)\n\n  physical_appearance: This is a black-and-white photograph. It is rectangular in shape and landscape in orientation. It features the branches of a durian tree. There are several durian fruits seen on the branches\n in the center and on the right. There is an inscription at the bottom left of the photograph in white. There are no tears or folds seen on the photograph.\n\n  subject_terms_1: snapshots trees fruit (plant components)\n\n  subject_terms_2: Photographs Durian\n\n  subject_terms_3: Photography Plants\n\n  subject_terms_4: \n\n  sgcool_label_text: This is a personal photograph album that belonged to a Corporal A. Silver who spent 16 months in Singapore between 1951 and 1952. Silver was presumably a Jewish lady who was stationed in Singapore to serve at the Royal Air Force (RAF) Hospital at Changi. The album contains photographs that document her working and personal life\n including friends she made within the Jewish community in Singapore.\n",
+  "createdDate": "20201120223708",
+  "version": 0,
+  "latest": false,
+  "roles": [],
+  "metadata": {
+    "accession_no_csv": "2017-01040-154",
+    "Image": "",
+    "object_work_type": "black-and-white photographs photographs",
+    "title_text": "\"Personal photograph album titled \"\"Sixteen Months in Singapore\"\"\" Sixteen Months in Singapore: Photograph of durian branch",
+    "preference": "alternate main",
+    "title_language": "",
+    "creation_date": "1951-1952",
+    "creation_place_original_location": "Singapore",
+    "inscriptions": "",
+    "inscription_language": "",
+    "shape": "rectangular",
+    "materials_name": "paper (fiber product)",
+    "techniques_name": "photographic processes",
+    "object_colour": "black-and-white (colors)",
+    "physical_appearance": "This is a black-and-white photograph. It is rectangular in shape and landscape in orientation. It features the branches of a durian tree. There are several durian fruits seen on the branches, in the center and on the right. There is an inscription at the bottom left of the photograph in white. There are no tears or folds seen on the photograph.",
+    "subject_terms_1": "snapshots trees fruit (plant components)",
+    "subject_terms_2": "Photographs Durian",
+    "subject_terms_3": "Photography Plants",
+    "subject_terms_4": "",
+    "sgcool_label_text": "This is a personal photograph album that belonged to a Corporal A. Silver who spent 16 months in Singapore between 1951 and 1952. Silver was presumably a Jewish lady who was stationed in Singapore to serve at the Royal Air Force (RAF) Hospital at Changi. The album contains photographs that document her working and personal life, including friends she made within the Jewish community in Singapore."
+  },
+  "nlpDate": "20201120223708",
+  "connectorId": 0,
+  "tags": {}
+}
