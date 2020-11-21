@@ -22,6 +22,7 @@ export function getConfig(relativeUrl, headerPara) {
     return {
         method: 'get',
         // url: constructUrl(relativeUrl),
+        url: relativeUrl,
         headers: headerPara
     }
 }
@@ -46,7 +47,7 @@ export function requestWithConfig(url1, para, headerPara, mth) {
 
 export function postRequest(url, body, headerPara) {
     return new Promise(function (resolve, reject) {
-        axios.post(constructUrl(url), body, { method: 'POST', headers: headerPara })
+        axios.post(url, body, { method: 'POST', headers: headerPara })
         .then(function (respone) {
             console.log(respone);
             console.log(respone.data);

@@ -68,7 +68,7 @@ const Tables = () => {
                 bordered
                 size="sm"
                 itemsPerPage={15}
-                pagination={{ 'align': 'end', 'size': 'lg' }}
+                pagination={{ 'align': 'center', 'size': 'lg' }}
                 scopedSlots={{
                   'isActive':
                     (item) => (

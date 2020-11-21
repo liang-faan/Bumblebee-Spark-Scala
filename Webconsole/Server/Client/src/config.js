@@ -1,12 +1,12 @@
-const hostname = document.hostname
-const port  = window.location.port
-const protocal = window.location.protocol
+const hostname1 = window.location.hostname
+const port1  = window.location.port
+const protocal1 = window.location.protocol
 
 
 var apiOptions = {
-    hostname: hostname,
-    port: port,
-    protocal: protocal,
+    hostname: hostname1,
+    port: port1,
+    protocal: protocal1,
     key: "",
     headers: {
         "Authorization":"{0}",

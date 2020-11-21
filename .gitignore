@@ -2,7 +2,6 @@
 target/
 node_modules/
 .cache/
-public/
 #amplify
 amplify/\#current-cloud-backend
 amplify/.config/local-*
@@ -20,3 +19,4 @@ amplify-gradle-config.json
 amplifytools.xcconfig
 .DS_Store
 .serverless/
+Data/
