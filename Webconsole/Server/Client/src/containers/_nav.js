@@ -22,6 +22,12 @@ export default [
     to: '/airflow/Dagtable',
     icon: 'cil-drop',
   },
+  {
+    _tag: 'CSidebarNavItem',
+    name: 'Search Books',
+    to: '/airflow/SearchPage',
+    icon: 'cil-pencil',
+  },
   // {
   //   _tag: 'CSidebarNavItem',
   //   name: 'Typography',

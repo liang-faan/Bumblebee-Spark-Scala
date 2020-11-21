@@ -42,6 +42,7 @@ const User = React.lazy(() => import('./views/users/User'));
  * Custom pages
  */
 const Dagtable = React.lazy(() => import('./views/airflow/Dagtable'));
+const SearchPage = React.lazy(() => import('./views/airflow/SearchPage'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -87,7 +88,8 @@ const routes = [
   /**
    * Custom paths
    */
-  { path: '/airflow/Dagtable', exact: true, name: 'Dagtable', component: Dagtable }
+  { path: '/airflow/Dagtable', exact: true, name: 'Dagtable', component: Dagtable },
+  { path: '/airflow/SearchPage', exact: true, name: 'Search Books', component: SearchPage }
 ];
 
 export default routes;
