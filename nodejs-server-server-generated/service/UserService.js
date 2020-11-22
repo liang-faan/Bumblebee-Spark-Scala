@@ -275,7 +275,7 @@ exports.getUserRoles = function(userName) {
 
 
 /**
- * List all pets
+ * List all users
  *
  * returns List
  **/
