@@ -1,1 +1,22 @@
 // Here you can add other styles
+.input {
+    height: inherit;
+    font-family: inherit;
+    align-items: left;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: auto;
+    // padding: .375rem .75rem;
+    // font-size: .875rem;
+    font-weight: 400;
+    // line-height: 1.5;
+    background-clip: padding-box;
+    // color: #768192;
+    // background-color: #fff;
+    // border: 1px solid #d8dbe0;
+    // border-radius: .25rem;
+    // transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}

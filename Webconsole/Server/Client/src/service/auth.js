@@ -1,4 +1,4 @@
-import config from '../config'
+import {apiOptions} from '../config'
 import jwt from "jsonwebtoken"
 import { postRequest } from "./proxy/ApiProxy"
 
@@ -12,7 +12,7 @@ const getAuthentication = () => isBrowser() && window.localStorage.getItem("acce
 export function handleLogin(username, password) {
 
   if (username && password) {
-    var authUrl = config.loginUrl
+    var authUrl = apiOptions.loginUrl
 
     var body = { "userName": username, "password": password, "refresh": true, "provider": "db" };
 

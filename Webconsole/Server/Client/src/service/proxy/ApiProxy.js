@@ -1,10 +1,10 @@
 import axios from 'axios'
 // import { reject, resolve } from 'core-js/fn/promise';
-import config from '../../config';
+import {apiOptions} from '../../config';
 import {getAccessToken} from '../auth'
 
 export function constructUrl(relativeUrl) {
-    return (config.protocal).concat("://",config.hostname, ":", config.port, relativeUrl);
+    return (apiOptions.protocal).concat("://",apiOptions.hostname, ":", apiOptions.port, relativeUrl);
 }
 
 export function constructAuthenticationHeaders() {

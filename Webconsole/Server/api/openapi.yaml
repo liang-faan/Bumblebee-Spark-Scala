@@ -5,7 +5,7 @@ info:
     name: Group#3 - Capstone Project
   version: 1.0.0
 servers:
-- url: http://localhost:5000/api/v1
+- url: http://localhost:8080/api/v1
   description: development url
 - url: https://liangfaan.com/api/v1
   description: production url
@@ -41,7 +41,7 @@ paths:
     get:
       tags:
       - User
-      summary: List all users
+      summary: List all pets
       operationId: listUsers
       responses:
         "200":
@@ -60,7 +60,8 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       security:
-      - bearerAuth: []
+      - bearerAuth:
+        - Admin
       x-swagger-router-controller: User
     post:
       tags:
@@ -84,7 +85,8 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       security:
-      - bearerAuth: []
+      - bearerAuth:
+        - Admin
       x-swagger-router-controller: User
   /users/{userName}:
     get:
@@ -148,7 +150,8 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       security:
-      - bearerAuth: []
+      - bearerAuth:
+        - Admin
       x-swagger-router-controller: User
   /dags:
     get:
@@ -173,7 +176,10 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       security:
-      - bearerAuth: []
+      - bearerAuth:
+        - Op
+        - Viewer
+        - User
       x-swagger-router-controller: Dag
   /tasks:
     get:
@@ -198,7 +204,10 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       security:
-      - bearerAuth: []
+      - bearerAuth:
+        - Op
+        - Viewer
+        - User
       x-swagger-router-controller: Task
   /tasks/schedule:
     get:
@@ -223,7 +232,9 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       security:
-      - bearerAuth: []
+      - bearerAuth:
+        - Op
+        - Viewer
       x-swagger-router-controller: Task
   /jobs:
     get:
@@ -248,8 +259,104 @@ paths:
               schema:
                 $ref: '#/components/schemas/Error'
       security:
-      - bearerAuth: []
+      - bearerAuth:
+        - Op
+        - Viewer
       x-swagger-router-controller: Job
+  /search:
+    get:
+      tags:
+      - Search
+      summary: searching books from elastic
+      operationId: elasticSearch
+      parameters:
+      - name: q
+        in: query
+        description: searching content
+        required: true
+        style: form
+        explode: true
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Success search response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SearchList'
+                x-content-type: application/json
+      security:
+      - bearerAuth:
+        - Viewer
+      x-swagger-router-controller: Search
+  /notification/receive/{appId}:
+    get:
+      tags:
+      - Notification
+      summary: consume notificaitons from Kafka
+      operationId: retrieveNotifications
+      parameters:
+      - name: appId
+        in: path
+        description: App id will be used as kafka consumer group id
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      responses:
+        "200":
+          description: Success search response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Error'
+                x-content-type: application/json
+        "404":
+          description: Content not found
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Error'
+                x-content-type: application/json
+      security:
+      - bearerAuth:
+        - Viewer
+      x-swagger-router-controller: Notification
+  /notification/publish:
+    put:
+      tags:
+      - Notification
+      summary: consume notificaitons from Kafka
+      operationId: publishNotifications
+      requestBody:
+        description: publish message body
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        "200":
+          description: Success search response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Error'
+                x-content-type: application/json
+      security:
+      - bearerAuth:
+        - Viewer
+      x-swagger-router-controller: Notification
 components:
   schemas:
     User:
@@ -521,6 +628,9 @@ components:
           format: int32
         message:
           type: string
+      example:
+        code: 0
+        message: message
     Dag:
       type: object
       properties:
@@ -597,18 +707,6 @@ components:
         dagId:
           type: string
           description: dag id
-    DagPickle:
-      type: object
-      properties:
-        id:
-          type: integer
-        picked:
-          type: string
-        createDateTime:
-          type: string
-          format: datetime
-        pickleHash:
-          type: number
     Job:
       type: object
       properties:
@@ -746,6 +844,341 @@ components:
         tryNumber: 6
         taskId: taskId
         startDate: startDate
+    Metadata:
+      type: object
+      properties:
+        accession_no_csv:
+          type: string
+        Image:
+          type: string
+        object_work_type:
+          type: string
+        title_text:
+          type: string
+        preference:
+          type: string
+        title_language:
+          type: string
+        creator_2:
+          type: string
+        creator_1:
+          type: string
+        creator_role:
+          type: string
+        creation_date:
+          type: string
+        creation_place_original_location:
+          type: string
+        styles_periods_indexing_terms:
+          type: string
+        inscriptions:
+          type: string
+        inscription_language:
+          type: string
+        scale_type:
+          type: string
+        shape:
+          type: string
+        materials_name:
+          type: string
+        techniques_name:
+          type: string
+        object_colour:
+          type: string
+        edition_description:
+          type: string
+        physical_appearance:
+          type: string
+        subject_terms_1:
+          type: string
+        subject_terms_2:
+          type: string
+        subject_terms_3:
+          type: string
+        subject_terms_4:
+          type: string
+        context_1:
+          type: string
+        context_2:
+          type: string
+        context_3:
+          type: string
+        context_4:
+          type: string
+        context_5:
+          type: string
+        context_6:
+          type: string
+        context_7:
+          type: string
+        context_8:
+          type: string
+        context_9:
+          type: string
+        context_10:
+          type: string
+        context_11:
+          type: string
+        context_12:
+          type: string
+        context_13:
+          type: string
+        context_14:
+          type: string
+        context_15:
+          type: string
+        context_16:
+          type: string
+        context_17:
+          type: string
+        context_18:
+          type: string
+        context_19:
+          type: string
+        context_20:
+          type: string
+        context_21:
+          type: string
+        context_22:
+          type: string
+        context_23:
+          type: string
+        context_24:
+          type: string
+        sgcool_label_text:
+          type: string
+      example:
+        context_23: context_23
+        context_22: context_22
+        context_24: context_24
+        Image: Image
+        materials_name: materials_name
+        subject_terms_3: subject_terms_3
+        subject_terms_4: subject_terms_4
+        subject_terms_1: subject_terms_1
+        accession_no_csv: accession_no_csv
+        subject_terms_2: subject_terms_2
+        context_21: context_21
+        context_20: context_20
+        shape: shape
+        preference: preference
+        inscription_language: inscription_language
+        sgcool_label_text: sgcool_label_text
+        creation_date: creation_date
+        title_language: title_language
+        physical_appearance: physical_appearance
+        scale_type: scale_type
+        creation_place_original_location: creation_place_original_location
+        context_12: context_12
+        techniques_name: techniques_name
+        context_1: context_1
+        context_11: context_11
+        context_2: context_2
+        context_14: context_14
+        context_3: context_3
+        context_13: context_13
+        context_4: context_4
+        context_16: context_16
+        context_5: context_5
+        context_15: context_15
+        inscriptions: inscriptions
+        object_colour: object_colour
+        context_6: context_6
+        context_18: context_18
+        context_7: context_7
+        context_17: context_17
+        context_8: context_8
+        context_9: context_9
+        context_19: context_19
+        edition_description: edition_description
+        creator_role: creator_role
+        creator_2: creator_2
+        creator_1: creator_1
+        object_work_type: object_work_type
+        styles_periods_indexing_terms: styles_periods_indexing_terms
+        title_text: title_text
+        context_10: context_10
+    SearchList:
+      type: object
+      properties:
+        _index:
+          type: string
+        _type:
+          type: string
+        _id:
+          type: string
+        _score:
+          type: number
+        _source:
+          $ref: '#/components/schemas/SearchResult'
+      example:
+        _index: _index
+        _type: _type
+        _source:
+          metadata:
+            context_23: context_23
+            context_22: context_22
+            context_24: context_24
+            Image: Image
+            materials_name: materials_name
+            subject_terms_3: subject_terms_3
+            subject_terms_4: subject_terms_4
+            subject_terms_1: subject_terms_1
+            accession_no_csv: accession_no_csv
+            subject_terms_2: subject_terms_2
+            context_21: context_21
+            context_20: context_20
+            shape: shape
+            preference: preference
+            inscription_language: inscription_language
+            sgcool_label_text: sgcool_label_text
+            creation_date: creation_date
+            title_language: title_language
+            physical_appearance: physical_appearance
+            scale_type: scale_type
+            creation_place_original_location: creation_place_original_location
+            context_12: context_12
+            techniques_name: techniques_name
+            context_1: context_1
+            context_11: context_11
+            context_2: context_2
+            context_14: context_14
+            context_3: context_3
+            context_13: context_13
+            context_4: context_4
+            context_16: context_16
+            context_5: context_5
+            context_15: context_15
+            inscriptions: inscriptions
+            object_colour: object_colour
+            context_6: context_6
+            context_18: context_18
+            context_7: context_7
+            context_17: context_17
+            context_8: context_8
+            context_9: context_9
+            context_19: context_19
+            edition_description: edition_description
+            creator_role: creator_role
+            creator_2: creator_2
+            creator_1: creator_1
+            object_work_type: object_work_type
+            styles_periods_indexing_terms: styles_periods_indexing_terms
+            title_text: title_text
+            context_10: context_10
+          nlpDate: nlpDate
+          connectorId: 1
+          roles:
+          - roles
+          - roles
+          source: source
+          title: title
+          version: 6
+          content: content
+          tags: {}
+          path: path
+          id: id
+          createDate: createDate
+          latest: true
+        _id: _id
+        _score: 0.80082819046101150206595775671303272247314453125
+    SearchResult:
+      type: object
+      properties:
+        id:
+          type: string
+        title:
+          type: string
+        source:
+          type: string
+        path:
+          type: string
+        content:
+          type: string
+        createDate:
+          type: string
+        version:
+          type: integer
+        latest:
+          type: boolean
+        roles:
+          type: array
+          items:
+            type: string
+        metadata:
+          $ref: '#/components/schemas/Metadata'
+        nlpDate:
+          type: string
+        connectorId:
+          type: integer
+        tags:
+          type: object
+      example:
+        metadata:
+          context_23: context_23
+          context_22: context_22
+          context_24: context_24
+          Image: Image
+          materials_name: materials_name
+          subject_terms_3: subject_terms_3
+          subject_terms_4: subject_terms_4
+          subject_terms_1: subject_terms_1
+          accession_no_csv: accession_no_csv
+          subject_terms_2: subject_terms_2
+          context_21: context_21
+          context_20: context_20
+          shape: shape
+          preference: preference
+          inscription_language: inscription_language
+          sgcool_label_text: sgcool_label_text
+          creation_date: creation_date
+          title_language: title_language
+          physical_appearance: physical_appearance
+          scale_type: scale_type
+          creation_place_original_location: creation_place_original_location
+          context_12: context_12
+          techniques_name: techniques_name
+          context_1: context_1
+          context_11: context_11
+          context_2: context_2
+          context_14: context_14
+          context_3: context_3
+          context_13: context_13
+          context_4: context_4
+          context_16: context_16
+          context_5: context_5
+          context_15: context_15
+          inscriptions: inscriptions
+          object_colour: object_colour
+          context_6: context_6
+          context_18: context_18
+          context_7: context_7
+          context_17: context_17
+          context_8: context_8
+          context_9: context_9
+          context_19: context_19
+          edition_description: edition_description
+          creator_role: creator_role
+          creator_2: creator_2
+          creator_1: creator_1
+          object_work_type: object_work_type
+          styles_periods_indexing_terms: styles_periods_indexing_terms
+          title_text: title_text
+          context_10: context_10
+        nlpDate: nlpDate
+        connectorId: 1
+        roles:
+        - roles
+        - roles
+        source: source
+        title: title
+        version: 6
+        content: content
+        tags: {}
+        path: path
+        id: id
+        createDate: createDate
+        latest: true
   responses:
     UnauthorizedError:
       description: Access token is missing or invalid

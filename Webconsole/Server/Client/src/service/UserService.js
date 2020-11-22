@@ -1,8 +1,8 @@
 import { getRequest, constructAuthenticationHeaders } from './proxy/ApiProxy'
-import config from '../config'
+import {apiOptions} from '../config'
 
 export function retrieveUsers() {
-  return getRequest(config.userUrl, null, constructAuthenticationHeaders()).then(
+  return getRequest(apiOptions.userUrl, null, constructAuthenticationHeaders()).then(
       function (res, err) {
         if (err) {
           console.log(err);

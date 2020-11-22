@@ -3,7 +3,7 @@ const port1  = window.location.port
 const protocal1 = window.location.protocol
 
 
-var apiOptions = {
+exports.apiOptions = {
     hostname: hostname1,
     port: port1,
     protocal: protocal1,
@@ -18,4 +18,12 @@ var apiOptions = {
     dagsUrl: '/api/v1/dags'
 };
 
-module.exports = apiOptions;
+exports.searchOptions = {
+    url: "http://localhost:9200",
+    searchIndex: "/books",
+    searchAction: "/_search",
+    createAction: "/_creeate"
+    
+}
+
+// module.exports = apiOptions, searchOptions;
