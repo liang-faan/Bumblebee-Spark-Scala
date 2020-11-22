@@ -19,7 +19,7 @@ exports.apiOptions = {
 };
 
 exports.searchOptions = {
-    url: "http://localhost:9200",
+    url: `${protocal1}://${hostname1}:${port1}`,
     searchIndex: "/books",
     searchAction: "/_search",
     createAction: "/_creeate"

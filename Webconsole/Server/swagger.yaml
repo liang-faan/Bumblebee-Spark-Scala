@@ -5,7 +5,7 @@ info:
   license:
     name: "Group#3 - Capstone Project"
 servers:
-  - url: http://localhost:8080/api/v1
+  - url: http://localhost:5000/api/v1
     description: "development url"
   - url: https://liangfaan.com/api/v1
     description: "production url"
@@ -38,10 +38,10 @@ paths:
                 $ref: "#/components/schemas/Error"
   /users:
     get:
-      summary: List all pets
+      summary: List all users
       operationId: listUsers
       security: 
-        - bearerAuth: ['Admin']
+        - bearerAuth: []
       tags:
         - User
       # parameters:
@@ -75,7 +75,7 @@ paths:
       summary: User Register
       operationId: createUser
       security: 
-        - bearerAuth: ['Admin']
+        - bearerAuth: []
       tags:
         - User
       requestBody:
@@ -132,7 +132,7 @@ paths:
       summary: "Retrieve user roles by userName"
       operationId: getUserRoles
       security:
-        - bearerAuth: ['Admin']
+        - bearerAuth: []
       tags:
         - "User"
       parameters: 
@@ -160,7 +160,7 @@ paths:
       summary: Retrieve airflow DAGs
       operationId: getDags
       security: 
-        - bearerAuth: ['Op','Viewer','User']
+        - bearerAuth: []
       tags: 
         - Dag
       responses:
@@ -183,7 +183,7 @@ paths:
       summary: retrieve dags schedule from airflow
       operationId: getTasks
       security: 
-        - bearerAuth: ['Op','Viewer','User']
+        - bearerAuth: []
       tags: 
         - Task
       responses:
@@ -206,7 +206,7 @@ paths:
       summary: retrieve dags schedule from airflow
       operationId: getTaskSchedule
       security: 
-        - bearerAuth: ['Op','Viewer']
+        - bearerAuth: []
       tags: 
         - Task
       responses:
@@ -252,7 +252,7 @@ paths:
       summary: searching books from elastic
       operationId: elasticSearch
       security: 
-        - bearerAuth: ['Viewer']
+        - bearerAuth: []
       tags: 
         - Search
       parameters:
@@ -276,7 +276,7 @@ paths:
       summary: consume notificaitons from Kafka
       operationId: retrieveNotifications
       security: 
-        - bearerAuth: ['Viewer']
+        - bearerAuth: []
       tags: 
         - Notification
       parameters: 
@@ -308,7 +308,7 @@ paths:
       summary: consume notificaitons from Kafka
       operationId: publishNotifications
       security: 
-        - bearerAuth: ['Viewer']
+        - bearerAuth: []
       tags: 
         - Notification
       requestBody:
