@@ -19,10 +19,10 @@ exports.apiOptions = {
 };
 
 exports.searchOptions = {
-    url: `${protocal1}://${hostname1}:${port1}`,
-    searchIndex: "/books",
+    url: '/api/v1/search',
+    searchIndex: "/company",
     searchAction: "/_search",
-    createAction: "/_creeate"
+    createAction: "/_create"
     
 }
 

@@ -12,7 +12,8 @@ const dev = {
     path: './db/airflow.db'
   },
   jwtSecretKey: "0QyYwXN2NXpd47gq/IaaEYphBdJ98+J0DdUsX7q+zCkI",
-  jwtIssuer: { issuer: "liang.faan@gmail.com" }
+  jwtIssuer: { issuer: "liang.faan@gmail.com" },
+  elasticSearchUrl: "http://localhost:9200/"
 };
 
 const test = {
@@ -25,7 +26,8 @@ const test = {
     name: 'test'
   },
   jwtSecretKey: "0QyYwXN2NXpd47gq/IaaEYphBdJ98+J0DdUsX7q+zCkI",
-  jwtIssuer: { issuer: "liang.faan@gmail.com" }
+  jwtIssuer: { issuer: "liang.faan@gmail.com" },
+  elasticSearchUrl: "http://localhost:9200/"
 };
 
 const Config = {

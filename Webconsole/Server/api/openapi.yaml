@@ -252,7 +252,7 @@ paths:
         - Op
         - Viewer
       x-swagger-router-controller: Job
-  /search:
+  /search/{searchIndex}/{searchAction}:
     get:
       tags:
       - Search
@@ -265,6 +265,20 @@ paths:
         required: true
         style: form
         explode: true
+        schema:
+          type: string
+      - name: searchIndex
+        in: path
+        required: true
+        style: simple
+        explode: false
+        schema:
+          type: string
+      - name: searchAction
+        in: path
+        required: true
+        style: simple
+        explode: false
         schema:
           type: string
       responses:
