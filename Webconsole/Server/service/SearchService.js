@@ -26,7 +26,7 @@ exports.elasticSearch = function (param, searchIndex, searchAction) {
       url: url1,
       method: "GET",
       // headers: headerPara,
-      params: { q: param }
+      params: { q: param, size: 200 }
     }
     axios.request(apiConfig).then(function (response) {
       // handle success

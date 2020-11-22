@@ -20,7 +20,7 @@ exports.apiOptions = {
 
 exports.searchOptions = {
     url: '/api/v1/search',
-    searchIndex: "/company",
+    searchIndex: "/books",
     searchAction: "/_search",
     createAction: "/_create"
     

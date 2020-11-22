@@ -17,7 +17,7 @@ import CIcon from '@coreui/icons-react'
 import { getRequest, constructAuthenticationHeaders } from '../../service/proxy/ApiProxy'
 import { searchOptions } from '../../config'
 
-const fields = ["title_text","object_work_type"]
+const fields = ["title_text", "object_work_type"]
 
 const SearchPage = () => {
     const [searchInput, setSearchInput] = useState();
@@ -33,7 +33,7 @@ const SearchPage = () => {
         getRequest(hostUrl + searchIndex + searchAction + `?q=${searchInput}`, null, constructAuthenticationHeaders()).then(function (response) {
             // handle success
             console.log(response);
-            var metadataList = response.data.map((item)=> 
+            var metadataList = response.data.map((item) =>
                 item._source.metadata
             );
             setSearchResult(metadataList);
@@ -81,20 +81,28 @@ const SearchPage = () => {
                 <CCol>
                     <CCard>
                         <CCardHeader color="success" className="text-white">Searching Results</CCardHeader>
-                    
-                    <CCardBody>
-                        <CDataTable
-                            items={searchResult}
-                            fields={fields}
-                            hover
-                            striped
-                            bordered
-                            size="sm"
-                            itemsPerPage={15}
-                            pagination={{ 'align': 'center', 'size': 'lg' }}
 
-                        />
-                    </CCardBody>
+                        <CCardBody>
+                            <CDataTable
+                                items={searchResult}
+                                fields={fields}
+                                hover
+                                striped
+                                bordered
+                                size="sm"
+                                itemsPerPage={15}
+                                pagination={{ 'align': 'center', 'size': 'lg' }}
+                                scopedSlots={
+                                    {
+                                        'title_text': (item) => (
+                                            <td>
+                                                {item.title_text.length > 60 ? (item.title_text.substring(0,56) + "...") : item.title_text}
+                                            </td>
+                                        ),
+                                    }
+                                }
+                            />
+                        </CCardBody>
                     </CCard>
                 </CCol>
                 <CCol>
