@@ -148,3 +148,13 @@ download linux version sqlite3;
 
 ./node_modules/.bin/node-pre-gyp install --directory=./node_modules/sqlite3 --target_platform=linux 
 ```
+
+### CORS attach in browser
+```
+Kafkajs cannot launch in React App in browser because of CORS attack blocking
+solution: need to via express server back communicate with Kafka and use websocket push back the message
+
+Cannot search the Elastic engine because CORS attack blocking
+Solution: retrieve Elastic Search via express API.
+
+```

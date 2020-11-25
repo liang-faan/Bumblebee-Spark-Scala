@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import {consumeKafkaMessage} from '../../service/KafkaUtils'
 import {
     CInputGroup,
     CInputGroupPrepend,
@@ -11,21 +12,38 @@ import {
     CCardHeader,
     CCardBody,
     CButton,
-    CDataTable
+    CDataTable,
+    CCollapse,
+    CLink
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { getRequest, constructAuthenticationHeaders } from '../../service/proxy/ApiProxy'
 import { searchOptions } from '../../config'
 
-const fields = ["title_text", "object_work_type"]
+// consumeKafkaMessage("testMessage");
+
+const fields = [{ key: "title_text", label: "Books Name" },
+{
+    key: 'show_details',
+    label: '',
+    _style: { width: '1%%' },
+    sorter: false,
+    filter: false
+}]
 
 const SearchPage = () => {
     const [searchInput, setSearchInput] = useState();
     const [searchResult, setSearchResult] = useState();
+    const [details, setDetails] = useState([])
     const handleSubmit = () => {
-
+        setDetails([])
+        setSearchResult(null)
         console.log("start searching elastic search")
         console.log(searchInput);
+        if (searchInput === null || searchInput === "") {
+            setSearchResult(null);
+            return;
+        }
 
         var hostUrl = searchOptions.url
         var searchIndex = searchOptions.searchIndex
@@ -33,10 +51,14 @@ const SearchPage = () => {
         getRequest(hostUrl + searchIndex + searchAction + `?q=${searchInput}`, null, constructAuthenticationHeaders()).then(function (response) {
             // handle success
             console.log(response);
-            var metadataList = response.data.map((item) =>
-                item._source.metadata
-            );
-            setSearchResult(metadataList);
+            if (Array.isArray(response.data)) {
+                var metadataList = response.data.map((item) =>
+                    item._source.metadata
+                );
+
+                // metadataList=metadataList.sort((a, b) => (a.accession_no_csv > b.accession_no_csv) ? 1 : (a.accession_no_csv === b.accession_no_csv) ? ((a.creation_date > b.creation_date) ? 1 : -1) : -1 )
+                setSearchResult(metadataList);
+            }
 
         }).catch(function (error) {
             // handle error
@@ -47,10 +69,17 @@ const SearchPage = () => {
             console.log("Finish searching")
         });
     }
-    // if (searchResult) {
-    //     console.log(searchResult._source)
-    // }
 
+    const toggleDetails = (index) => {
+        const position = details.indexOf(index)
+        let newDetails = details.slice()
+        if (position !== -1) {
+            newDetails.splice(position, 1)
+        } else {
+            newDetails = [...details, index]
+        }
+        setDetails(newDetails)
+    }
     return (
         <>
             <CRow>
@@ -81,24 +110,55 @@ const SearchPage = () => {
                 <CCol>
                     <CCard>
                         <CCardHeader color="success" className="text-white">Searching Results</CCardHeader>
-
-                        <CCardBody>
+                        <CCardBody color="white">
                             <CDataTable
                                 items={searchResult}
                                 fields={fields}
                                 hover
-                                striped
                                 bordered
                                 size="sm"
-                                itemsPerPage={15}
+                                itemsPerPage={10}
                                 pagination={{ 'align': 'center', 'size': 'lg' }}
                                 scopedSlots={
                                     {
-                                        'title_text': (item) => (
-                                            <td>
-                                                {item.title_text.length > 60 ? (item.title_text.substring(0,56) + "...") : item.title_text}
-                                            </td>
-                                        ),
+                                        'title_text':
+                                            (item, index) => {
+                                                return (
+                                                    <td>
+                                                        <CLink onClick={() => { toggleDetails(index) }}> {item.title_text.replace(/^\?*/,'').replace(/\?{2,}$/,'')} </CLink>
+                                                    </td>
+                                                )
+                                            },
+                                        'show_details':
+                                            (item, index) => {
+                                                return (
+                                                    <td>
+                                                        <CButton
+                                                            color="primary"
+                                                            variant="outline"
+                                                            shape="square"
+                                                            size="sm"
+                                                            onClick={() => { toggleDetails(index) }}
+                                                        >
+                                                            {details.includes(index) ? 'Hide' : 'Show'}
+                                                        </CButton>
+                                                    </td>
+                                                )
+                                            },
+                                        'details':
+                                            (item, index) => {
+                                                return (
+                                                    <CCollapse show={details.includes(index)}>
+                                                        <CCardBody>
+                                                            <h4>{item.title_text.replace(/^\?*/,'').replace(/\?{2,}$/,'')}</h4>
+                                                            <h5>Creator: {item.creator_1 + ((item.creator_1 !== '' && item.creator_2 !== '' && item.creator_2 !== 'Unknow') ? '/' : '') + (item.creator_2 !== 'Unknow' ? item.creator_2 : '')}</h5>
+                                                            <h5>Object Type: {item.object_work_type?item.object_work_type.replace(/^\?*/,'').replace(/\?{2,}$/,''):''}</h5>
+                                                            <h5>Creation Date: {item.creation_date?item.creation_date:''}</h5>
+                                                            <p>Context: {item.physical_appearance?item.physical_appearance.replace(/^\?*/,'').replace(/\?{2,}$/,''):''}</p>
+                                                        </CCardBody>
+                                                    </CCollapse>
+                                                )
+                                            }
                                     }
                                 }
                             />

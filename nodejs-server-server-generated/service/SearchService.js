@@ -5,9 +5,11 @@
  * searching books from elastic
  *
  * q String searching content
+ * searchIndex String 
+ * searchAction String 
  * returns List
  **/
-exports.elasticSearch = function(q) {
+exports.elasticSearch = function(q,searchIndex,searchAction) {
   return new Promise(function(resolve, reject) {
     var examples = {};
     examples['application/json'] = [ {

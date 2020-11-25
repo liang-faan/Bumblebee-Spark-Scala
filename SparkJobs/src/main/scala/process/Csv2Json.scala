@@ -1,6 +1,7 @@
 package process
 
 import java.io._
+import java.net.URLEncoder
 import java.util.Date
 
 import com.google.gson.GsonBuilder
@@ -100,56 +101,56 @@ object Csv2Json {
      * Merged the records with same id: accession_no_csv
      */
     val DfMerged = Df2.filter(col("accession_no_csv").isNotNull).groupBy("accession_no_csv")
-      .agg(trim(concat_ws(" ", collect_list("Image"))).as("Image")
-        , trim(concat_ws(" ", collect_list("object_work_type"))).as("object_work_type")
-        , trim(concat_ws(" ", collect_list("title_text"))).as("title_text")
-        , trim(concat_ws(" ", collect_list("preference"))).as("preference")
-        , trim(concat_ws(" ", collect_list("title_language"))).as("title_language")
-        , trim(concat_ws(" ", collect_list("creator_2"))).as("creator_2")
-        , trim(concat_ws(" ", collect_list("creator_1"))).as("creator_1")
-        , trim(concat_ws(" ", collect_list("creator_role"))).as("creator_role")
-        , trim(concat_ws(" ", collect_list("creation_date"))).as("creation_date")
-        , trim(concat_ws(" ", collect_list("creation_place_original_location"))).as("creation_place_original_location")
-        , trim(concat_ws(" ", collect_list("styles_periods_indexing_terms"))).as("styles_periods_indexing_terms")
-        , trim(concat_ws(" ", collect_list("inscriptions"))).as("inscriptions")
-        , trim(concat_ws(" ", collect_list("inscription_language"))).as("inscription_language")
-        , trim(concat_ws(" ", collect_list("scale_type"))).as("scale_type")
-        , trim(concat_ws(" ", collect_list("shape"))).as("shape")
-        , trim(concat_ws(" ", collect_list("materials_name"))).as("materials_name")
-        , trim(concat_ws(" ", collect_list("techniques_name"))).as("techniques_name")
-        , trim(concat_ws(" ", collect_list("object_colour"))).as("object_colour")
-        , trim(concat_ws(" ", collect_list("edition_description"))).as("edition_description")
-        , trim(concat_ws(" ", collect_list("physical_appearance"))).as("physical_appearance")
-        , trim(concat_ws(" ", collect_list("subject_terms_1"))).as("subject_terms_1")
-        , trim(concat_ws(" ", collect_list("subject_terms_2"))).as("subject_terms_2")
-        , trim(concat_ws(" ", collect_list("subject_terms_3"))).as("subject_terms_3")
-        , trim(concat_ws(" ", collect_list("subject_terms_4"))).as("subject_terms_4")
-        , trim(concat_ws(" ", collect_list("context_1"))).as("context_1")
-        , trim(concat_ws(" ", collect_list("context_2"))).as("context_2")
-        , trim(concat_ws(" ", collect_list("context_3"))).as("context_3")
-        , trim(concat_ws(" ", collect_list("context_4"))).as("context_4")
-        , trim(concat_ws(" ", collect_list("context_5"))).as("context_5")
-        , trim(concat_ws(" ", collect_list("context_6"))).as("context_6")
-        , trim(concat_ws(" ", collect_list("context_7"))).as("context_7")
-        , trim(concat_ws(" ", collect_list("context_8"))).as("context_8")
-        , trim(concat_ws(" ", collect_list("context_9"))).as("context_9")
-        , trim(concat_ws(" ", collect_list("context_10"))).as("context_10")
-        , trim(concat_ws(" ", collect_list("context_11"))).as("context_11")
-        , trim(concat_ws(" ", collect_list("context_12"))).as("context_12")
-        , trim(concat_ws(" ", collect_list("context_13"))).as("context_13")
-        , trim(concat_ws(" ", collect_list("context_14"))).as("context_14")
-        , trim(concat_ws(" ", collect_list("context_15"))).as("context_15")
-        , trim(concat_ws(" ", collect_list("context_16"))).as("context_16")
-        , trim(concat_ws(" ", collect_list("context_17"))).as("context_17")
-        , trim(concat_ws(" ", collect_list("context_18"))).as("context_18")
-        , trim(concat_ws(" ", collect_list("context_19"))).as("context_19")
-        , trim(concat_ws(" ", collect_list("context_20"))).as("context_20")
-        , trim(concat_ws(" ", collect_list("context_21"))).as("context_21")
-        , trim(concat_ws(" ", collect_list("context_22"))).as("context_22")
-        , trim(concat_ws(" ", collect_list("context_23"))).as("context_23")
-        , trim(concat_ws(" ", collect_list("context_24"))).as("context_24")
-        , trim(concat_ws(" ", collect_list("sgcool_label_text"))).as("sgcool_label_text"))
-      .toDF();
+      .agg(trim(concat_ws(" ", collect_set(regexp_replace(trim(col("Image")),"\\?{2,}","")))).as("Image")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("object_work_type")),"\\?{2,}","")))).as("object_work_type")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("title_text")),"\\?{2,}","")))).as("title_text")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("preference")),"\\?{2,}","")))).as("preference")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("title_language")),"\\?{2,}","")))).as("title_language")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("creator_2")),"\\?{2,}","")))).as("creator_2")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("creator_1")),"\\?{2,}","")))).as("creator_1")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("creator_role")),"\\?{2,}","")))).as("creator_role")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("creation_date")),"\\?{2,}","")))).as("creation_date")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("creation_place_original_location")),"\\?{2,}","")))).as("creation_place_original_location")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("styles_periods_indexing_terms")),"\\?{2,}","")))).as("styles_periods_indexing_terms")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("inscriptions")),"\\?{2,}","")))).as("inscriptions")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("inscription_language")),"\\?{2,}","")))).as("inscription_language")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("scale_type")),"\\?{2,}","")))).as("scale_type")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("shape")),"\\?{2,}","")))).as("shape")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("materials_name")),"\\?{2,}","")))).as("materials_name")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("techniques_name")),"\\?{2,}","")))).as("techniques_name")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("object_colour")),"\\?{2,}","")))).as("object_colour")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("edition_description")),"\\?{2,}","")))).as("edition_description")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("physical_appearance")),"\\?{2,}","")))).as("physical_appearance")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("subject_terms_1")),"\\?{2,}","")))).as("subject_terms_1")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("subject_terms_2")),"\\?{2,}","")))).as("subject_terms_2")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("subject_terms_3")),"\\?{2,}","")))).as("subject_terms_3")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("subject_terms_4")),"\\?{2,}","")))).as("subject_terms_4")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_1")),"\\?{2,}","")))).as("context_1")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_2")),"\\?{2,}","")))).as("context_2")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_3")),"\\?{2,}","")))).as("context_3")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_4")),"\\?{2,}","")))).as("context_4")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_5")),"\\?{2,}","")))).as("context_5")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_6")),"\\?{2,}","")))).as("context_6")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_7")),"\\?{2,}","")))).as("context_7")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_8")),"\\?{2,}","")))).as("context_8")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_9")),"\\?{2,}","")))).as("context_9")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_10")),"\\?{2,}","")))).as("context_10")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_11")),"\\?{2,}","")))).as("context_11")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_12")),"\\?{2,}","")))).as("context_12")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_13")),"\\?{2,}","")))).as("context_13")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_14")),"\\?{2,}","")))).as("context_14")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_15")),"\\?{2,}","")))).as("context_15")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_16")),"\\?{2,}","")))).as("context_16")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_17")),"\\?{2,}","")))).as("context_17")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_18")),"\\?{2,}","")))).as("context_18")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_19")),"\\?{2,}","")))).as("context_19")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_20")),"\\?{2,}","")))).as("context_20")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_21")),"\\?{2,}","")))).as("context_21")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_22")),"\\?{2,}","")))).as("context_22")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_23")),"\\?{2,}","")))).as("context_23")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("context_24")),"\\?{2,}","")))).as("context_24")
+        , trim(concat_ws(" ", collect_set(regexp_replace(trim(col("sgcool_label_text")),"\\?{2,}","")))).as("sgcool_label_text"))
+      .toDF().orderBy(desc("accession_no_csv"));
 
     val output2 = DfMerged.na.replace(df.columns, Map("NA" -> null));
     output2.show();
@@ -237,8 +238,10 @@ object Csv2Json {
         null
       );
       //      outputObjectList.add(outputObj);
-      writeToFile(output, fileName, gson.toJson(outputObj));
+      var content = gson.toJson(outputObj);
+      writeToFile(output, fileName, content);
 //      KafkaUtils.messageProducer("books-testing-messages-broadcast",UUID.randomUUID().toString, outputObj)
+      pushToElasticSearch(content, meta.accession_no_csv.trim().replaceAll("[\\n,\\r]", "__"));
     })
 
 
@@ -293,6 +296,7 @@ object Csv2Json {
       case e: FileNotFoundException => println("Couldn't find that file.")
       case e: IOException => println("Had an IOException trying to read that file")
     }
+
   }
 
   def renameCsvOutput(path: String, fileType: String, newName: String): Unit = {
@@ -306,6 +310,11 @@ object Csv2Json {
       file.renameTo(new File(path + "/" + newName))
       println(file.getAbsolutePath)
     })
+  }
+
+  def pushToElasticSearch(content: String, id: String): Unit ={
+    val url = "http://localhost:9200/books/_doc/"+URLEncoder.encode(id, "UTF-8")
+    requests.put(url, data=content, headers=Map("content-type"->"application/json"));
   }
 }
 

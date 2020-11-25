@@ -48,9 +48,9 @@ assemblyMergeStrategy in assembly := {
   case x => MergeStrategy.first
 }
 
-resolvers ++= Seq(
-  "apache-snapshots" at "http://repository.apache.org/snapshots/"
-)
+//resolvers ++= Seq(
+//  "apache-snapshots" at "http://repository.apache.org/snapshots/"
+//)
 
 libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-core" % "3.0.1",
@@ -60,6 +60,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-mllib" % "3.0.1",
   "com.google.code.gson" % "gson" % "2.8.6",
   "org.apache.kafka" % "kafka-clients" % "2.6.0",
-  "org.apache.kafka" %% "kafka" % "2.6.0"
+  "org.apache.kafka" %% "kafka" % "2.6.0",
+  "com.lihaoyi" %% "requests" % "0.6.5"
 )
 

@@ -1,10 +1,10 @@
 package kafka
 
-import java.util.Properties
+import java.util.concurrent.{ExecutorService, Executors}
+import java.util.{Collections, Properties}
 
 import com.google.gson.GsonBuilder
-import jsonclass.OutputCsv
-import org.apache.kafka.clients.consumer.ConsumerConfig
+import org.apache.kafka.clients.consumer.{ConsumerConfig, KafkaConsumer}
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerConfig, ProducerRecord}
 
 object KafkaUtils {
@@ -15,6 +15,7 @@ object KafkaUtils {
     .create();
 
   val kafkaBrokers = "localhost:9092"
+  val groupId = "group1"
 
   def getProperties(): Properties = {
     val props = new Properties()
@@ -27,11 +28,11 @@ object KafkaUtils {
 
   var producer = new KafkaProducer[String, String](getProperties());
 
-  def messageProducer(topic: String, key: String, outputCsv: OutputCsv) = {
+  def messageProducer(topic: String, key: String, message:String) = {
     if (producer == null) {
       producer = new KafkaProducer[String, String](getProperties());
     }
-    val data = new ProducerRecord[String, String](topic, key, gson.toJson(outputCsv));
+    val data = new ProducerRecord[String, String](topic, key, message);
     producer.send(data);
   }
 
@@ -51,8 +52,29 @@ object KafkaUtils {
     props
   }
 
-  def messageConsumer(topic: String): Unit ={
+  val props = createConsumerConfig(groupId)
+  val consumer = new KafkaConsumer[String, String](props)
+  var executor: ExecutorService = null
 
+  def messageConsumer(topic: String, groupId: String): Unit ={
+    consumer.subscribe(Collections.singletonList(topic))
+    Executors.newSingleThreadExecutor.execute(    new Runnable {
+      override def run(): Unit = {
+        while (true) {
+          val records = consumer.poll(1000)
+          for (record <- records) {
+            System.out.println("Received message: (" + record.key() + ", " + record.value() + ") at offset " + record.offset())
+          }
+        }
+      }
+    })
+  }
+
+  def shutdown() = {
+    if (consumer != null)
+      consumer.close();
+    if (executor != null)
+      executor.shutdown();
   }
 
 }
