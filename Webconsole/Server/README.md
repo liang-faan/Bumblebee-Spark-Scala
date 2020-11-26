@@ -158,3 +158,26 @@ Cannot search the Elastic engine because CORS attack blocking
 Solution: retrieve Elastic Search via express API.
 
 ```
+
+# Install Elastic Search in local
+
+### Install ES
+```
+docker pull elasticsearch:7.9.3
+```
+
+### Start ES
+```
+docker run -d --name elasticsearch --net kibana -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.9.3
+```
+
+### create ES index
+```
+PUT http://localhost:9200/books/_doc/2014-00285-019 -d {***input JSON body here***}
+
+```
+
+### Query ES
+```
+GET http://localhost:9200/books/_search?q=Food&sort=%7B%22createdDate%22:%7B%22order%22:%22desc%22%7D%7D&size=200
+```

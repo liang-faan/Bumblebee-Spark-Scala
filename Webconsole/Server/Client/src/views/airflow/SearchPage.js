@@ -22,7 +22,7 @@ import { searchOptions } from '../../config'
 
 // consumeKafkaMessage("testMessage");
 
-const fields = [{ key: "title_text", label: "Books Name" },
+const fields = [{ key: "title_text", label: "Magazine Title" },
 {
     key: 'show_details',
     label: '',
@@ -91,7 +91,7 @@ const SearchPage = () => {
                         <CCardBody>
                             <CInputGroup>
                                 <CInputGroupPrepend>
-                                    <CInputGroupText className={'bg-info text-white'}>Books</CInputGroupText>
+                                    <CInputGroupText className={'bg-info text-white'}>Magazine</CInputGroupText>
                                 </CInputGroupPrepend>
                                 <CInput type="text" id="searchInput" name="searchInput" onChange={e => setSearchInput(e.target.value)} onKeyPress={event => { if (event.key === 'Enter') { handleSubmit() } }} />
                                 <CInputGroupAppend>
