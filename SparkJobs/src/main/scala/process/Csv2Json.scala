@@ -28,11 +28,19 @@ object Csv2Json {
 
     val input = args(0)
     val output = args(1)
-    val outputCsvPath = args(2)
+    var outputCsvPath: String= null;
+    if(args.length>2){
+       outputCsvPath = args(2)
+    }
+
+    if(outputCsvPath ==null){
+      outputCsvPath=output+"/csv"
+    }
+
 
     logger.info("input file name: {}", input)
     logger.info("output path {}", output)
-    logger.info("output path {}", outputCsvPath)
+    logger.info("output csv path {}", outputCsvPath)
 
     logger.info("Initial spark session...")
     val session = connectToSpark()
