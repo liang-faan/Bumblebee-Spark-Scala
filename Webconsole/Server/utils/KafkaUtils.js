@@ -28,7 +28,7 @@ rackId: <String>
 
 const consumer = kafka.consumer({
     groupId: 'webconsole-group-'.concat(v4()),
-    allowAutoTopicCreation=true,
+    allowAutoTopicCreation: true,
     retry: {
         initialRetryTime: 100,
         retries: 8

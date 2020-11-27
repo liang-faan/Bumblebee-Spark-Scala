@@ -6,6 +6,7 @@ var http = require('http');
 const config = require('./Config');
 const express = require("express");
 const tokenService = require("./service/TokenService")
+const kafka = require("./utils/KafkaUtils")
 
 var oas3Tools = require('oas3-tools');
 var serverPort = config.app.port;
@@ -42,7 +43,7 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname + '/Client/build/index.html'));
 });
 
-
+kafka.consumeKafkaMessage("user_recommendation")
 
 
 // Initialize the Swagger middleware

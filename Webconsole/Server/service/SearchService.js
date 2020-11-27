@@ -1,7 +1,8 @@
 'use strict';
 const axios = require('axios')
 var config = require('../Config')
-
+var kafka = require('../utils/KafkaUtils')
+const { v4 } = require('uuid');
 /**
  * searching books from elastic
  *
@@ -15,6 +16,8 @@ exports.elasticSearch = function (param, searchIndex, searchAction) {
   console.log(`search action ${searchAction}`)
   console.log(`searching parameter ${param}`)
 
+  kafka.sendKafkaMessage("user_info", { value: JSON.stringify({ userId: Math.floor(Math.random()*71567)}), key: v4() })
+  
   var url1 = config.elasticSearchUrl + searchIndex + "/" + searchAction
   console.log(`requesting ${url1}`)
 
