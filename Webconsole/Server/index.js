@@ -1,12 +1,13 @@
 'use strict';
 
-const serverless = require('serverless-http');
+// const serverless = require('serverless-http');
 var path = require('path');
 var http = require('http');
 const config = require('./Config');
 const express = require("express");
 const tokenService = require("./service/TokenService")
-const kafka = require("./utils/KafkaUtils")
+// const kafka = require("./utils/KafkaUtils")
+const webSocketServer = require("./utils/WebSocketServer")
 
 var oas3Tools = require('oas3-tools');
 var serverPort = config.app.port;
@@ -43,7 +44,7 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname + '/Client/build/index.html'));
 });
 
-kafka.consumeKafkaMessage("user_recommendation")
+// kafka.consumeKafkaMessage("user_recommendation")
 
 
 // Initialize the Swagger middleware
@@ -52,5 +53,5 @@ http.createServer(app).listen(serverPort, function () {
     console.log('Swagger-ui is available on http://localhost:%d/docs', serverPort);
 });
 
-
+webSocketServer.createSocketServer(8080);
 // module.exports.handler = serverless(app); 

@@ -54,8 +54,8 @@ object RecommendationStreaming {
     //    val spark = SparkSession.builder().appName("NetworkWordCount").master("local[*]").getOrCreate();
 
     val conf = new SparkConf().setMaster("local[4]").setAppName("User Searching Recommendation");
-    val ssc = new StreamingContext(conf, Seconds(5));
-    ssc.sparkContext.setLogLevel("INFO")
+    val ssc = new StreamingContext(conf, Seconds(4));
+    ssc.sparkContext.setLogLevel("ERROR")
     /**
      * Loading Recommendation Model
      */

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, {useState } from 'react'
+// import Websocket from 'react-websocket';
 // import {consumeKafkaMessage} from '../../service/KafkaUtils'
 import {
     CInputGroup,
@@ -20,6 +21,45 @@ import CIcon from '@coreui/icons-react'
 import { getRequest, constructAuthenticationHeaders } from '../../service/proxy/ApiProxy'
 import { searchOptions } from '../../config'
 
+import {createSocketClient} from '../../service/websocket/SocketClient'
+
+createSocketClient(8080,setRecommendationOut);
+
+
+function setRecommendationOut(message){
+    console.log("come to callback function");
+    console.log(message)
+
+    if(isNaN(message)){
+        var recomd= JSON.parse(message);
+        var text = "<ol>"; 
+        recomd.recommandations.forEach(e => text += "<li>"+e+"</li>")
+        text +="</ol>"
+        document.getElementById("recomendationText").innerHTML = text;
+    }
+    
+}
+
+// useEffect(()=> {
+//     return () => {
+//         if(gMessageUpdate){
+//             document.getElementById("recomendationText").innerHTML = gMessage;
+//             gMessageUpdate=false;
+//         }
+        
+//     };
+//   }, []);
+
+
+// function getGlobalMessage(){
+//     return this.messageGlobal;
+// }
+
+// setTimeout(function() {
+//     client.close();
+//     createSocketClient(8080);
+// }, 3000);
+
 // consumeKafkaMessage("testMessage");
 
 const fields = [{ key: "title_text", label: "Magazine Title" },
@@ -35,6 +75,8 @@ const SearchPage = () => {
     const [searchInput, setSearchInput] = useState();
     const [searchResult, setSearchResult] = useState();
     const [details, setDetails] = useState([])
+  
+    
     const handleSubmit = () => {
         setDetails([])
         setSearchResult(null)
@@ -169,7 +211,8 @@ const SearchPage = () => {
                     <CCard>
                         <CCardHeader color="primary" className="text-white">Recommendation</CCardHeader>
                         <CCardBody>
-                            Recommendations here
+                            <div id = "recomendationText">
+                            </div>
                         </CCardBody>
                     </CCard>
                 </CCol>

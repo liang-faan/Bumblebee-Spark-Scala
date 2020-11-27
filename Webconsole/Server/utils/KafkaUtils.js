@@ -51,20 +51,25 @@ exports.sendKafkaMessage = async function (kafkaTopic, kafkaMessage) {
 
 }
 
-exports.consumeKafkaMessage = async function (kafkaTopic) {
+exports.consumeKafkaMessage = async function (kafkaTopic, callback) {
+    // let messages = new Array();
     await consumer.connect()
     await consumer.subscribe({ topic: kafkaTopic, fromBeginning: false })
-    await consumer.run({
-        // eachBatch: async ({ batch }) => {
-        //   console.log(batch)
-        // },
-        autoCommitInterval: 2000,
-        autoCommitThreshold: 30,
-        eachMessage: async ({ topic, partition, message }) => {
-            const prefix = `${topic}[${partition} | ${message.offset}] / ${message.timestamp}`
-            console.log(`- ${prefix} ${message.key}#${message.value}`)
-        },
-    })
+    await consumer.run(
+        {
+            autoCommitInterval: 1000,
+            autoCommitThreshold: 30,
+            eachMessage: async ({ topic, partition, message }) => callback(topic,partition, message)
+            
+            // {
+            //     messages = [];
+            //     const prefix = `${topic}[${partition} | ${message.offset}] / ${message.timestamp}`
+            //     console.log(`- ${prefix} ${message.key}#${message.value}`)
+            //     messages.push(message.value)
+            // },
+        }
+    )
+
     //  consumer.disconnect()
 }
 

@@ -21,7 +21,8 @@
     "oas3-tools": "file:oas3-tools-2.1.3.tgz",
     "serverless-http": "^2.6.0",
     "sqlite3": "^5.0.0",
-    "uuid": "^8.3.1"
+    "uuid": "^8.3.1",
+    "websocket": "^1.0.32"
   },
   "os": "darwin"
 }
