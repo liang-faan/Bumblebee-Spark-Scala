@@ -16,6 +16,7 @@ import org.slf4j.LoggerFactory
 import scala.collection.mutable.ListBuffer
 
 case class User(userId: String)
+
 case class UserRecommandation(userId: String, recommandations: Array[String])
 
 object RecommendationStreaming {
@@ -106,43 +107,48 @@ object RecommendationStreaming {
       (record.key, record.value)
     )
     records.print(10)
+    try {
 
-    records.foreachRDD(
-      (messageRdd, time) => {
-        var recommendationList = new ListBuffer[String]();
-        if (!messageRdd.isEmpty() && messageRdd.first()._2.contains("userId")) {
-          logger.debug(messageRdd.first()._2) //getting message body
-          val tyze = new TypeToken[User]() {}.getType
-          val user: User = gson.fromJson(messageRdd.first()._2, tyze);
-          logger.info(user.userId)
-          logger.debug(time.toString())
-          val recommendations = recommendModel.recommendProducts(user.userId.toInt, 10);
-          recommendations.foreach(rate => {
-            logger.info("Recommendation Product: {}", rate.product)
-            logger.info("Recommended Magazine {}", magazineList.apply((rate.product % magazineList.size + 1)))
 
-            recommendationList.append(magazineList.apply((rate.product % magazineList.size + 1)).replaceFirst("^\"",""))
+      records.foreachRDD(
+        (messageRdd, time) => {
+          var recommendationList = new ListBuffer[String]();
+          if (!messageRdd.isEmpty() && messageRdd.first()._2.contains("userId")) {
+            logger.debug(messageRdd.first()._2) //getting message body
+            val tyze = new TypeToken[User]() {}.getType
+            val user: User = gson.fromJson(messageRdd.first()._2, tyze);
+            logger.info(user.userId)
+            logger.debug(time.toString())
+            val recommendations = recommendModel.recommendProducts(user.userId.toInt, 10);
+            recommendations.foreach(rate => {
+              logger.info("Recommendation Product: {}", rate.product)
+              logger.info("Recommended Magazine {}", magazineList.apply((rate.product % magazineList.size + 1)))
+
+              recommendationList.append(magazineList.apply((rate.product % magazineList.size + 1)).replaceFirst("^\"", ""))
+            }
+            )
+            recommendationList = recommendationList.distinct;
+            logger.info("recommendationList size {}", recommendationList.size)
+            recommendationList.foreach(s => {
+              logger.info("Output List {}", s)
+            })
+
+            val userRecommandation = new UserRecommandation(user.userId, recommendationList.toList.toArray)
+            logger.info("after Object {}", userRecommandation.recommandations.length)
+
+            producer.send(new ProducerRecord[String, String](
+              "user_recommendation",
+              UUID.randomUUID().toString,
+              gson.toJson(userRecommandation, classOf[UserRecommandation])
+            ))
           }
-          )
-          recommendationList = recommendationList.distinct;
-          logger.info("recommendationList size {}", recommendationList.size)
-          recommendationList.foreach(s => {
-            logger.info("Output List {}", s)
-          })
-
-          val userRecommandation = new UserRecommandation(user.userId, recommendationList.toList.toArray)
-          logger.info("after Object {}", userRecommandation.recommandations.length)
-
-          producer.send(new ProducerRecord[String, String](
-            "user_recommendation",
-            UUID.randomUUID().toString,
-            gson.toJson(userRecommandation, classOf[UserRecommandation])
-          ))
         }
-      }
-    )
-    //recommend 100 products to a user
+      )
+      //recommend 100 products to a user
 
+    } catch {
+      case e: Exception => e.printStackTrace()
+    }
 
     ssc.start();
     ssc.awaitTermination();
