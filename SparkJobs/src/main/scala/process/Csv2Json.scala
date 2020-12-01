@@ -48,7 +48,7 @@ object Csv2Json {
     val outputDf = processCSVFile(df)
 
     transformCSVJson(outputDf, output, outputCsvPath)
-    //val locationIdentifier = CountryModelTraining.locationClassification(session, outputDf);
+    val locationIdentifier = CountryModelTraining.locationClassification(session, outputDf);
 
   }
 
@@ -249,7 +249,7 @@ object Csv2Json {
       var content = gson.toJson(outputObj);
       writeToFile(output, fileName, content);
 //      KafkaUtils.messageProducer("books-testing-messages-broadcast",UUID.randomUUID().toString, outputObj)
-      pushToElasticSearch(content, meta.accession_no_csv.trim().replaceAll("[\\n,\\r]", "__"));
+//      pushToElasticSearch(content, meta.accession_no_csv.trim().replaceAll("[\\n,\\r]", "__"));
     })
 
 

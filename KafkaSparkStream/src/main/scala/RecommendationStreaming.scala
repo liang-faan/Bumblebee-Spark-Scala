@@ -108,8 +108,6 @@ object RecommendationStreaming {
     )
     records.print(10)
     try {
-
-
       records.foreachRDD(
         (messageRdd, time) => {
           var recommendationList = new ListBuffer[String]();
