@@ -158,7 +158,7 @@ object CountryModelTraining {
 
     val pipelinefit = pipeline.fit(trainingData);
 
-//    pipelinefit.save("");// => input text -> API input json -> model -> come out recommand
+    pipelinefit.save("");// => input text -> API input json -> model -> come out recommand
     /**
      * evaluate the result
      */
